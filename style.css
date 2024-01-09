@@ -1,0 +1,102 @@
+/* fazer classes */
+/* aqui estou criando variavel */
+:root {
+    --accent-color: #9C2E35;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main-name-header {
+    color: #252525;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.about,
+.work,
+.contact {
+    color: #252525;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word
+}
+
+
+.title {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--accent-color, #9C2E35);
+    /* primeiro parametro e a cor que eu escolhi e e o segundo parametro e uma cor default */
+}
+
+
+.subtitle {
+    color: #21243D;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word
+}
+
+.resume-text {
+    color: #252525;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 0.60px;
+    word-wrap: break-word
+}
+
+.button-resume {
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #E5B714;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex
+}
+
+.footer-designer {
+    /* position: relative;
+    width: 100%; */
+}
+
+.triangulo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.trapezio {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
