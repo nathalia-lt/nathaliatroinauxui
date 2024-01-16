@@ -2,31 +2,46 @@
 /* aqui estou criando variavel */
 :root {
     --accent-color: #9C2E35;
+    --secondary-color: #384272;
+    --tertiary-color: #feaea3;
+    --button-color: #e5b714;
+    --preto-color: #252525;
+
 }
 
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
 }
 
+body {
+    scrollbar-color: var(--secondary-color, auto);
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
 
 
 .top-nav {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    background: transparent;
 }
 
 .main-name-header {
     color: #252525;
-    font-size: 20px;
+    font-size: 22px;
     font-family: Montserrat;
-    font-weight: 600;
-    word-wrap: break-word
+    font-weight: 700;
+    word-wrap: break-word;
+    word-spacing: 22px;
+}
+
+.top-nav.scrolled {
+    background-color: #fff;
 }
 
 .about,
@@ -41,13 +56,15 @@ body {
 }
 
 
+/* aqui adicionei margim para deixar o meu titulo mais centralizado e ainda deixou o buttom mais proximo :) */
 .title {
+    margin-top: 10rem;
     font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: var(--accent-color, #9C2E35);
+    color: var(--secondary-color);
     /* primeiro parametro e a cor que eu escolhi e e o segundo parametro e uma cor default */
 }
 
@@ -72,31 +89,115 @@ body {
 
 .button-resume {
     height: 53px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background: #E5B714;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    display: inline-flex
+    display: inline-flex;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.25s;
 }
 
-.footer-designer {
-    /* position: relative;
-    width: 100%; */
+.button-resume:hover {
+    border-color: #9C2E35;
+}
+
+
+
+.figma-designer {
+    /* position: relative; */
+    width: 100%;
 }
 
 .triangulo {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    left: 0;
+    top: -40px;
+    transform: rotate(180deg);
 }
 
 .trapezio {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    left: 0;
+    top: -40px;
+    transform: rotate(180deg);
+}
+
+.projects-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    height: 480px;
+    width: 70%;
+    background-color: #ecd3ab;
+    border-radius: 4px;
+}
+
+/* dentro do flex usar de flex */
+.container-title {
+    width: 70%;
+    /* align-self: flex-start; */
+}
+
+.project-image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-image img {
+    height: 80%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-description h3 {
+color: #384272;
+font-size: 40px;
+font-family: Montserrat;
+font-weight: 700;
+word-wrap: break-word
+}
+
+
+.project-description p {
+color: #252525;
+font-size: 16px;
+font-family: Montserrat;
+font-weight: 400;
+line-height: 22px;
+word-wrap: break-word
+}
+
+
+.project-description a {
+color: #667085;
+font-size: 16px;
+font-family: Montserrat;
+font-weight: 500;
+text-decoration: underline;
+word-wrap: break-word
 }

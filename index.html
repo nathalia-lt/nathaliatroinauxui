@@ -1,54 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    <header class="top-nav" style="width: 100%;  padding-top: 25px; padding-bottom: 25px; padding-left: 50px; padding-right: 50px; background: white; ">
-        <div class="" style=" height: 30px; padding-top: 3px; padding-bottom: 3px; justify-content: flex-end; align-items: center; display: inline-flex">
-            <div class="main-name-header">Nathalia Troina</div>
+  </head>
+  <body>
+    <div class="figma-design">
+      <div class="trapezio">
+        <svg
+          width="361"
+          height="355"
+          viewBox="0 0 361 355"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 364.5L368 2V128.5C368 122.9 210.667 283.5 132 364.5H2Z"
+            fill="#384272"
+          />
+          <path
+            d="M368 135.5V128.5M368 128.5V2L2 364.5H132C210.667 283.5 368 122.9 368 128.5Z"
+            stroke="black"
+            stroke-width="1.03138"
+          />
+        </svg>
+      </div>
+      <div class="triangulo">
+        <svg
+          width="226"
+          height="236"
+          viewBox="0 0 226 236"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="Vector 2"
+            d="M233 236H5L233 5V236Z"
+            fill="#FEAEA3"
+            stroke="#FEAEA3"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+    </div>
+    <header
+      class="top-nav"
+      style="
+        z-index: 1000;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 40px;
+        padding-right: 50px;
+      "
+    >
+      <div
+        class=""
+        style="
+          height: 30px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          justify-content: flex-end;
+          align-items: center;
+          display: inline-flex;
+        "
+      >
+        <div class="main-name-header" style="color: var(--secondary-color)">
+          Nathalia <span style="color: var(--tertiary-color)">Troina</span>
         </div>
-        <div  style="width: 256px; height: 22px; position: relative">
-            <div  class="about"style="left: 0px; top: 0px; position: absolute; ">About</div>
-            <div class="work" style="left: 101px; top: 0px; position: absolute; ">Work</div>
-            <div class="contact" style="left: 192px; top: 0px; position: absolute; ">Contact</div>
+      </div>
+      <div style="width: 256px; height: 22px; position: relative">
+        <div class="about" style="left: 0px; top: 0px; position: absolute">
+          About
         </div>
+        <div class="work" style="left: 101px; top: 0px; position: absolute">
+          Work
+        </div>
+        <div class="contact" style="left: 192px; top: 0px; position: absolute">
+          Contact
+        </div>
+      </div>
     </header>
-    <main >
-        <div style="width: 100%; justify-content: center; align-items: center; gap: 169px; display: inline-flex; margin: 126px 0" >
-            <div style="height: 395px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 79px; display: inline-flex">
-                <div style="height: 263px; flex-direction: column; justify-content: center; align-items: center; gap: 32px; display: flex">
-                    <div class="title" style="width: 506px; height: 105px; ">Hi, I’m Nathalia Troina<br/>UX/UI designer</div>
-                    <div class="subtitle" style="width: 497px; height: 126px;">Passionate about creating seamless digital experiences, I am a junior UX designer who thrives at the intersection of design and technology. I believe in crafting solutions that not only look visually appealing but also prioritize the user’s experencie.</div>
-                </div>
-                <div class="button-resume">
-                    <div class="resume-text" style="color: #252525; font-size: 20px; font-family: Montserrat; font-weight: 700; letter-spacing: 0.60px; word-wrap: break-word">Download Resume</div>
-                </div>
+    <main>
+      <!-- Home Page -->
+      <div
+        style="
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          gap: 169px;
+          display: inline-flex;
+          margin: 126px 0;
+        "
+      >
+        <div
+          style="
+            height: 395px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 79px;
+            display: inline-flex;
+          "
+        >
+          <div
+            style="
+              height: 263px;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 16px;
+              display: flex;
+            "
+          >
+            <h1 class="title" style="width: 506px; height: 105px">
+              Hi, I’m Nathalia Troina<br />UX/UI designer
+            </h1>
+            <p class="subtitle" style="width: 497px; height: 126px">
+              Passionate about creating seamless digital experiences, I am a UX
+              designer based in New York City.
+            </p>
+          </div>
+          <div class="button-resume">
+            <div
+              style="
+                color: black;
+                font-size: 20px;
+                font-family: Montserrat;
+                font-weight: 700;
+                letter-spacing: 0.6px;
+                word-wrap: break-word;
+              "
+            >
+              Resume
             </div>
-            <img style="width: 243px; height: 243px; border-radius: 9999px" src="https://via.placeholder.com/243x243" />
+          </div>
         </div>
+
+    </div>
+    <!-- Recent work page -->
+    <div class="projects-container">
+         <h2 class="container-title">My recent projects</h2>
+        <div class="project">
+            <div class="project-image">
+                <img src="./assets/iPhone 13 Mockup.png" alt="mobile-image">
+            </div>
+            <div class="project-description">
+                <h3>Flower Power</h3>
+                <p>E-commerce flower mobile app</p>
+                <a href="./projects/flower-power.html">Case Study</a>
+
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image">
+                <img src="" alt="">
+            </div>
+            <div class="project-description">
+                <h3>Yogarythm<h3>
+                <p>Learn Yoga and find your instructor</p>
+                <a href="">Case Study</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image">
+                <img src="" alt="">
+            </div>
+            <div class="project-description">
+                <h3>Coming soon</h3>
+                <p></p>
+                <a href="">Case Study</a>
+            </div>
+        </div>
+
+     </div>
     </main>
-    <footer class="footer-design">
-        <div class="trapezio">
-            <svg width="361" height="355" viewBox="0 0 361 355" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 364.5L368 2V128.5C368 122.9 210.667 283.5 132 364.5H2Z" fill="#384272"/>
-                <path d="M368 135.5V128.5M368 128.5V2L2 364.5H132C210.667 283.5 368 122.9 368 128.5Z" stroke="black" stroke-width="1.03138"/>
-                </svg>
-        </div>
-            <div class="triangulo">
-                <svg width="226" height="236" viewBox="0 0 226 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="Vector 2" d="M233 236H5L233 5V236Z" fill="#FEAEA3" stroke="#FEAEA3" stroke-width="4"/>
-                    </svg>
-            </div>
-    </footer>
-</body>
+
+    <script src="/home.js"></script>
+  </body>
 </html>
-
-
