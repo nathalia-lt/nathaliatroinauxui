@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -53,101 +54,46 @@
       </div>
     </div>
     <header
-      class="top-nav"
-      style="
-        z-index: 1000;
-        width: 100%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 40px;
-        padding-right: 50px;
-      "
-    >
-      <div
-        class=""
-        style="
-          height: 30px;
-          padding-top: 3px;
-          padding-bottom: 3px;
-          justify-content: flex-end;
-          align-items: center;
-          display: inline-flex;
-        "
-      >
-        <div class="main-name-header" style="color: var(--secondary-color)">
-          Nathalia <span style="color: var(--tertiary-color)">Troina</span>
+    class="top-nav">
+    <div>
+        <div class="main-name-header">
+          Nathalia <span>Troina</span>
         </div>
       </div>
       <div style="width: 256px; height: 22px; position: relative">
-        <div class="about" style="left: 0px; top: 0px; position: absolute">
+        <div class="about" style="left: 0px; top: 0px;">
           About
         </div>
-        <div class="work" style="left: 101px; top: 0px; position: absolute">
+        <div class="work" style="left: 101px; top: 0px;">
           Work
         </div>
-        <div class="contact" style="left: 192px; top: 0px; position: absolute">
+        <div class="contact" style="left: 192px; top: 0px;">
           Contact
         </div>
       </div>
     </header>
     <main>
       <!-- Home Page -->
-      <div
-        style="
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-          gap: 169px;
-          display: inline-flex;
-          margin: 126px 0;
-        "
-      >
-        <div
-          style="
-            height: 395px;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 79px;
-            display: inline-flex;
-          "
-        >
-          <div
-            style="
-              height: 263px;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              gap: 16px;
-              display: flex;
-            "
-          >
-            <h1 class="title" style="width: 506px; height: 105px">
+      <div class="home-page">
+        <div class="home-container">
+          <div class="home-content">
+            <h1 class="title">
               Hi, I’m Nathalia Troina<br />UX/UI designer
             </h1>
-            <p class="subtitle" style="width: 497px; height: 126px">
+            <p class="subtitle">
               Passionate about creating seamless digital experiences, I am a UX
               designer based in New York City.
             </p>
           </div>
           <div class="button-resume">
-            <div
-              style="
-                color: black;
-                font-size: 20px;
-                font-family: Montserrat;
-                font-weight: 700;
-                letter-spacing: 0.6px;
-                word-wrap: break-word;
-              "
-            >
+            <div>
               Resume
             </div>
           </div>
         </div>
 
     </div>
-    <!-- Recent work page -->
+    <!-- My recent projects page -->
     <div class="projects-container">
          <h2 class="container-title">My recent projects</h2>
         <div class="project">
@@ -181,10 +127,27 @@
                 <a href="">Case Study</a>
             </div>
         </div>
-
      </div>
+     <div class="contact-container">
+        <h1>Let's connect</h1>
+        <p>I am currently looking for opportunities for work and would be happy to collaborate.</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/nathaliatroina/">
+                <i class="fa fa-linkedin fa-3x"></i>
+            </a>
+            <a href="mailto:nathaliatroina@gmail.com">
+                <i class="fa fa-envelope fa-3x"></i>
+            </a>
+            <a href="https://github.com/nathalia-lt">
+                <i class="fa fa-github fa-3x"></i>
+            </a>
+        </div>
+        
+     </div>
+     <footer>Designed and built by Nathalia Troina</footer>
     </main>
 
     <script src="/home.js"></script>
   </body>
 </html>
+
