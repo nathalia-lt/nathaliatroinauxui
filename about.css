@@ -68,9 +68,22 @@ span{
 /* About session */
 
 .about-me{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 32px 16px;
+    justify-content: center;
     width: 100%;
     height: 600px;
-    background-color: #e5b714;
+}
+
+.about-photo{
+    width: 300px;
+    height: 363.436px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 50px;
+    align-items: flex-end;
 }
 
 /* Footer */
