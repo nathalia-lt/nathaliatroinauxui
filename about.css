@@ -1,0 +1,88 @@
+
+:root {
+    --accent-color: #9C2E35;
+    --secondary-color: #384272;
+    --tertiary-color: #feaea3;
+    --button-color: #e5b714;
+    --preto-color: #252525;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scrollbar-color: var(--secondary-color, auto);
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Header */
+
+.top-nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: white;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+
+.about,
+.work,
+.contact {
+    color: #252525;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main-name-header {
+    /* color: #252525; */
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-spacing: 22px;
+}
+
+span{
+    color: var(--tertiary-color);
+}
+
+/* About session */
+
+.about-me{
+    width: 100%;
+    height: 600px;
+    background-color: #e5b714;
+}
+
+/* Footer */
+
+
+footer{
+    position:absolute;
+    margin-bottom: 1.5rem;
+    width:100%;
+    background: #fff;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--preto-color);
+    text-align: center;
+}
