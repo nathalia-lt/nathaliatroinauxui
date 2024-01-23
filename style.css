@@ -6,6 +6,7 @@
     --tertiary-color: #feaea3;
     --button-color: #e5b714;
     --preto-color: #252525;
+    --background-color: #F6F2EE;
 }
 
 * {
@@ -191,9 +192,6 @@ span{
     border-color: #9C2E35;
 }
 
-
-
-
 /* My recents projects page */
 
 .projects-container {
@@ -211,7 +209,7 @@ span{
     flex-direction: row;
     height: 480px;
     width: 70%;
-    background-color: #ecd3ab;
+    background-color: #F6F2EE;
     border-radius: 4px;
 }
 

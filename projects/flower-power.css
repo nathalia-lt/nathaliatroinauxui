@@ -1,0 +1,152 @@
+:root {
+    --accent-color: #9C2E35;
+    --secondary-color: #384272;
+    --tertiary-color: #feaea3;
+    --button-color: #e5b714;
+    --preto-color: #252525;
+    --background-color: #F6F2EE;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scrollbar-color: var(--secondary-color, auto);
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    color: var(--preto-color);
+}
+
+/* header */
+
+.top-nav {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: transparent;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.main-name-header {
+    /* color: #252525; */
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-spacing: 22px;
+}
+
+span {
+    color: var(--tertiary-color);
+}
+
+.ux-title span {
+    color: linear-gradient(to right top, #384272, #755686, #ab6e93, #d98b9b, #feaea3);
+}
+
+.about,
+.work,
+.contact {
+    color: #252525;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Case Study */
+
+h1{
+    color: var(--accent-color);
+}
+
+.home-project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: inline-flex;
+    background-color: #ab6e93;
+}
+
+.carousel img{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 9px;
+    height: 400px;
+    overflow-x: auto;
+}
+
+/* overview section */
+
+.project-overview{
+    width: 100%;
+    height: 832px;
+    background-color: var(--background-color);
+    margin: 32px 16px;
+}
+
+.overview-role{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.problem-goal{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Design Process */
+
+.design-process{
+    width: 100%;
+    height: 832px;
+}
+
+.process-icons{
+    width: 60%;
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    position: absolute;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background: #fff;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--preto-color);
+    text-align: center;
+}
