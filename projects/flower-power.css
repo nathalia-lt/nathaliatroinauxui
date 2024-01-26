@@ -21,9 +21,15 @@ body {
     color: var(--preto-color);
 }
 
-main{
-    margin: 32px;
+section{
+    width: 80%;
+    margin: 48px auto;
 }
+
+section.background-colored {
+    background-color: var(--background-color);
+}
+
 
 /* header */
 
@@ -39,6 +45,10 @@ main{
     padding-bottom: 25px;
     padding-left: 40px;
     padding-right: 50px;
+}
+
+.top-nav a {
+    text-decoration: none;
 }
 
 .main-name-header {
@@ -70,13 +80,23 @@ span {
     word-wrap: break-word;
     position: absolute;
     cursor: pointer;
-    text-decoration: none;
 }
 
 /* Case Study */
 
-h1{
+/* larger fonts look better with less line spacing. Especially headers */
+h1 {
     color: var(--accent-color);
+    font-size: 32px;
+    letter-spacing: -2%;
+}
+
+/* Smaller text sizes work best with larger line-heights */
+/* size 16px line-height: 140% */
+/* spacing following the paragraph should be at least two times the font size */
+p {
+    font-size: 16px;
+    line-height: 140%;
 }
 
 .home-project {
@@ -85,51 +105,97 @@ h1{
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 16px;
     display: inline-flex;
-    background-color: #ab6e93;
 }
 
-.carousel img{
-    display: flex;
+.home-project h1 {
+    padding-bottom: 10px;
+}
+
+.home-project h3 {
     width: 100%;
-    align-items: flex-start;
-    gap: 9px;
-    height: 400px;
+    text-align: left;
+}
+
+.carousel-container {
+    width: 80%;
     overflow-x: auto;
+}
+
+.carousel-container::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: var(--secondary-color);
+    /* ou que isso seja adicionado ao "caminho" da barra */
+}
+
+/* Adiciona a barra arrastável */
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
+}
+
+.carousel-images-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+img.carousel {
+    display: inline;
+    gap: 9px;
+    height: 450px;
 }
 
 /* overview section */
 
-.project-overview{
-    width: 100%;
-    height: 400px;
+.project-overview {
+    padding: 16px;
     background-color: var(--background-color);
-    margin: 32px 16px;
 }
 
-.overview-role{
-    display:flex;
+.overview-role {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.problem-goal{
+.problem-goal {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.project-overview .year {
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.project-overview h3 {
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.project-overview p {
+    line-height: 140%;
 }
 
 
 /* Design Process */
 
-.design-process{
-    width: 100%;
-    height: 732px;
+.underlined-title{
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 6px;
+    margin-bottom: 32px;
+    text-underline-offset: 8px;
 }
 
-.process-icons{
+
+.process-icons {
     width: 60%;
     display: flex;
     text-align: center;
@@ -137,7 +203,19 @@ h1{
 
 /* Emphasize */
 
-.painpoints{
+.understanding-user {
+    background-color: var(--background-color);
+}
+
+.underlined-title{
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 6px;
+    margin-bottom: 32px;
+    text-underline-offset: 8px;
+}
+
+.painpoints {
     text-align: center;
 }
 
@@ -145,30 +223,28 @@ h1{
 
 /* Define */
 
-.define{
+.define {
     width: 100%;
     height: 1600px;
     margin-top: 30px;
     background-color: var(--background-color);
 }
 
-.container-personas{
-    width: 100%;
+.container-personas {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
     margin: 32px;
 }
 
-.persona{
-    height: 450px;
+.persona {
+    height: 400px;
+    gap: 8px;
     text-align: center;
 }
 
-.user-journey{
-    height: 750px;
+.user-journey {
     text-align: center;
     padding: 16px 8px;
 }
@@ -176,15 +252,13 @@ h1{
 
 /* Ideate */
 
-.ideate{
+.ideate {
     width: 100%;
-    height: 1000px;
 }
 
 /* design */
 
-.wireframe{
-    height: 400px;
+.wireframe {
     text-align: center;
 }
 
@@ -204,4 +278,14 @@ footer {
     font-size: 12px;
     color: var(--preto-color);
     text-align: center;
+}
+
+.row {
+    display: flex;
+    
+}
+
+.cell {
+    flex: 1;
+    padding: 16px 32px;
 }
