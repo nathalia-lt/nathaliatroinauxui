@@ -20,6 +20,12 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
+h2{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+
 /* Header */
 
 .top-nav {
@@ -35,6 +41,10 @@ body {
     padding-bottom: 25px;
     padding-left: 40px;
     padding-right: 50px;
+}
+
+.top-nav a {
+    text-decoration: none;
 }
 
 
@@ -68,31 +78,59 @@ span{
 
 /* About session */
 
+
+
 .about-container{
-    width: 100%;
-    background-color: #e5b714;
+    width: 80%;
+    /* background-color: peachpuff; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
+    align-content: center;
     flex-wrap: wrap;
-    gap: 300px;
+    /* gap: 50px; */
     margin: auto;
-    /* align-content: center; */
-    justify-content: center;
+    padding-top: 32px;
+    align-content: center;
+    /* justify-content: center; */
     height: 600px;
+}
+
+ .about-content{
+    width: 60%;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 16px;
+    padding: 16px 8px;
+    line-height: 140%;
+ }
+
+ .rectangle-design{
+    width: 40%;
+    height: 10px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    text-align: center;
 }
 
 
 .about-image{
     width: 300px;
     height: 363px;
+    margin: auto;
     padding: 30px 20px;
     margin-top: 30px;
     /* flex-shrink: 0; */
 }
 
+.skills{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 50px;
+}
+
 
 /* Footer */
-
 
 footer{
     position:absolute;

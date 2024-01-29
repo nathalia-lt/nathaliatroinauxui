@@ -168,7 +168,7 @@ span{
     word-wrap: break-word
 }
 
-.resume-text {
+/* .resume-text {
     color: #252525;
     font-size: 20px;
     font-family: Montserrat;
@@ -198,7 +198,7 @@ span{
     cursor: pointer;
     border: 1px solid transparent;
     transition: border-color 0.25s;
-}
+} */
 
 .button-resume:hover {
     border-color: #9C2E35;
