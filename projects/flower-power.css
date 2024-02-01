@@ -91,6 +91,26 @@ h1 {
     letter-spacing: -2%;
 }
 
+h3{
+    font-weight: bold;
+    letter-spacing: -2%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+h4{
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+p{
+    font-size: 16px;
+}
+
+ul{
+    padding-left: 18px;
+}
+
 /* Smaller text sizes work best with larger line-heights */
 /* size 16px line-height: 140% */
 /* spacing following the paragraph should be at least two times the font size */
@@ -196,8 +216,8 @@ img.carousel {
 
 
 .process-icons {
-    width: 60%;
-    display: flex;
+    height: 130px;
+    margin: 16px;
     text-align: center;
 }
 
@@ -246,6 +266,16 @@ img.carousel {
 img.user-journey {
     text-align: center;
     height: 700px;
+}
+
+.user-flow-container{
+    display: flex;
+    flex-direction: column;
+}
+
+img.user-flow{
+    height: 500px;
+    text-align: center;
     padding: 16px 8px;
 }
 
@@ -282,16 +312,19 @@ img.design-systems{
     align-self: center;
 }
 
-/*       <!-- Hi-fi and Usability studies --> */
+/*  Hi-fi and Usability studies */
 
 .mockup-container{
     padding: 32px;
     display: flex;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
 }
 
 .gif-description{
-    padding: 32px;
+    margin-top: 32px;
+    /* padding-top: 32px; */
+    width: 60%;
 }
 
 
@@ -302,11 +335,14 @@ img.gif{
 }
 
 
+/* Takeaways */
+
+
+
+
 
 
 /* Footer */
-
-
 
 footer {
     position: absolute;
