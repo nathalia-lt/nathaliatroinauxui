@@ -22,8 +22,8 @@ body {
 
 h2{
     font-size: 20px;
-    font-weight: 300;
-    padding-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 16px;
 }
 
 /* Header */
@@ -99,7 +99,7 @@ span{
     width: 60%;
     font-size: 16px;
     text-align: left;
-    margin-top: 16px;
+    margin-top: 80px;
     padding: 16px 8px;
     line-height: 140%;
  }

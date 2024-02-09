@@ -15,7 +15,7 @@
     padding: 0;
 }
 
-body{
+body {
     scrollbar-color: var(--secondary-color, auto);
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--tertiary-color);
 }
 
-h2{
+h2 {
     font-size: 20px;
     font-weight: 300;
 }
@@ -64,12 +64,30 @@ h2{
     word-spacing: 22px;
 }
 
-span{
+span {
     color: var(--tertiary-color);
 }
 
-.ux-title span{
-    color: linear-gradient(to right top, #384272, #755686, #ab6e93, #d98b9b, #feaea3);
+.ux-title {
+    color: #384272;
+}
+
+/* .ux-title span{ //procura a classe ux-title e depois procura dentro do elemento que tem essa classe um elemento filho (neto) que seja um span; */
+
+/*  sem espaco span.ux-title { um elemento span que possui a classe ux-title; */
+
+span.ux-title {
+    color: var(--secondary-color);
+    /* color: linear-gradient(to right top, #feaea3,  #384272); */
+    -webkit-transition: color 2s 1s;
+    -moz-transition: color 2s 1s;
+    -ms-transition: color 2s 1s;
+    -o-transition: color 2s 1s;
+    transition: color 2s 1s;
+}
+
+span.ux-title.new-color {
+    color: var(--tertiary-color);
 }
 
 .top-nav.scrolled {
@@ -115,7 +133,7 @@ span{
 
 /* aqui adicionei margim para deixar o meu titulo mais centralizado e ainda deixou o button mais proximo :) */
 
-.home-page{
+.home-page {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -124,7 +142,7 @@ span{
     margin: 126px 0;
 }
 
-.home-container{
+.home-container {
     height: 395px;
     flex-direction: column;
     justify-content: flex-start;
@@ -133,7 +151,7 @@ span{
     display: inline-flex;
 }
 
-.home-content{
+.home-content {
     height: 263px;
     flex-direction: column;
     justify-content: center;
@@ -251,75 +269,104 @@ span{
 }
 
 .project-description h3 {
-color: #384272;
-font-size: 40px;
-font-family: Montserrat;
-font-weight: 700;
-word-wrap: break-word
+    color: #384272;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
 
 .project-description p {
-color: #252525;
-font-size: 16px;
-font-family: Montserrat;
-font-weight: 400;
-line-height: 22px;
-word-wrap: break-word
+    color: #252525;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word
 }
 
 
 .project-description a {
-color: #667085;
-font-size: 16px;
-font-family: Montserrat;
-font-weight: 500;
-text-decoration: underline;
-word-wrap: break-word
+    color: #667085;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+    text-decoration: underline;
+    word-wrap: break-word
 }
 
 /* contact session */
 
-.contact-container{
+.contact-container {
     width: 100%;
     color: var(--secondary-color);
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.contact-container p{
+.contact-container p {
     color: var(--preto-color);
     padding-top: 1.5rem;
 }
 
-.icons{
+.icons {
     display: flex;
     margin: 3rem;
-    gap: 25px;
+    gap: 20px;
     cursor: pointer;
 }
 
-.fa{
+.fa {
     color: var(--preto-color);
-
 }
 
-/* .fa-linkedin{
-    color: #0077b5;
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    
 }
 
-.fa-envelope{
-    color: var(--preto-color)
+.icon p {
+    opacity: 0;
+    font-size: 12px;
+    color: var(--preto-color);
+    visibility: hidden;
+    padding: 5px 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.icon p::after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color:  var(--accent-color);
+	border-bottom: 0;
+	margin-left: -10px;
+	margin-bottom: -10px;
 }
 
-.fa-github{
-    color:#2b3137;
-} */
 
-.rectangle-design{
+.icon:hover p {
+    opacity: 0.7;
+    display: inline-block;
+    visibility: visible;
+}
+
+.rectangle-design {
     width: 30%;
     height: 10px;
     flex-shrink: 0;
@@ -327,14 +374,13 @@ word-wrap: break-word
 }
 
 
-footer{
-    position:absolute;
+footer {
+    position: absolute;
     margin-bottom: 1.5rem;
-    width:100%;
+    width: 100%;
     background: #fff;
     padding: 24px;
     font-size: 12px;
     color: var(--preto-color);
     text-align: center;
 }
-

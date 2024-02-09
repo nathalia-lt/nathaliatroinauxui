@@ -24,7 +24,9 @@ body {
 section{
     width: 80%;
     margin: 48px auto;
+    padding: 32px;
 }
+
 
 section.background-colored {
     background-color: var(--background-color);
@@ -94,8 +96,9 @@ h1 {
 h3{
     font-weight: bold;
     letter-spacing: -2%;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
     padding-top: 8px;
+    margin-top: 32px;
 }
 
 h4{
@@ -106,6 +109,8 @@ h4{
 
 ul{
     padding-left: 18px;
+    margin-top: 16px;
+    margin-bottom: 32px;
 }
 
 /* Smaller text sizes work best with larger line-heights */
@@ -307,6 +312,7 @@ img.lo-fi-wireframe{
 img.design-systems{
     width: 80%;
     align-self: center;
+    margin: 32px 10%;
 }
 
 /*  Hi-fi and Usability studies */
@@ -316,6 +322,7 @@ img.design-systems{
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-around;
+    align-items: center;
 }
 
 .gif-description{
