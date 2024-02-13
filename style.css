@@ -64,7 +64,7 @@ h2 {
     word-spacing: 22px;
 }
 
-span {
+.surname {
     color: var(--tertiary-color);
 }
 

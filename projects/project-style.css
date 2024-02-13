@@ -25,6 +25,8 @@ section {
     width: 80%;
     margin: 48px auto;
     padding-bottom: 32px;
+    /* auto so serve pra margin, nao serve pra padding */
+    padding: 32px 16px;
 }
 
 
@@ -63,7 +65,7 @@ section.background-colored {
     word-spacing: 22px;
 }
 
-span {
+.surname {
     color: var(--tertiary-color);
 }
 
@@ -294,15 +296,22 @@ h2::before {
 }
 
 .painpoint-description {
-    width: 22%;
     text-align: center;
-    background-color: #e5b714;
+    padding: 16px;
+    background-color: #efd8d570;
 }
 
 .painpoint-wrapper {
     display: flex;
-    flex-direction: column;
+    gap: 24px;
+    margin: 0 32px;
+}
 
+.painpoint-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 
 
@@ -346,6 +355,13 @@ img.user-flow {
     padding: 16px 8px;
 }
 
+.statment{
+    font-weight: bolder;
+}
+
+.problem-statment{
+    margin-top: 16px;
+}
 
 /* Ideate */
 
@@ -433,3 +449,42 @@ footer {
     flex: 1;
     padding: 16px 32px;
 }
+
+
+/* Yogarhytm project */
+
+.emphaty-map{
+    width: 80%;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.design-process-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.design-process-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    background: var(--secondary-color);
+    color: #F6F2EE;
+    border-radius: 50%;
+    /* para centralizar os numeros, usei esse padding top mas nao tenho certeza se é a melhor opcao. */    
+}
+
+.separator{
+    border-bottom: 2px solid var(--preto-color);
+    width: 30px;
+}
+
+
