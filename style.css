@@ -340,8 +340,8 @@ span.ux-title.new-color {
     color: var(--preto-color);
     visibility: hidden;
     padding: 5px 10px;
-    background-color: var(--accent-color);
-    color: #fff;
+    background-color: var(--preto-color);
+    color: var(--tertiary-color);
     font-weight: 600;
     position: relative;
 }
@@ -353,7 +353,7 @@ span.ux-title.new-color {
 	width: 0;
 	height: 0;
 	border: 10px solid transparent;
-	border-top-color:  var(--accent-color);
+	border-top-color:  var(--preto-color);
 	border-bottom: 0;
 	margin-left: -10px;
 	margin-bottom: -10px;

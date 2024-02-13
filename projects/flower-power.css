@@ -21,10 +21,10 @@ body {
     color: var(--preto-color);
 }
 
-section{
+section {
     width: 80%;
     margin: 48px auto;
-    padding: 32px;
+    padding-bottom: 32px;
 }
 
 
@@ -88,12 +88,12 @@ span {
 
 /* larger fonts look better with less line spacing. Especially headers */
 h1 {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-size: 32px;
     letter-spacing: -2%;
 }
 
-h3{
+h3 {
     font-weight: bold;
     letter-spacing: -2%;
     padding-bottom: 16px;
@@ -101,13 +101,13 @@ h3{
     margin-top: 32px;
 }
 
-h4{
+h4 {
     font-weight: 600;
     padding-bottom: 8px;
 }
 
 
-ul{
+ul {
     padding-left: 18px;
     margin-top: 16px;
     margin-bottom: 32px;
@@ -132,7 +132,7 @@ p {
 }
 
 .home-project h1 {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .home-project h3 {
@@ -190,7 +190,7 @@ img.carousel {
 
 .project-overview .year {
     font-size: 24px;
-    color: var(--accent-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
     font-weight: 600;
 }
@@ -208,19 +208,56 @@ img.carousel {
 
 /* Design Process */
 
-.underlined-title{
-    text-decoration: underline;
-    text-decoration-color: var(--accent-color);
-    text-decoration-thickness: 6px;
+h2 {
+    position: relative;
     margin-bottom: 32px;
-    text-underline-offset: 8px;
 }
+
+h2::before {
+    content: "";
+    background: linear-gradient(90deg, #feaea3 0%, rgba(255, 165, 0, 0.00) 100%);
+    opacity: 0.3;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 20px;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* .underlined-title{
+    text-decoration: underline;
+    /* text-decoration-color: var(--tertiary-color); */
+    /* text-decoration-thickness: 6px;
+    margin-bottom: 32px;
+    text-underline-offset: 8px; */
+    /* } */
+    
+    
+    
+    /* .underlined-title{
+        text-decoration: underline;
+        text-decoration-color: var(--tertiary-color);
+        text-decoration-thickness: 6px;
+        margin-bottom: 32px;
+        text-underline-offset: 8px;
+    } */
 
 
 .process-icons {
-    height: 130px;
-    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
     text-align: center;
+    gap: 32px;
+}
+
+/* eu   queria os icons menores, mas se  eu altero o height, nao fica responsivo */
+
+.process-icon p{
+    font-weight: 500;
 }
 
 /* Emphasize */
@@ -229,16 +266,43 @@ img.carousel {
     background-color: var(--background-color);
 }
 
-.underlined-title{
-    text-decoration: underline;
-    text-decoration-color: var(--accent-color);
-    text-decoration-thickness: 6px;
-    margin-bottom: 32px;
-    text-underline-offset: 8px;
+.painpoint-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.painpoints {
+.painpoint {
+    width: 70px;
+    height: 70px;
     text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    background: var(--tertiary-color);
+    border-radius: 50%;
+    padding-top: 20px;
+    /* para centralizar os numeros, usei esse padding top mas nao tenho certeza se é a melhor opcao. */
+    margin-bottom: 25px;
+}
+
+.painpoint-description-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.painpoint-description {
+    width: 22%;
+    text-align: center;
+    background-color: #e5b714;
+}
+
+.painpoint-wrapper {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -254,14 +318,15 @@ img.carousel {
 .container-personas {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     flex-wrap: wrap;
     margin: 32px;
+    gap: 24px;
 }
 
 .persona {
-    height: 400px;
-    gap: 8px;
+    height: 500px;
     text-align: center;
 }
 
@@ -270,12 +335,12 @@ img.user-journey {
     height: 700px;
 }
 
-.user-flow-container{
+.user-flow-container {
     display: flex;
     flex-direction: column;
 }
 
-img.user-flow{
+img.user-flow {
     height: 500px;
     text-align: center;
     padding: 16px 8px;
@@ -290,7 +355,7 @@ img.user-flow{
 
 /* design */
 
-.starting-design{
+.starting-design {
     display: flex;
     flex-direction: column;
 }
@@ -299,17 +364,17 @@ img.user-flow{
 img.wireframe {
     width: 60%;
     height: 550px;
-    align-self: center;    
+    align-self: center;
     padding: 16px 8px;
 }
 
-img.lo-fi-wireframe{
+img.lo-fi-wireframes {
     padding: 16px 8px;
-    width: 65%;
+    width: 80%;
     align-self: center;
 }
 
-img.design-systems{
+img.design-systems {
     width: 80%;
     align-self: center;
     margin: 32px 10%;
@@ -317,7 +382,7 @@ img.design-systems{
 
 /*  Hi-fi and Usability studies */
 
-.mockup-container{
+.mockup-container {
     padding: 32px;
     display: flex;
     /* flex-wrap: wrap; */
@@ -325,7 +390,7 @@ img.design-systems{
     align-items: center;
 }
 
-.gif-description{
+.gif-description {
     margin-top: 32px;
     /* padding-top: 32px; */
     width: 60%;
@@ -333,9 +398,9 @@ img.design-systems{
 
 
 
-img.gif{
+img.gif {
     height: 400px;
-    
+
 }
 
 
@@ -361,7 +426,7 @@ footer {
 
 .row {
     display: flex;
-    
+
 }
 
 .cell {
