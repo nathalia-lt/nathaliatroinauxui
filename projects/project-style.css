@@ -433,6 +433,12 @@ img.gif {
 
 /* More projects */
 
+.more-projects-title{
+    text-align: center;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
 .div-block{
     width: 80%;
     margin-left: 10%;
@@ -467,7 +473,7 @@ a.project{
 }
 
 .project:hover{
-    transition: 0.3ms ease-out;
+    transition: 500ms linear;
     transform: scale(1.1);
 }
 
@@ -572,6 +578,70 @@ footer {
 .separator{
     border-bottom: 2px solid #667085;
     width: 30px;
+}
+
+.competitors-logo-wrapper{
+    margin: 32px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.competitor-logo{
+    text-align: center;
+    padding: 30px;
+}
+
+.competitors-logo-icon{
+    height: 60px;
+}
+
+figcaption{
+    font-size: 14px;
+}
+
+table{
+    margin: 16px auto;
+    width: 100%;
+    border: 1px solid var(--preto-color);
+    border-bottom: 1px solid var(--preto-color);
+}
+
+tr{
+    height: 40px;
+    border-top: 1px solid var(--preto-color);
+}
+
+td{
+    border-top: 1px solid var(--preto-color);
+
+}
+
+.greendot{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: lightgreen; 
+    margin: auto;  
+}
+
+.greendot div{
+    text-align: center;
+}
+
+.reddot{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: orange;
+    margin: auto;
+}
+
+.yellowdot{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: auto;
 }
 
 

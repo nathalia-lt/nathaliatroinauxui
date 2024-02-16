@@ -438,3 +438,46 @@ footer {
     color: var(--preto-color);
     text-align: center;
 }
+
+
+
+/* header test */
+
+.main-name-wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-name-headertest {
+    display: flex;
+    /* color: #252525; */
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-spacing: 22px;
+}
+
+.headertest{
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-nav-test{
+    display: flex;
+    /* position: fixed; */
+    justify-content: flex-end;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    /* background: transparent; */
+    /* z-index: 1000; */
+    /* width: 100%; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 50px;
+    gap: 32px;
+}
