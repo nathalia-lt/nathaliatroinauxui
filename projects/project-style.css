@@ -362,8 +362,7 @@ img.user-journey {
 }
 
 img.user-flow {
-    height: 500px;
-    text-align: center;
+    height: 350px;
     padding: 16px 8px;
 }
 
@@ -449,14 +448,13 @@ img.gif {
 
 .projects-container{
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
     margin-top: 50px;
-    /* pq o wrap nao esta respondendo */
     cursor: pointer;
-    background-color: #667085;
 }
 
 .project{
@@ -494,9 +492,10 @@ a.project{
     width: 50%;
     display: flex;
     /* padding-right: 50px; */
-    padding-top: 70px;
+    /* padding-top: 70px; */
     justify-content: center;
     background-color: #d98b9b;
+    align-items: center;
 }
 
 .project-description h3 {
@@ -504,12 +503,13 @@ a.project{
     font-size: 24px;
     font-family: Montserrat;
     font-weight: 700;
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin:0;
+    padding:0;
+    text-align: center;
 }
 
-
-
-
+/* alterar com media query display flex flex do container para colunm para  teleas pequenas */
 
 /* Footer */
 
@@ -646,6 +646,11 @@ td{
 
 .flowchart{
     height: 200px;
+}
+
+.sitemap{
+    height: 300px;
+    /* text-align: center; */
 }
 
 

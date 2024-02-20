@@ -129,13 +129,20 @@ span.ux-title.new-color {
 }
 
 /* Dropdown Content (Hidden by Default) */
+/* sem position o lefet nao funciona */
+/* nao da para trasition com display none ou block */
 .dropdown-content {
-    display: none;
-    /* position: absolute; */
+    /* display: none; */
+    opacity:0;
+    max-height: 0;
+    transition: all 0.5s;
+    visibility: hidden;
+    position: relative;
     background-color: #f9f9f9;
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    left: -20px;
 }
 
 /* Links inside the dropdown */
@@ -147,12 +154,26 @@ span.ux-title.new-color {
 }
 
   /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1
+}
 
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+    /* display: block; */
+    opacity: 1;
+    max-height: 300px;
+    visibility: visible;
+}
+
+.dropdown-arrow{
+    color: var(--preto-color);
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(90deg);
 }
 
 .contact{
@@ -441,43 +462,3 @@ footer {
 
 
 
-/* header test */
-
-.main-name-wrapper{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.main-name-headertest {
-    display: flex;
-    /* color: #252525; */
-    color: var(--secondary-color);
-    font-size: 22px;
-    font-family: Montserrat;
-    font-weight: 700;
-    word-wrap: break-word;
-    word-spacing: 22px;
-}
-
-.headertest{
-    width: 100%;
-    padding-top: 80px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.top-nav-test{
-    display: flex;
-    /* position: fixed; */
-    justify-content: flex-end;
-    /* justify-content: space-between; */
-    flex-direction: row;
-    /* background: transparent; */
-    /* z-index: 1000; */
-    /* width: 100%; */
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 40px;
-    padding-right: 50px;
-    gap: 32px;
-}
