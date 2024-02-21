@@ -98,6 +98,63 @@ section.background-colored {
     
 }
 
+/* The container <div> - needed to position the dropdown content */
+/* eu tenho dois div com position relative que estao em conflito */
+/* vou colocar em flex e align end */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/* sem position o lefet nao funciona */
+/* nao da para trasition com display none ou block */
+.dropdown-content {
+    /* display: none; */
+    opacity:0;
+    max-height: 0;
+    transition: all 0.5s;
+    visibility: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--secondary-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    /* display: block; */
+    opacity: 1;
+    max-height: 300px;
+    visibility: visible;
+}
+
+.dropdown-arrow{
+    color: var(--preto-color);
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(90deg);
+}
+
+
 /* Case Study */
 
 /* larger fonts look better with less line spacing. Especially headers */
@@ -343,7 +400,7 @@ h2::before {
     justify-content: center;
     flex-wrap: wrap;
     margin: 32px;
-    gap: 24px;
+    gap: 8px;
 }
 
 .persona {
@@ -351,9 +408,20 @@ h2::before {
     text-align: center;
 }
 
+.user-journey-scenario-wrapper{
+    display: flex;
+    margin-top: 16px;
+}
+
+.user-journey-scenario{
+    padding: 8px 4px;
+    flex: 1;
+}
+
 img.user-journey {
     text-align: center;
-    height: 700px;
+    height: 600px;
+    padding: 8px 4px;
 }
 
 .user-flow-container {
@@ -395,9 +463,16 @@ img.wireframe {
     padding: 16px 8px;
 }
 
-img.lo-fi-wireframes {
+.lo-fi-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+img.lo-fi {
+    height: 300px;
     padding: 16px 8px;
-    width: 80%;
     align-self: center;
 }
 
@@ -494,7 +569,6 @@ a.project{
     /* padding-right: 50px; */
     /* padding-top: 70px; */
     justify-content: center;
-    background-color: #d98b9b;
     align-items: center;
 }
 
@@ -549,7 +623,7 @@ footer {
 .emphaty-map{
     width: 80%;
     text-align: center;
-    margin: 0 10%;
+    margin: 16px 10%;
 }
 
 .design-process-wrapper{
@@ -648,9 +722,12 @@ td{
     height: 200px;
 }
 
-.sitemap{
-    height: 300px;
-    /* text-align: center; */
+/* Esse padding esta errado mas nao consegui centralizar */
+
+.site-map{
+    height: 400px;
+    margin: 32px auto;
+    padding-left: 150px;
 }
 
 
