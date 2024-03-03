@@ -503,6 +503,17 @@ img.gif {
     height: 400px;
 }
 
+.mockup-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.mockups{
+    height: 500px;
+    padding: 16px 8px;
+    align-self: center;
+}
+
 /* Takeaways */
 
 /* More projects */
