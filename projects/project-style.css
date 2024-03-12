@@ -379,8 +379,8 @@ h2::before {
 .painpoint-card{
     display: flex;
     flex-direction: column;
-    justify-content:center;
     align-items: center;
+    flex: 1;
 }
 
 
@@ -508,8 +508,8 @@ img.gif {
     justify-content: center;
 }
 
-.mockups{
-    height: 500px;
+.mockup{
+    height: 900px;
     padding: 16px 8px;
     align-self: center;
 }
