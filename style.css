@@ -420,6 +420,7 @@ span.ux-title.new-color {
     font-weight: 600;
     position: relative;
 }
+
 .icon p::after{
     content: '';
 	position: absolute;
