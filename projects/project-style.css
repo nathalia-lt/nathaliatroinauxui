@@ -574,6 +574,14 @@ a.project{
     border-radius: 4px;
 }
 
+.project-image-desktop img{
+    height: 70%;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+
+
 .project-description {
     width: 50%;
     display: flex;
