@@ -299,15 +299,15 @@ h2::before {
 
 /* .underlined-title{
     text-decoration: underline;
-    /* text-decoration-color: var(--tertiary-color); */
+    text-decoration-color: var(--tertiary-color); */
     /* text-decoration-thickness: 6px;
     margin-bottom: 32px;
-    text-underline-offset: 8px; */
-    /* } */
+    text-underline-offset: 8px; 
+    }  */ 
     
     
     
-    /* .underlined-title{
+     /* .underlined-title{
         text-decoration: underline;
         text-decoration-color: var(--tertiary-color);
         text-decoration-thickness: 6px;
@@ -753,14 +753,27 @@ td{
 .lo-fi-landpage-wrapper{
     padding-top: 32px;
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px
+    gap: 24px;
+
 }
 
 .lo-fi-landpage{
-    height: 300px;
+    width: 30%;
     border: 1px solid black;
+    flex: 1;
+    object-fit: contain;
+}
+
+.website-button{
+    padding: 16px 8px;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    letter-spacing: 3%;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 
