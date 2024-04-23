@@ -761,19 +761,32 @@ td{
 }
 
 .lo-fi-landpage{
-    width: 30%;
+    width: 40%;
     border: 1px solid black;
     flex: 1;
     object-fit: contain;
 }
 
-.website-button{
-    padding: 16px 8px;
+.website-btn{
+    padding: 16px 32px;
     color: var(--background-color);
     background-color: var(--secondary-color);
     letter-spacing: 3%;
-    font-weight: bolder;
+    font-weight: 700;
     cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+}
+
+.code-btn{
+    padding: 16px 32px;
+    background-color: #f1f1f1;
+    color: var(--secondary-color);
+    letter-spacing: 3%;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
 }
 
 
