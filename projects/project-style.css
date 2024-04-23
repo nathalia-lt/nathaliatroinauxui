@@ -811,6 +811,8 @@ td{
 
 /* hi-fidelity */
 
+
+
 .btn-wrapper{
     display: flex;
     margin: 32px;
@@ -857,5 +859,12 @@ td{
 
 .dev-paragraph{
     margin: 32px 0;
+}
+
+.project-image-mobile img{
+    height: 70%;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-left: 100px;
 }
 
