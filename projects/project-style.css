@@ -767,8 +767,18 @@ td{
     object-fit: contain;
 }
 
-.website-btn{
-    padding: 16px 32px;
+
+.btn-wrapper{
+    display: flex;
+    margin: 32px;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.dev-btn{
+    margin:  8px auto;
+    /* padding: 24px 32px; */
+    padding: 16px 50px;
     color: var(--background-color);
     background-color: var(--secondary-color);
     letter-spacing: 3%;
@@ -776,18 +786,34 @@ td{
     cursor: pointer;
     border: 0;
     border-radius: 8px;
+    font-size: 16px;
 }
 
-.code-btn{
-    padding: 16px 32px;
+.snnipets{
+    padding: 16px 40px;
     background-color: #f1f1f1;
     color: var(--secondary-color);
-    letter-spacing: 3%;
-    font-weight: 700;
-    cursor: pointer;
     border: 1px solid var(--secondary-color);
-    border-radius: 8px;
 }
 
+.mockup-desktop-wrapper{
+    padding-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.hi-fi-desktop{
+    width: 40%;
+    border: 1px solid black;
+    flex: 1;
+    object-fit: contain;
+}
+
+.dev-paragraph{
+    margin: 32px 0;
+}
 
 
