@@ -741,7 +741,6 @@ td{
     height: 200px;
 }
 
-/* Esse padding esta errado mas nao consegui centralizar */
 
 .site-map{
     height: 400px;
@@ -767,6 +766,50 @@ td{
     object-fit: contain;
 }
 
+/* design system yogarythm */
+
+.design-system{
+    display: flex;
+}
+
+.palette-container{
+    display: flex;
+    
+}
+
+.color-container{
+    text-align: center;
+}
+
+.palette{
+    margin: 10px;;
+    width: 85px;
+    height: 85px;
+    background-color: #667085;
+    border: 1px solid black;    
+}
+
+.teal{
+    background-color: #2A9D8F;
+}
+
+.sky{
+    background-color: #C1D8E2;
+}
+
+.black{
+    background-color: #252525;
+}
+
+.gray{
+    background-color: #667085;
+}
+
+
+
+
+
+/* hi-fidelity */
 
 .btn-wrapper{
     display: flex;
@@ -815,5 +858,4 @@ td{
 .dev-paragraph{
     margin: 32px 0;
 }
-
 
