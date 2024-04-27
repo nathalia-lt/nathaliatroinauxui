@@ -69,6 +69,15 @@
               Yoga. In the past 5 years alone, yoga practitioners in the US has
               increased by over 50%.
             </p>
+
+            <h3>GOAL</h3>
+            <p>
+              Yoga is a great way to deal with stress relief in the form of a
+              physical workout. I want to create an intuitive and interactive
+              Yoga app that can help begginers to learn and also find online
+              classes. Effectiveness will be measured by analyzing the number of
+              videos streamed as well as number of users accessing the site.
+            </p>
           </div>
           <div class="cell">
             <h3>ROLE</h3>
@@ -97,14 +106,6 @@
             </p>
           </div>
           <div class="cell">
-            <h3>GOAL</h3>
-            <p>
-              Yoga is a great way to deal with stress relief in the form of a
-              physical workout. I want to create an intuitive and interactive
-              Yoga app that can help begginers to learn and also find online
-              classes. Effectiveness will be measured by analyzing the number of
-              videos streamed as well as number of users accessing the site.
-            </p>
           </div>
         </div>
       </section>
@@ -366,7 +367,7 @@
         <div>
           <h3>Site Map</h3>
           <p>
-            Based on the research and persona dicovery, I brainstormed, compiled
+            Based on the research and persona discovery, I brainstormed, compiled
             and organized the necessary website content and functionality. I
             decided to include the most vital information to make it clean and
             easy to navigate.
@@ -417,7 +418,7 @@
           For the UI, I focused on creating color palettes that represents the
           tranquility and harmony associated with yoga. Teal color, evoke
           feeling of calmness, balance, and connection to the nature, which
-          align well with the principles of yoga.
+          align well with the principles of yoga. The light blue color can help the users feel grounded and centered, facilitating their yoga and meditation practice.
         </p>
         <div class="design-system">
           <div class="Typography">
@@ -426,7 +427,7 @@
           </div>
           <div class="palette-container">
               <h3>Color Palette</h3>
-              <div>
+              <div class="colors-container">
                 <div class="color-container">
                   <div class="palette teal"></div>
                   <p>2A9D8F</p>
@@ -437,7 +438,7 @@
                 </div>
               </div>
               
-              <div>
+              <div  class="colors-container">
                 <div class="color-container">
                   <div class="palette black"></div>
                   <p>252525</p>
@@ -448,12 +449,10 @@
                 </div>
               </div>
               
-            </div>
-            
-            
+            </div>  
         </div>
       </section>
-      <section>
+      <section class="hi-fi-container">
         <h2 class="underlined-title">Hi-Fidelity and Development</h2>
         <a class="prototype-link" 
           href="https://www.figma.com/proto/VTFsQI3dOZLDWbnRJQxn2w/projetos?page-id=28%3A334&type=design&node-id=28-1152&viewport=408%2C81%2C0.1&t=hRymOxQNLUQ8fVxO-1&scaling=min-zoom&mode=design" 
@@ -470,8 +469,11 @@
         <ul>
           <li>User want more information about the teachers background</li>
           <li>User want a free option membership</li>
+          <li>Added a CTA in the membership section to encourage the user to select a plan</li>
         </ul>
-        <div class="mockup-desktop-wrapper">
+        </section>
+
+        <!-- <div class="mockup-desktop-wrapper">
           <img
             class="hi-fi-desktop"
             src="./yogarythm/assets/Desktop - 1.png"
@@ -502,26 +504,75 @@
             src="./yogarythm/assets/Desktop - 12.png"
             alt="hi-fi-desktop1"
           />
-        </div>
-        <p class="dev-paragraph">
-          I am currently developing the landing page for my mockup project,
-          prioritizing a mobile-first approach while ensuring responsiveness
-          across various devices, including tablets and desktops. I have crafted
-          the entire landing page from the scratch, integrating design
-          principles for optimal user experience and accessibility.
-        </p>
-        <p style="color: red;">Note: The development still in progress</p>
-        <div class="btn-wrapper">
-          <button class="dev-btn">Live Version</button>
-          <button class="dev-btn snnipets">Code Snippets</button>
-        </div>
-      </section>
+        </div> -->
+        <section class="carousel-wrapper">
+          <div class="carousel-container">
+            <div class="carousel-images-container-desktop">
+                <img
+                    class="carousel-desktop"
+                    src="./yogarythm/assets/Desktop - 1.png"
+                    alt="hi-fi-desktop1"
+                  />
+                  <img
+                    class="carousel-desktop"          
+                    src="./yogarythm/assets/Desktop - 2.png"
+                    alt="hi-fi-desktop1"
+                  />
+                  <img
+                    class="carousel-desktop"
+                    src="./yogarythm/assets/Desktop - 3.png"
+                    alt="hi-fi-desktop1"
+                  />
+                  <img
+                    class="carousel-desktop"
+                    src="./yogarythm/assets/Desktop - 4.png"
+                    alt="hi-fi-desktop1"
+                  />
+                  <img
+                    class="carousel-desktop"
+                    src="./yogarythm/assets/Desktop - 5.png"
+                    alt="hi-fi-desktop1"
+                  />
+                  <img
+                    class="carousel-desktop"
+                    src="./yogarythm/assets/Desktop - 12.png"
+                    alt="hi-fi-desktop1"
+                  />
+            </div>
+          </div>
+        </section>
+
+        <!-- mobile version -->
+        <section>
+
+          <div>
+            <div class="mobile-mockup-container">
+              <img class="gif" src="../assets/yogamobile1.png" alt="mobile">
+              <img class="gif" src="../assets/yogamobile2.png" alt="mobile">
+              <p>I wanted to demostrate the main user flow in the mobile version</p>
+            </div>
+          </div>
+  
+          <p class="dev-paragraph">
+            I am currently developing the landing page for my mockup project,
+            prioritizing a mobile-first approach while ensuring responsiveness
+            across various devices, including tablets and desktops. I have crafted
+            the entire landing page from the scratch, integrating design
+            principles for optimal user experience and accessibility.
+          </p>
+          <p style="color: red;">Note: The development still in progress</p>
+          <div class="btn-wrapper">
+            <a href="./yogarythm/index.html" class="dev-btn">Live Version</a>
+            <button class="dev-btn snnipets">Code Snippets</button>
+          </div>
+        </section>
+
       <section>
         <h2 class="underlined-title">Takeaways</h2>
         <h3>What I learned</h3>
         <p>I thoroughly enjoyed learning and experiencing throughout the entire process. Navigating through challenges was essential, from the initial research phase where I aimed to gain clarity on user frustrations, needs, and desires, to figuring out the appropriate features for the app. For this project, I also decided to develop the landing page and apply my knowledge in HTML and CSS. I believe that speaking the language of developers makes collaboration smoother and more efficient.</p>
           <h3>Next Steps</h3>
-          <p>As I continue gaining more experience in UX field, I would like to revisit this project in the future and try out new things to improve the overall design</p>
+          <p>As I continue gaining more experience in UX field, I would like to revisit this project in the future and try out new things to improve the overall design.</p>
       </section>
       <div class="div-block"></div>
       <section>

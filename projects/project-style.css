@@ -34,6 +34,16 @@ section.background-colored {
     background-color: var(--background-color);
 }
 
+.prototype-link, .prototype-link:visited{
+    display: inline-block;
+    margin: 16px 0;
+    color: var(--secondary-color);
+}
+
+.prototype-link:hover{
+    color: var(--tertiary-color);
+}
+
 /* header */
 
 .top-nav {
@@ -214,11 +224,12 @@ p {
 .carousel-container {
     width: 80%;
     overflow-x: auto;
+    margin: 0 auto;
 }
 
 .carousel-container::-webkit-scrollbar {
     width: 5px;
-    height: 8px;
+    height: 7px;
     background-color: var(--secondary-color);
     /* ou que isso seja adicionado ao "caminho" da barra */
 }
@@ -770,14 +781,22 @@ td{
 
 .design-system{
     display: flex;
+    gap: 32px;
 }
 
 .palette-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.colors-container{
     display: flex;
     
 }
 
 .color-container{
+    
     text-align: center;
 }
 
@@ -811,7 +830,9 @@ td{
 
 /* hi-fidelity */
 
-
+.hi-fi-container{
+    margin-bottom: 0;
+}
 
 .btn-wrapper{
     display: flex;
@@ -832,6 +853,7 @@ td{
     border: 0;
     border-radius: 8px;
     font-size: 16px;
+    text-decoration: none;
 }
 
 .snnipets{
@@ -839,6 +861,18 @@ td{
     background-color: #f1f1f1;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+}
+
+.carousel-container::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: var(--secondary-color);
+    /* ou que isso seja adicionado ao "caminho" da barra */
+}
+
+/* Adiciona a barra arrastável */
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
 }
 
 .mockup-desktop-wrapper{
@@ -850,11 +884,39 @@ td{
     gap: 24px;
 }
 
-.hi-fi-desktop{
+.carousel-wrapper{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.carousel-images-container-desktop{
+    display: flex;
+    flex-wrap: nowrap
+}
+
+
+img.carousel-desktop {
+    display: inline;
+    gap: 15px;
+    height: 500px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* .hi-fi-desktop{
     width: 40%;
     border: 1px solid black;
     flex: 1;
     object-fit: contain;
+} */
+
+.mobile-mockup-container{
+    margin: 32px auto;
+    display: flex;
 }
 
 .dev-paragraph{
