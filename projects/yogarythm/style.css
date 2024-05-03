@@ -1,8 +1,9 @@
-/* yogarythm */
+/* yogarythm webpage */
 :root {
     --accent-color: #2A9D8F;
     --preto-color: #252525;
     --gray-color: #667085;
+    --skyblue-color: #C1D8E2;
 }
 
 
@@ -33,30 +34,37 @@ img {
     width: 100px;
 }
 
+/* 24px */
 h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     /* margin: 1em 0; */
     color: #ffff;
 }
 
+/* 16px */
 h2 {
-    font-size: 0.em;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
     margin: 1rem 0;
 }
 
+/* 12px */
 h3 {
-    font-size: 1.7rem;
+    font-size: 0.75rem;
     margin: 1rem 0;
 }
 
+/* 16px */
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1em 0;
     color: var(--gray-color);
 }
 
 .btn {
-    margin: 30px;
+    /* margin: 30px; */
+    margin-top: 30px;
     padding: 8px 16px;
     background-color: #2A9D8F;
     color: #ffff;
@@ -157,14 +165,17 @@ img.avatar {
 
 .classes-content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
 }
 
 .class-card {
     width: 280px;
     border-radius: 8px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    gap: 24px;
+    gap: 16px;
+    margin-bottom: 16px;
 }
 
 .class-card img {
@@ -177,6 +188,13 @@ img.avatar {
 
 /* About us section */
 
+.about-image{
+    width: 250px;
+
+}
+
+.btn .about{
+}
 
 
 /* Pose section */
@@ -191,6 +209,7 @@ img.avatar {
 
 .instructors-content {
     display: flex;
+    justify-content: center;
 }
 
 .instructor-card {
@@ -198,21 +217,79 @@ img.avatar {
 }
 
 
+/* tati!!! seria melhor colocar dentro de uma div, ja que para centralizar o botao coloquei display block */
+.instructor{
+    display: block;
+    margin: auto;
+    background-color: #ffff;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    
+}
+
+.instructors-content{
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.instructor-card img{
+    width: 200px;
+}
+
+.instructor-card{
+    margin-top: 30px;
+    border: 2px solid #252525;
+    /* width: 200px; */
+    background-color: var(--skyblue-color);
+
+}
+
+.instructor-description{
+    margin-left: 16px;
+}
+
+
 
 /* membership */
 
+.membership-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .membership-card {
-    width: 370px;
+    width: 400px;
     margin: 16px auto;
     padding: 32px;
     border-radius: 8px;
     border: 1px solid black;
-    border: 2px solid pink;
+    border: 1px solid var(--accent-color);
 }
 
+.standard{
+    background-color: #2A9D8F;
+}
+
+ .standardplan{
+    display: block;
+    margin: 24px auto;
+    background-color: #ffff;
+    color: var(--accent-color);
+ }
+ 
+ .standard p {
+    color: #ffff;
+ }
+
+
 .plan {
+    display: block;
+    margin: 24px auto;
     text-align: center;
 }
+
 
 
 
