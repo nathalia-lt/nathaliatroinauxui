@@ -45,6 +45,7 @@
         </p>
         <button class="sign-button start">Get Started!</button>
       </section>
+      
       <!-- Classes section -->
       <section class="classes">
         <h2>Take your studio with you wherever you go</h2>
@@ -87,7 +88,7 @@
           <img class="about-image" src="./assets/aboutpic.png" alt="aboutus">
           <div class="about-card-description">
             <h3>Mind and soul</h3>
-            <p>Welcome to Yogarythm, wheere we believe that yoga is not just a practice, but a journey towards self-discovery and holistic well-being. With a variety of classes tailored to all levels and interests, from gentle Hatha to invigorating Vinyasa.</p>
+            <p>Welcome to Yogarythm, where we believe that yoga is not just a practice, but a journey towards self-discovery and holistic well-being. With a variety of classes tailored to all levels and interests, from gentle Hatha to invigorating Vinyasa.</p>
             <button class="btn about">Learn more</button>
           </div>
         </div>
@@ -98,22 +99,21 @@
         <h2>Pose library in your pocket</h2>
         <div class="poses-content">
           <div class="pose">
-            <img src="./assets/posesectionpic.png" alt="pose" />
+            <img class="pose-image" src="./assets/posesectionpic.png" alt="pose" />
             <div class="pose-description-card">
               <h3>Over 300 poses in your pocket</h3>
-              <p>Yoga poses, or “asanas” are the physical postures practiced in yoga that help to promote strength, flexibility, and balance in the body. From the grounding Mountain Pose to the energizing Warrior Poses, each asana offers it’s unique baenefits for both the body and mind. Through mindful practice and breath awareness, yoga poses not only enhance physical well-being but also cultivate a sense of presence and inner peace, making them essential tools on the path to holistic health and wellness.</p>
+              <p>Yoga poses, or “asanas” are the physical postures practiced in yoga that help to promote strength, flexibility, and balance in the body. From the grounding Mountain Pose to the energizing Warrior Poses, each asana offers it’s unique baenefits for both the body and mind.</p>
             </div>
-          </div>
-          
+          </div>    
+          <button class="btn btnpose">See more</button>
         </div>
-        <button class="btn">See more</button>
       </section>
 
 
       <section class="instructors">
         <h2>Meet your Instructors</h2>
         <p>Our elite team of instructors is dedicated to empowering you to achieve your fitness and wellness aspirations, guiding you through an enriching journey every step of the way </p>
-          <button class="btn instructor">View Instructors</button>
+          <button class="btn btninstructor">View Instructors</button>
         <div class="instructors-content">
           <div class="instructor-card">
             <img src="./assets/instructor1.png" alt="instructor" />
@@ -144,6 +144,7 @@
           </div>
         </div>
       </section>
+
       <!-- membership section -->
       <section class="membership">
         <h2>Membership</h2>
@@ -197,13 +198,18 @@
       </section>
 
       <!-- Testimonials -->
-      <div id="bullets-container" class="bullets-container"></div>
       <section class="testimonials">
         <h2>What our clients say about us</h2>
+        <div id="bullets-container" class="bullets-container">
+          <div class="bullet active" data-id="1"></div>
+          <div class="bullet" data-id="2"></div>
+          <div class="bullet" data-id="3"></div>
+        </div>
         <div class="carousel">
           <div class="carousel-item">
-            <img src="./assets/no-image.png" alt="avatar" />
-            <!-- <div class="carousel-avatar"></div> -->
+            <div class="carousel-avatar">
+              <img src="./assets/no-image.png" alt="avatar" />
+            </div>
             <p>member name</p>
             <p>
               “As someone who's never done yoga before, this app is a lifesaver! The beginner-friendly tutorials and explanations helped me grasp the basics quickly. I feel more confident and relaxed after each session. The instructors do an excellent job of breaking down each pose step by step. I never feel lost or confused, which is a common concern for beginners like me. It's like having a patient teacher right in my pocket!”
