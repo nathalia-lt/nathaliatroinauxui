@@ -43,7 +43,7 @@
           Start your journey to serenity: Embrace yoga's transformative power
           today
         </p>
-        <button class="sign-button start">Get Started!</button>
+        <button class="btn start">Get Started!</button>
       </section>
       
       <!-- Classes section -->
@@ -104,8 +104,10 @@
               <h3>Over 300 poses in your pocket</h3>
               <p>Yoga poses, or “asanas” are the physical postures practiced in yoga that help to promote strength, flexibility, and balance in the body. From the grounding Mountain Pose to the energizing Warrior Poses, each asana offers it’s unique baenefits for both the body and mind.</p>
             </div>
-          </div>    
-          <button class="btn btnpose">See more</button>
+          </div>  
+          <div class="btnpose">
+            <button class="btn">See more</button>
+          </div>  
         </div>
       </section>
 
@@ -206,11 +208,11 @@
           <div class="bullet" data-id="3"></div>
         </div>
         <div class="carousel">
-          <div class="carousel-item">
+          <div id="carousel-item" class="carousel-item">
             <div class="carousel-avatar">
               <img src="./assets/no-image.png" alt="avatar" />
             </div>
-            <p>member name</p>
+            <p id="user-name">${testimonial.username}</p>
             <p>
               “As someone who's never done yoga before, this app is a lifesaver! The beginner-friendly tutorials and explanations helped me grasp the basics quickly. I feel more confident and relaxed after each session. The instructors do an excellent job of breaking down each pose step by step. I never feel lost or confused, which is a common concern for beginners like me. It's like having a patient teacher right in my pocket!”
             </p>
@@ -221,7 +223,7 @@
         </div>
       </section>
       <section class="subscribe">
-        <h2>keep update</h2>
+        <h3>Subscribe to our Newsletter</h3>
         <form action="">
           <fieldset>
             <label for="">Name</label>
@@ -252,19 +254,23 @@
 
       <div class="contact">
         <h3>Contact Us</h3>
-        <a class="fa fa-letter" href="http://">email@email.com</a>
-        <p class="fa fa-phone">999-999-999</p>
+        <div class="contact-icons">
+          <p class="fa fa-envelope fa-2x"> yogarythm@email.com
+            <!-- <a href="http://">yogarythm@email.com</a> -->
+          </p>
+          <p class="fa fa-phone fa-2x"> 999-999-999</p>
+        </div>
       </div>
 
       <div class="social-media">
         <h3>Social Media</h3>
-        <ul>
-          <li class="fa fa-instagram"><a href="http://"></a></li>
-          <li class="fa fa-github"><a href="http://"></a></li>
-          <li class="fa fa-facebook-square"><a href="http://"></a></li>
+        <ul class="social-icons">
+          <li class="fa fa-instagram fa-2x "><a href="http://"></a></li>
+          <li class="fa fa-github fa-2x"><a href="http://"></a></li>
+          <li class="fa fa-facebook-square fa-2x"><a href="http://"></a></li>
         </ul>
       </div>
     </footer>
-    <script src="./yogarythm.js"></script>
+    <script type="module" src="./yogarythm.js"></script>
   </body>
 </html>

@@ -34,24 +34,25 @@ img {
     width: 100%;
 }
 
-/* 24px */
+/* 32px */
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* margin: 1em 0; */
     color: #ffff;
 }
 
-/* 16px */
+/* 24px */
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     margin: 1rem 0;
 }
 
-
+/* 20px */
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
     margin: 1rem 0;
 }
 
@@ -70,6 +71,7 @@ p {
     color: #ffff;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .start {
@@ -304,8 +306,6 @@ img.avatar {
 }
 
 
-
-
 /* Testimonials */
 
 .testimonials {
@@ -362,8 +362,8 @@ img.avatar {
 }
 
 .bullet {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: var(--skyblue-color);
 }
@@ -380,25 +380,60 @@ img.avatar {
 }
 
 
-
 /* Footer */
+
+.logo{
+    width: 60%;
+}
 
 footer {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     min-height: 60px;
     background-color: #e7e5dd;
-    padding-left: 1rem;
     font-weight: lighter;
     font-size: 0.8rem;
     margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
 }
 
-.social-media {}
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;    
+}
+
+footer p {
+    color: var(--preto-color);
+    margin: 0;
+    padding: 12px;
+}
+
+
+.contact-icons{
+    color: #252525;
+}
+
+.social-media{
+    padding-bottom: 15px;
+}
+
+.social-media h3{
+    display: none;
+}
+
+.social-icons{
+    display: flex;
+    gap: 24px;
+}
 
 li {
     list-style-type: none;
+    gap: 10px;
 }
 
 
@@ -418,6 +453,10 @@ li {
         background-position: center 70%;
         background-image: url(./assets/hero-yoga.png);
     }
+    footer{
+        flex-direction: row;
+    }
+
 }
 
 /* tablet size */
@@ -426,6 +465,12 @@ li {
     h1 {
         font-size: 2rem;
         margin: 1em 0;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 1.1rem;
     }
 
     #hamburguer {
@@ -513,6 +558,10 @@ li {
         margin-top: 30px;
     }
 
+    .social-media h3{
+        display: block;
+    }
+
 
 }
 
@@ -533,6 +582,11 @@ li {
     p {
         font-size: 1rem;
     }
+
+    .btn{
+        padding: 16px 32px;
+    }
+
 
     /* class section */
     .classes-content {
@@ -584,5 +638,9 @@ li {
         width: 100px;
         height: 100px;
     }
+    .logo{
+        width: 200px;
+    }
+
 
 }
