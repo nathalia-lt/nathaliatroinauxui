@@ -203,23 +203,28 @@
       <section class="testimonials">
         <h2>What our clients say about us</h2>
         <div id="bullets-container" class="bullets-container">
-          <div class="bullet active" data-id="1"></div>
-          <div class="bullet" data-id="2"></div>
-          <div class="bullet" data-id="3"></div>
+          <div class="testimonial-bullet active" data-id="0"></div>
+          <div class="testimonial-bullet" data-id="1"></div>
+          <div class="testimonial-bullet" data-id="2"></div>
+          <div class="testimonial-bullet" data-id="3"></div>
         </div>
-        <div class="carousel">
+
+        
+        <div class="carousel" id="carousel">
+          <!--
           <div id="carousel-item" class="carousel-item">
             <div class="carousel-avatar">
-              <img src="./assets/no-image.png" alt="avatar" />
+              <img id="testimonial-avatar" src="./assets/no-image.png" alt="avatar" />
             </div>
-            <p id="user-name">${testimonial.username}</p>
-            <p>
+            <p id="testimonial-user-name">${testimonial.username}</p>
+            <p id="testimonial">
               “As someone who's never done yoga before, this app is a lifesaver! The beginner-friendly tutorials and explanations helped me grasp the basics quickly. I feel more confident and relaxed after each session. The instructors do an excellent job of breaking down each pose step by step. I never feel lost or confused, which is a common concern for beginners like me. It's like having a patient teacher right in my pocket!”
             </p>
-            <p>May,8, 2024</p>
+            <p id="testimonial-date">May,8, 2024</p>
           </div>
           <div class="carousel-item"></div>
           <div class="carousel-item"></div>
+          -->
         </div>
       </section>
       <section class="subscribe">
@@ -255,17 +260,16 @@
       <div class="contact">
         <h3>Contact Us</h3>
         <div class="contact-icons">
-          <p class="fa fa-envelope fa-2x"> yogarythm@email.com
-            <!-- <a href="http://">yogarythm@email.com</a> -->
-          </p>
-          <p class="fa fa-phone fa-2x"> 999-999-999</p>
+            <p><i class="fa fa-envelope fa-2x"></i> yogarythm@email.com</p>
+    
+            <p> <i class="fa fa-phone fa-2x" ></i> 999-999-999</p>
         </div>
       </div>
 
       <div class="social-media">
         <h3>Social Media</h3>
         <ul class="social-icons">
-          <li class="fa fa-instagram fa-2x "><a href="http://"></a></li>
+          <li ><i class="fa fa-instagram fa-2x "></i><a href="http://"></a></li>
           <li class="fa fa-github fa-2x"><a href="http://"></a></li>
           <li class="fa fa-facebook-square fa-2x"><a href="http://"></a></li>
         </ul>
