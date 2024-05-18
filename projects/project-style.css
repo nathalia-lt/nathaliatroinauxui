@@ -930,3 +930,16 @@ img.carousel-desktop {
     margin-left: 100px;
 }
 
+
+/* Gym app */
+
+.lean-canvas{
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.lean-canvas:active{
+    transform: scale(130%);
+    cursor: pointer;
+}
