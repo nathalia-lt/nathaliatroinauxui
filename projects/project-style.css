@@ -943,3 +943,18 @@ img.carousel-desktop {
     transform: scale(130%);
     cursor: pointer;
 }
+
+.affinity-mapping {
+    margin: auto;
+    width: 80%;
+}
+
+.customer-journey{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.moscow-method{
+    width: 80%;
+    margin: 16px auto;
+}
