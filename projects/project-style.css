@@ -945,7 +945,7 @@ img.carousel-desktop {
 }
 
 .affinity-mapping {
-    margin: auto;
+    margin: 16px 10%;
     width: 80%;
 }
 
@@ -954,7 +954,17 @@ img.carousel-desktop {
     width: 100%;
 }
 
+
 .moscow-method{
     width: 80%;
-    margin: 16px auto;
+    margin: 16px 10%;
+}
+
+.card-sorting-description{
+    text-decoration: underline;
+}
+
+.card-sorting{
+    width: 100%;
+    margin-top: 30px;
 }
