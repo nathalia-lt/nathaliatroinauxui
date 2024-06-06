@@ -34,6 +34,13 @@ section.background-colored {
     background-color: var(--background-color);
 }
 
+div.background-colored {
+    padding-bottom: 32px;
+    padding: 16px;
+    background-color: var(--background-color);
+
+}
+
 .prototype-link, .prototype-link:visited{
     display: inline-block;
     margin: 16px 0;
@@ -967,4 +974,23 @@ img.carousel-desktop {
 .card-sorting{
     width: 100%;
     margin-top: 30px;
+}
+
+.mvp-key{
+    font-weight: 600;
+}
+
+li{
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.wireframe-gym{
+    width: 50%;
+    margin: 16px 20%;
+}
+
+.lo-fi-gym{
+    width: 80%;
+    margin: 16px 10%;
 }
