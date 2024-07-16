@@ -802,8 +802,7 @@ td{
     
 }
 
-.color-container{
-    
+.color-container{    
     text-align: center;
 }
 
@@ -830,9 +829,6 @@ td{
 .gray{
     background-color: #667085;
 }
-
-
-
 
 
 /* hi-fidelity */
@@ -1003,12 +999,65 @@ li{
 }
 
 .wireframe-pet-container{
+    width: 100%;
     display: flex;
     align-items: flex-start;
     margin-top: 32px;
     }
     
-    .pet-wireframe{
-    width: 280px;
-    padding-right: 24px;
+.pet-wireframe{
+    width: 350px;
+    padding-right: 16px;
+}
+
+.design-system-pet{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.typografy-pet{
+    width: 300px;
+}
+
+.palette-color{
+    width: 200px;
+}
+
+.iconograpy{
+    width: 200px;
+}
+
+.components-pet{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.comp-pet{
+    width: 300px;
+}
+
+.components-pet-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.comp-pet-bigger{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.pet-gif{
+    width: 60%;
+    margin: 32px 20%;
+}
+
+.mobile-hi-fi{
+    width: 70%;
+    margin: 32px 15%;
 }
