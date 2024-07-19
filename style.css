@@ -6,8 +6,11 @@
     --tertiary-color: #feaea3;
     --button-color: #e5b714;
     --preto-color: #252525;
-    --background-color: #F6F2EE;
+    --black-color: #333A3F;
+    --background-color: # #f2f2f2;
 }
+
+ /* other black color #333333 */
 
 * {
     box-sizing: border-box;
@@ -17,6 +20,7 @@
 
 body {
     scrollbar-color: var(--secondary-color, auto);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
@@ -73,12 +77,14 @@ span {
     color: #384272;
 }
 
+
 /* .ux-title span{ //procura a classe ux-title e depois procura dentro do elemento que tem essa classe um elemento filho (neto) que seja um span; */
 
 /*  sem espaco span.ux-title { um elemento span que possui a classe ux-title; */
 
 span.ux-title {
-    color: var(--secondary-color);
+    color: var(--black-color);
+    /* color: var(--secondary-color); */
     /* color: linear-gradient(to right top, #feaea3,  #384272); */
     -webkit-transition: color 1s 1s;
     -moz-transition: color 1s 1s;
@@ -98,7 +104,7 @@ span.ux-title.new-color {
 .about,
 .work,
 .contact {
-    color: #252525;
+    color: var(--black-color);
     font-size: 16px;
     font-family: Montserrat;
     font-weight: 400;
@@ -157,6 +163,21 @@ span.ux-title.new-color {
 .dropdown-content a:hover {background-color: #f1f1f1
 }
 
+.resume-btn{
+    padding: 8px 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--tertiary-color);
+    color: var(--black-color);
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a .resume-btn {
+    text-decoration: none;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -243,7 +264,8 @@ span.ux-title.new-color {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
+    color: var(--black-color);
     /* primeiro parametro e a cor que eu escolhi e e o segundo parametro e uma cor default */
 }
 
@@ -251,7 +273,7 @@ span.ux-title.new-color {
 .subtitle {
     width: 497px;
     height: 126px;
-    color: #21243D;
+    color: var(--black-color);
     font-size: 16px;
     font-family: Montserrat;
     font-weight: 400;
@@ -359,7 +381,7 @@ span.ux-title.new-color {
 
 
 .project-description p {
-    color: #252525;
+    color: var(--black-color);
     font-size: 16px;
     font-family: Montserrat;
     font-weight: 400;
@@ -390,7 +412,7 @@ span.ux-title.new-color {
 }
 
 .contact-container p {
-    color: var(--preto-color);
+    color: var(--black-color);
     padding-top: 1.5rem;
 }
 
@@ -402,7 +424,7 @@ span.ux-title.new-color {
 }
 
 .fa {
-    color: var(--preto-color);
+    color: var(--black-color);
 }
 
 .icon {
@@ -418,10 +440,10 @@ span.ux-title.new-color {
 .icon p {
     opacity: 0;
     font-size: 12px;
-    color: var(--preto-color);
+    color: var(--black-color);
     visibility: hidden;
     padding: 5px 10px;
-    background-color: var(--preto-color);
+    background-color: var(--black-color);
     color: var(--tertiary-color);
     font-weight: 600;
     position: relative;
@@ -435,7 +457,7 @@ span.ux-title.new-color {
 	width: 0;
 	height: 0;
 	border: 10px solid transparent;
-	border-top-color:  var(--preto-color);
+	border-top-color:  var(--black-color);
 	border-bottom: 0;
 	margin-left: -10px;
 	margin-bottom: -10px;
