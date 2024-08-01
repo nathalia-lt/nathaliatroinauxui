@@ -164,7 +164,7 @@ span{
     padding-top: 32px;
     align-content: center;
     /* justify-content: center; */
-    height: 600px;
+    height: 700px;
 }
 
  .about-content{
@@ -205,6 +205,9 @@ span{
 /* Footer */
 
 footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
     position:absolute;
     margin-bottom: 1.5rem;
     width:100%;
