@@ -795,7 +795,8 @@ td{
 
 .design-system{
     display: flex;
-    gap: 32px;
+    /* gap: 32px; */
+    justify-content: space-evenly;
 }
 
 .palette-container{
@@ -813,10 +814,15 @@ td{
     text-align: center;
 }
 
+.icons-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .palette{
     margin: 10px;;
-    width: 85px;
-    height: 85px;
+    width: 75px;
+    height: 75px;
     background-color: #667085;
     border: 1px solid black;    
 }
@@ -835,6 +841,22 @@ td{
 
 .gray{
     background-color: #667085;
+}
+
+.purple{
+    background-color: #8B19D6;
+}
+
+.lightgray{
+    background-color: #F0F1F5;
+}
+
+.nubankblack{
+    background-color: #353535;
+}
+
+.white{
+    background-color: #ffff;
 }
 
 
