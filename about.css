@@ -28,11 +28,12 @@ body {
     line-height: 1.6;
     color: var(--black2-color);
     margin: 0;
-    padding: 1.25rem;
+    /* padding: 1.25rem; */
     max-width: 1400px;
     margin: 0 auto;
     /* Center content on large screens */
     min-height: 100vh;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -48,7 +49,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1, h2, h3 {
-    font-family: 'Unbounded', cursive;
+    font-family: 'Unbounded', sans-serif;
     margin-top: 0;
 }
 
