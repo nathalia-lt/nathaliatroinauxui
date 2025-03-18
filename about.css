@@ -1,4 +1,3 @@
-
 :root {
     --accent-color: #9C2E35;
     --secondary-color: #384272;
@@ -6,6 +5,7 @@
     --button-color: #e5b714;
     --preto-color: #252525;
     --black-color: #333A3F;
+    --black2-color: #18181b;
     --background-color: # #f2f2f2;
 }
 
@@ -15,79 +15,211 @@
     padding: 0;
 }
 
+
+/* base font-size for rem calculation */
+html {
+    font-size: 16px;
+}
+
 body {
     scrollbar-color: var(--secondary-color, auto);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--black2-color);
     margin: 0;
-    padding: 0;
-    font-family: Montserrat, sans-serif;
-    background-color: var(--background-color);
-    color: var(--black-color);
+    padding: 1.25rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* Center content on large screens */
+    min-height: 100vh;
 }
 
-h2{
-    font-size: 20px;
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-color);
+    /* ou que isso seja adicionado ao "caminho" da barra */
+}
+
+/* Adiciona a barra arrastável */
+body::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Unbounded', cursive;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    /* Large and bold for main headings */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    /* Slightly tighter for display fonts */
+}
+
+h2 {
+    font-size: 2.25rem;
+    /* Secondary headings */
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+    /* Slightly tighter for balance */
+}
+
+h3 {
+    font-size: 1.75rem;
+    /* Tertiary headings */
+    line-height: 1.4;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: normal;
+    /* Default spacing */
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    /* Body text uses Nunito */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+    /* Default spacing for readability */
+}
+
+li {
+    font-family: 'Nunito', sans-serif;
+    /* Body text uses Nunito */
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    letter-spacing: normal;
+    /* Default spacing for readability */
+}
+
+.bold-text {
     font-weight: bold;
-    padding-bottom: 16px;
 }
 
-/* Header */
+.about-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dropping-image {
+    width: 200px;
+    /* Adjust as needed */
+    position: absolute;
+    top: -200px;
+    /* Start above the viewport */
+    left: 70%;
+    transform: translateX(-50%);
+    animation: dropAnimation 2s ease-in-out forwards;
+}
+
+@keyframes dropAnimation {
+    0% {
+        top: -200px;
+    }
+
+    70% {
+        top: 30%;
+    }
+
+    85% {
+        top: 25%;
+    }
+
+    /* tenho 100 da altura, se eu tirar a altura da imagem */
+    100% {
+        top: calc(100vh - 563px - 30px);
+    }
+}
 
 .top-nav {
     position: fixed;
     display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
     justify-content: space-between;
-    flex-direction: row;
-    margin-bottom: 32px;
+    align-items: center;
     background: var(--background-color);
     z-index: 1000;
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 40px;
-    padding-right: 50px;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .top-nav a {
     text-decoration: none;
+    color: var(--black-color);
+    margin-left: 0rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
+.top-nav a:hover,
+.top-nav a:focus, .top-nav .work:hover, .top-nav .work:hover .dropdown-arrow {
+    color: var(--button-color);
+    outline: none;
+}
+
+.top-nav a:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
 
 .about,
 .work,
 .contact {
     color: var(--black-color);
-    font-size: 16px;
-    font-family: Montserrat;
-    font-weight: 400;
-    line-height: 22px;
     word-wrap: break-word;
     position: absolute;
     cursor: pointer;
     text-decoration: none;
 }
 
-.about{
+
+.about {
     left: 0px;
     top: 0px;
 }
 
-.work{
+.work {
     left: 101px;
     top: 0px;
-    
 }
+
+
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .top-nav a {
+        margin: 0.5rem 0;
+    }
+}
+
+
+
+/* --------------------------------------------------------- */
+
 
 .main-name-header {
     /* color: #252525; */
     color: var(--secondary-color);
-    font-size: 22px;
-    font-family: Montserrat;
+    font-size: 24px;
     font-weight: 700;
     word-wrap: break-word;
     word-spacing: 22px;
 }
 
-span{
+span {
     color: var(--tertiary-color);
 }
 
@@ -104,14 +236,14 @@ span{
 /* nao da para trasition com display none ou block */
 .dropdown-content {
     /* display: none; */
-    opacity:0;
+    opacity: 0;
     max-height: 0;
     transition: all 0.5s;
     visibility: hidden;
     position: relative;
     background-color: #f9f9f9;
     min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     left: -20px;
 }
@@ -124,8 +256,9 @@ span{
     display: block;
 }
 
-  /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
 }
 
 
@@ -137,10 +270,10 @@ span{
     visibility: visible;
 }
 
-.dropdown-arrow{
+.dropdown-arrow {
     color: var(--black-color);
     display: inline-block;
-    transition: all 0.5s;
+    transition: transform 0.3s;
 }
 
 .dropdown:hover .dropdown-arrow {
@@ -151,33 +284,26 @@ span{
 /* About session */
 
 
-
-.about-container{
+.about-container {
     width: 80%;
-    /* background-color: peachpuff; */
     display: flex;
-    /* flex-direction: row; */
     align-content: center;
     flex-wrap: wrap;
-    /* gap: 50px; */
     margin: auto;
-    padding-top: 32px;
     align-content: center;
-    /* justify-content: center; */
-    height: 700px;
+    height: 600px;
 }
 
- .about-content{
+.about-content {
     width: 60%;
     font-size: 16px;
     text-align: left;
-    margin-top: 80px;
     padding: 16px 8px;
     line-height: 140%;
- }
+}
 
- .rectangle-design{
-    width: 40%;
+.rectangle-design {
+    width: 50%;
     height: 10px;
     flex-shrink: 0;
     margin-top: 30px;
@@ -185,16 +311,15 @@ span{
 }
 
 
-.about-image{
-    width: 300px;
+.about-image {
+    width: 350px;
     height: 363px;
-    margin: auto;
+    /* margin: auto; */
     padding: 30px 20px;
-    margin-top: 30px;
     /* flex-shrink: 0; */
 }
 
-.skills{
+.skills {
     display: flex;
     align-items: center;
     padding: 16px;
@@ -204,13 +329,14 @@ span{
 
 /* Footer */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     margin-top: auto;
-    position:absolute;
+    position: absolute;
+    bottom: 0;
     margin-bottom: 1.5rem;
-    width:100%;
+    width: 100%;
     background: var(--background-color);
     padding: 24px;
     font-size: 12px;
