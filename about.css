@@ -6,13 +6,14 @@
     --preto-color: #252525;
     --black-color: #333A3F;
     --black2-color: #18181b;
-    --background-color: # #f2f2f2;
+    --background-color: #f2f2f2;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: solid red 1px; Temporary debugging tool */
 }
 
 
@@ -22,18 +23,19 @@ html {
 }
 
 body {
+    background-color: var(--background-color);
     scrollbar-color: var(--secondary-color, auto);
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--black2-color);
+    color: var(--black-color);
     margin: 0;
     /* padding: 1.25rem; */
     max-width: 1400px;
     margin: 0 auto;
     /* Center content on large screens */
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -51,6 +53,7 @@ body::-webkit-scrollbar-thumb {
 h1, h2, h3 {
     font-family: 'Unbounded', sans-serif;
     margin-top: 0;
+    color: var(--black2-color);
 }
 
 h1 {
@@ -296,8 +299,7 @@ span {
 }
 
 .about-content {
-    width: 60%;
-    font-size: 16px;
+    width: 60%;    
     text-align: left;
     padding: 16px 8px;
     line-height: 140%;

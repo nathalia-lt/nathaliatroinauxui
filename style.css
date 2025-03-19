@@ -4,12 +4,14 @@
     --accent-color: #9C2E35;
     --secondary-color: #384272;
     --tertiary-color: #feaea3;
-    --button-color: #e5b714;
+    --CTA-color: #e5b714;
     --preto-color: #252525;
-    --black-color: #333A3F;
-    --black2-color: #18181b;
+    --text-color: #333A3F;
+    --black-color: #18181b;
     --background-color: #f2f2f2;
-    --white-color: #Ffffff;
+    --white-color: #fafafa;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* other black color #333333 */
@@ -19,7 +21,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 /* base font-size for rem calculation */
 html {
@@ -31,7 +32,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--black2-color);
+    background-color: var(--background-color);
     margin: 0;
     /* padding: 1.25rem; */
     max-width: 1200px;
@@ -60,6 +61,7 @@ header {
 h1, h2, h3 {
     font-family: 'Unbounded', sans-serif;
     margin-top: 0;
+    color: var(--black-color);
 }
 
 h1 {
@@ -97,13 +99,26 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     letter-spacing: normal;
+    color: var(--text-color);
     /* Default spacing for readability */
 }
+
+/* Section spacing */
+section {
+    margin-bottom: 4rem; /* Add white space between sections */
+  }
+  
+  /* Optional border between sections for visual separation */
+  section:not(:last-child) {
+    padding-bottom: 3rem;
+    /* border-bottom: 1px solid #e0e0e0; */
+  }
 
 button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-top: 24px;
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
@@ -111,7 +126,7 @@ button {
     text-decoration: none;
     color: var(--black-color);
     /* Black text for better contrast */
-    background-color: #e5b714;
+    background-color: var(--CTA-color);
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -144,8 +159,8 @@ button:focus {
     left: 0;
     right: 0;
     justify-content: space-between;
+    /* background-color: var(--background-color); */
     align-items: center;
-
     z-index: 1000;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -161,7 +176,7 @@ button:focus {
 
 .top-nav a:hover,
 .top-nav a:focus, .top-nav .work:hover, .top-nav .work:hover .dropdown-arrow {
-    color: var(--button-color);
+    color: var(--CTA-color);
     outline: none;
 }
 
@@ -221,16 +236,14 @@ span {
     color: var(--tertiary-color);
 }
 
-.ux-title {
-    color: #384272;
-}
+
 
 /* .ux-title span{ //procura a classe ux-title e depois procura dentro do elemento que tem essa classe um elemento filho (neto) que seja um span; */
 
 /*  sem espaco span.ux-title { um elemento span que possui a classe ux-title; */
 
 span.ux-title {
-    color: var(--black-color);
+    color: var(--black2-color);
     /* color: var(--secondary-color); */
     /* color: linear-gradient(to right top, #feaea3,  #384272); */
     /* -webkit-transition: color 1s 1s;
@@ -246,16 +259,13 @@ span.ux-title.new-color {
 }
 
 .top-nav.scrolled {
-    background-color: #fff;
+    background-color: var(--newbackground-color);
 }
 
 .about,
 .work,
 .contact {
-    color: var(--black-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    color: var(--text-color);
     word-wrap: break-word;
     position: absolute;
     cursor: pointer;
@@ -291,7 +301,7 @@ span.ux-title.new-color {
     transition: all 0.5s;
     visibility: hidden;
     position: relative;
-    background-color: #f9f9f9;
+    background-color: var(--newbackground-color);
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -308,7 +318,7 @@ span.ux-title.new-color {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #f1f1f1;
 }
 
 
@@ -321,7 +331,7 @@ span.ux-title.new-color {
 }
 
 .dropdown-arrow {
-    color: var(--preto-color);
+    color: var(--text-color);
     display: inline-block;
     transition: transform 0.3s;
 }
@@ -366,24 +376,22 @@ span.ux-title.new-color {
     align-items: center;
     gap: 169px;
     display: inline-flex;
-    margin: 126px 0;
+    margin: 0 auto;
 }
 
 .home-container {
-    height: 395px;
+    height: 550px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 79px;
     display: inline-flex;
 }
 
 .home-content {
-    height: 263px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    /* gap: 16px; */
     display: flex;
 }
 
@@ -391,18 +399,15 @@ span.ux-title.new-color {
 .title {
     width: 700px;
     height: 150px;
-    margin-top: 10rem;
-    /* color: var(--secondary-color); */
+    margin-top: 15rem;
     color: var(--black-color);
     /* primeiro parametro e a cor que eu escolhi e e o segundo parametro e uma cor default */
 }
 
-
 .subtitle {
     width: 700px;
-    height: 150px;
     color: var(--black-color);
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 /* My recents projects page */
@@ -421,11 +426,17 @@ span.ux-title.new-color {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 480px;
+    height: 380px;
     width: 70%;
-    background-color: #F6F2EE;
-    border-radius: 4px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow-color);
 }
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
 
 /* dentro do flex usar de flex */
 .container-title {
@@ -443,7 +454,12 @@ span.ux-title.new-color {
     height: 80%;
     object-fit: cover;
     border-radius: 4px;
+    transition: transform 0.3s ease;
 }
+
+.project:hover .project-image img {
+    transform: scale(1.05);
+  }
 
 .project-image .desk-img {
     height: 60%;
@@ -454,37 +470,52 @@ span.ux-title.new-color {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    padding: 1.5rem;
 }
 
 .project-description h3 {
-    color: #384272;
-    font-weight: 700;
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin-bottom: 0.5rem;
 }
 
-
 .project-description p {
-    color: var(--black-color);
-    font-weight: 400;
-    line-height: 22px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin-bottom: 1rem;
 }
 
 
 .project-description a {
-    color: #667085;
+    color: var(--text-color);
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word
 }
 
+/* .project-description a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-description a:hover {
+    background-color: darken(var(--accent-color), 10%);
+  }
+  
+  @media (max-width: 768px) {
+    .project {
+      width: 100%;
+    }
+  } */
+
 /* contact session */
 
 .contact-container {
     width: 100%;
-    color: var(--secondary-color);
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -492,7 +523,6 @@ span.ux-title.new-color {
 }
 
 .contact-container p {
-    color: var(--black-color);
     padding-top: 1.5rem;
 }
 
@@ -512,7 +542,7 @@ span.ux-title.new-color {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     text-decoration: none;
 }
 
@@ -567,6 +597,7 @@ footer {
     width: 100%;
     padding: 24px;
     font-size: 12px;
-    color: var(--black-color);
     text-align: center;
 }
+
+

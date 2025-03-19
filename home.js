@@ -26,7 +26,7 @@ window.addEventListener('scroll', function () {
     // Check if the scroll position is past the trigger position
     if (scrollPosition > triggerPosition) {
         // Change the background color
-        header.style.backgroundColor = 'var(--white-color)';
+        header.style.backgroundColor = 'var(--background-color)';
     } else {
         // Optionally, reset the background color if the user scrolls back up
         header.style.backgroundColor = 'transparent';
