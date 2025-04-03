@@ -32,3 +32,18 @@ window.addEventListener('scroll', function () {
         header.style.backgroundColor = 'transparent';
     }
 });
+
+// The aria-expanded attribute is set on an element to indicate if a control is expanded or collapsed, and whether or not the controlled elements are displayed or hidden.
+// aria-label and aria-expanded for screen readers.
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !isExpanded);
+      navMenu.classList.toggle('active');
+    });
+  });
+  

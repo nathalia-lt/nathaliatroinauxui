@@ -1,0 +1,536 @@
+:root {
+    --accent-color: #9C2E35;
+    --secondary-color: #384272;
+    --tertiary-color: #feaea3;
+    --CTA-color: #e5b714;
+    --preto-color: #252525;
+    --black-color: #18181b;
+    --text-color: #333A3F;
+    --uppercase-color: #666;
+    --background2-color: #F6F2EE;
+    --background-color: #f2f2f2;
+    --white-color: #fafafa;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+/* 80, 96, 120 de espaco entre as sections, para criar um respiro maior */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Unbounded:wght@400;500;600;700&display=swap');
+
+/* base font-size for rem calculation */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  padding: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto; /* Center content on large screens */
+  background-color: var(--background-color);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: var(--secondary-color);
+  /* ou que isso seja adicionado ao "caminho" da barra */
+}
+
+/* Adiciona a barra arrastável */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Unbounded', sans-serif;
+  margin-top: 0;
+  color: var(--black-color);
+}
+
+h1 {
+  font-size: 3rem; /* Large and bold for main headings */
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em; /* Slightly tighter for display fonts */
+}
+
+h2 {
+  font-size: 2.25rem; /* Secondary headings */
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em; /* Slightly tighter for balance */
+}
+
+h3 {
+  font-size: 1.75rem; /* Tertiary headings */
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: normal; /* Default spacing */
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: normal;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--uppercase-color);
+}
+
+p {
+  font-family: 'Nunito', sans-serif; /* Body text uses Nunito */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: normal; /* Default spacing for readability */
+  color: var(--text-color);
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 4rem auto; /* Add white space between sections */
+}
+
+/* Optional border between sections for visual separation */
+section:not(:last-child) {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* -----------------------HEADER------------------------------------------- */
+
+/* Base styles (mobile-first) */
+.top-nav {
+  position: fixed;
+  display: flex;
+  background-color: var(--background-color);
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--black-color);
+  margin-left: 0rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-nav.scrolled {
+  background-color: var(--background-color);
+}
+
+.logo {
+  z-index: 1001; /* Ensure logo stays above the menu */
+}
+
+.main-name-header {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 700;
+  word-wrap: break-word;
+  word-spacing: 55px;
+}
+
+.main-name-header span {
+  color: var(--tertiary-color);
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 32px;
+  height: 2px;
+  background-color: var(--black-color);
+  transition: all 0.3s linear;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+}
+
+.nav-menu a, .nav-menu .dropdown {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: var(--black-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus,
+.nav-menu .work:hover,
+.nav-menu .work:hover .dropdown-arrow {
+  color: var(--CTA-color);
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* position:relative; */
+  background-color: var(--background-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* left: -20px; */
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: var(--secondary-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-arrow {
+  color: var(--text-color);
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.dropdown:hover .dropdown-arrow {
+  transform: rotate(90deg);
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* Hide hamburger on desktop */
+  }
+
+  .nav-menu {
+    position: static;
+    transform: translateY(0);
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav-menu a, .nav-menu .dropdown {
+    margin-left: 2rem;
+  }
+
+  .nav-menu a:first-child {
+    margin-left: 0;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+
+/* -----------------------CASES SECTIONS------------------------------------- */
+
+main{
+  /* width: 500px; */
+  border: 1 solid red;
+}
+
+.carousel-container {
+  /* width: 80%; */
+  overflow-x: auto;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+
+.carousel-container::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  background-color: var(--secondary-color);
+  /* ou que isso seja adicionado ao "caminho" da barra */
+}
+
+/* Adiciona a barra arrastável */
+.carousel-container::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+}
+
+.carousel-images-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+img.carousel {
+  display: inline;
+  /* gap: 9px; */
+  height: 450px;
+}
+
+
+/* .project-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.column {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column h2, .column h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.column p, .column ul {
+  margin-bottom: 1.5rem;
+}
+
+.column ul {
+  padding-left: 1.5rem;
+}
+
+.year {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .project-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+
+
+.home-project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: inline-flex;
+}
+
+/* perguntar a melhor forma de arrumar o header */
+.home-project h1 {
+  padding-top: 8rem;
+  padding-bottom: 20px;
+}
+
+.project-card {
+  display: flex;
+  /* background-color: #ffffff; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* overflow: hidden; */
+}
+
+.column {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+  
+  .column-left {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details-container {
+    padding: 1rem;
+  }
+  
+  .column-left, .column-right {
+    padding: 1.5rem;
+  }
+}
+
+/* Project overview */
+
+.project-overview{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* gap: 32px; */
+    margin-top: 10px;
+}
+
+.project-description{
+    display: flex;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    width: 48%;
+    height: 220px;
+    padding: 2rem;
+ }
+
+ .header-container {
+  flex-direction: column;
+} 
+
+.header-container h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  order: -1;
+}
+
+.header-container h5 {
+  margin-top: 0;
+}
+
+/* Period tracker */
+
+.data-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data{
+  width: 33%;
+  padding: 8px;
+}
+
+.jtbd-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jtbd{
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+/* --------------------------MORE-CASES---------------------------- */
+
+/* During the development phase, the product encountered usability issues after initial testing:
+
+The interface experiences problems on small screens, with the current viewing area hindering access to basic information and action buttons.
+
+Components need adjustment, and in some cases, need to be created from scratch. This complicates the development process.
+
+There is no standardized component system, which impedes usability, aesthetics, and product scalability.
+
+We have defined the objective to create a new version of the interface that addresses these issues. The requirements include:
+
+Preferential use of Tailwind components
+
+Adoption of a mobile-first approach */
+
+
+/* ---------------------------FOOTER--------------------------------------- */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 1rem;
+  /* margin-bottom: 1.5rem; */
+  font-size: 12px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+
+
+
