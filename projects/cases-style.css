@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Unbounded', serif;
   margin-top: 0;
   color: var(--black-color);
 }
@@ -478,8 +478,10 @@ img.carousel {
 
 .data{
   width: 33%;
-  padding: 8px;
+  padding-right: 16px;
+  border: 2px solid red;
 }
+
 
 .jtbd-wrapper{
   display: flex;
@@ -493,6 +495,58 @@ img.carousel {
   margin-bottom: 16px;
 }
 
+
+
+/* --------------------------SPIRIT------------------------------ */
+
+.cjm-wrapper{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* gap: 16px; */
+  /* flex-wrap: wrap; */
+  border: 2px solid red;
+}
+
+.cjm{
+  width: 40%;
+  align-self: center;
+  border: 2px solid blue;
+}
+
+.cjm-img{
+  width: 90%;
+  height: 400px;
+}
+
+.method-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.matrix {
+  width: 45%;
+}
+
+.method{
+  width: 45%;
+}
+
+.hs-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.hs{
+  width: 30%;
+  border-radius: 100%;
+  padding: 24px;
+  margin: 0 auto;
+  background-color: var(--tertiary-color);
+  text-align: center;
+}
 
 
 

@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1, h2, h3 {
-    font-family: 'Unbounded', sans-serif;
+    font-family: 'Unbounded', serif;
     margin-top: 0;
     color: var(--black2-color);
 }
