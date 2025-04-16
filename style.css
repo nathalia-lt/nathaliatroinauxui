@@ -398,7 +398,7 @@ span.ux-title.new-color {
 
 .title {
     width: 700px;
-    height: 150px;
+    /* height: 150px; */
     margin-top: 15rem;
     color: var(--black-color);
     /* primeiro parametro e a cor que eu escolhi e e o segundo parametro e uma cor default */

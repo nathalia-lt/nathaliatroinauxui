@@ -52,10 +52,11 @@
         <section class="home-project">
             <h1>Spirit Airlines</h1>
             <h4>Smoother Skies: Improving Spirit Airlines’ Digital Experience for Hassle-Free Travel.</h4>
+            <!-- <h4>Buget travel, but at what cost?</h4> -->
             <p></p>
             <div class="carousel-container">
               <div class="carousel-images-container">
-                <img class="carousel" src="../assets/new-caroulse-flower.png" alt="">
+                <img class="carousel" src="../assets/carousel-spirit.png" alt="">
               </div>
             </div>
           </section>
@@ -71,14 +72,14 @@
             <p>2 months</p>
           </div>
           <!-- isso aqui ta errado -->
-          <div class="column">
+          <!-- <div class="column">
             <h5>Team</h5>
             <ul>1 Project Onwer</ul>
             <ul>1 Scrum Master</ul>
             <ul>4 Developers</ul>
             <ul>1 Design lead</ul>
             <ul>1 UX/UI Designer</ul>
-          </div>
+          </div> -->
           <div class="column">
             <h5>Process</h5>
             <p>Desk research, competitive analysis, survey, interview, heuristic analysis, JTBD, HMW, Impact vs benefit matrix, MoSCoW method, Card sorting, hypothesis statement, journey map, moodboard, crazy 8's wireframing, user testing, A/B testing.</p>
@@ -106,7 +107,7 @@
         <p>To truly understand what users experience, I conducted in-depth research using multiple methods:</p>
         
         <li>Desk Research: Analyzed industry trends and common pain points.</li>
-        <li>competitive Analysis: Comparece Spirit app aginst competitors like JetBlue, booking.com...</li>
+        <li>Competitive Analysis: Comparece Spirit app aginst competitors like JetBlue, booking.com...</li>
         <li>Survay: Gathered insights on frustations, expectations and booking behaviors.</li>
         <li>User Interview: Uncovered real pains points.</li>
         <h4>Key insights:</h4>
@@ -128,15 +129,18 @@
       <section>
         <h2>Defining the solution</h2>
         <p>Armed with research, I synthesized findings using: Heuristic Analysis, JTBD and HMW Statements.</p>
-        <h4>How might we improve Spirit Airlines’ booking experience to increase conversions while maintaining the affordability that defines the brand?</h4>
+        <h4>How might we improve Spirit Airlines’ booking experience to <span>increase conversions</span> while maintaining the affordability that defines the brand?</h4>
         <p>To prioritize improvements, I used:</p>
-        <ul>Imapct vs. Benefit Matrix to focus on the high-value, low effort fixes first.</ul>
-        <ul>MoSCoW Method to define must-haves vs. nice-tohave features</ul>
+        <ul>
+            <li>Imapct vs. Benefit Matrix to focus on the high-value, low effort fixes first.</li>
+            <li>MoSCoW Method to define must-haves vs. nice-to have features.</li>
+        </ul>
         <div class="method-wrapper">
-            <img class="matrix" src="../assets/matrix-spirit.png" alt="Impact vs Benefit Matrix">
-            <img class="method" src="../assets/moscow-spirit.png" alt="Moscow Method">
+            <div class="method">
+                <img class="matrix-img" src="../assets/matrix-spirit.png" alt="Impact vs Benefit Matrix">
+                <img class="method-img" src="../assets/moscow-spirit.png" alt="Moscow Method">
+            </div>
         </div>
-        <div>
             <h4>Hypothesis Statements</h4>
             <p>I wanted to ground my ideas in evidence and ensure my approach is measurable. Here some of them:</p>
             <div class="hs-wrapper">
@@ -192,46 +196,138 @@
         <h4>The design solution simplifies Spirit Airlines’ booking by clarifying fee structures, highlighting key information in search results, and ensuring users can easily find answers and support within the app, improving trust and usability.</h4>
       </section>
 
+            <!-- Hi-fi and Usability studies -->
+            <section>
+                <h2 class="underlined-title">Validation & Testing</h2>
+                <a href="http://">Go here to see the full hi-fi prototype</a>
+                <p>After 2 rounds of usability testing, I created a high-fidelity prototype that incorporated the feedback and insights gathered from the previous rounds. The goal was to ensure that the design not only met user needs but also provided a seamless and intuitive experience.</p>
+                <p>Here are some of the key findings from the usability testing:</p>
+                <ul>
+                    <li>Having the visual aid help in decision-making.</li>
+                    <li>Highlighting key information in search results significantly improved users' ability to make informed decisions quickly.</li>
+                    <li>Users appreciated the streamlined booking process, which reduced cognitive load and made it easier to navigate.</li>
+                </ul>
+                </p>
+                <br>
+
+
+                <div class="mockup-container">
+                  <p class="gif-description">
+                    On the airport flight page, the search bar was originally labeled “From where?” After observing that a user—who had never flown before—was confused about whether to search for a city or an airport, I updated the label to “Search for airport, city, or address” to make it clearer. I also improved the prompt for enabling location services and added features that show how far the airport is from the user’s current location, along with an estimated travel time to get there.
+                  </p>
+                  <img class="gif" src="../assets/flight-search-page.png" alt="flight-search-page" />
+                </div>
+                <div class="mockup-container">
+                  <img class="gif" src="../assets/Date-picker-page.png" alt="review-gif" />
+                  <p class="gif-description">
+                    Displaying the trip duration provides users with immediate feedback about the length of their stay, reducing cognitive load. This is especially helpful for users who may not be consciously aware of how many days their trip spans when selecting departure and return dates. Users can quickly adjust their dates to match their desired trip length without having to mentally calculate the duration. This streamlines the booking process and minimizes errors, such as accidentally selecting an overly long or short trip. "I loved the trip duration feature, I wish Airbnb had it"     </p>
+                </div>
+                <div class="mockup-container">
+                  <p class="gif-description">
+                    “I don't like to seat on the wings, would be nice to see the plane, to factor that into my purchase” P1
+                  </br>
+                    "Having the visual aid helps me when choosing a seat on the plane" P5
+                  </p>
+
+                  <img
+                    class="gif"
+                    src="../assets/Seat-selection.png"
+                    alt="track-image"
+                  />
+                </div>
+                <div class="mockup-wrapper" >
+                  <img class="mockup" src="../assets/Wrapper mockup.png" alt="mockups">
+                </div>
+              </section>
+
       <section>
-        <h2>Testing & Validation</h2>
-        <p>To ensure the redesign met user needs, I conducted:</p>
-        <h4>Usability Testing</h4>
-        <p>xxxxx</p>
         <h4>A/B Testing Plan:</h4>
         <div class="data-wrapper">
             <div class="data">
-              <h4>Problem statement 🔎</h4>
+              <h5>Problem statement 🔎</h5>
               <p>Does highlighting key information reduce the time users take to complete a booking?</p>
               <p>Can users recall the key details of their booking (e.g., flight time, baggage) without revisiting previous steps?</p>
             </div>
             <div class="data">
-              <h4>Data 📊</h4>
+              <h5>Data 📊</h5>
               <p>30% Struggle to to locate certain options or features on an Airline platform.</p>
             </div>
             <div class="data">
-              <h4>Hypothesis 💡</h4>
+              <h5>Hypothesis 💡</h5>
               <p>We believe that implementing a new design for the flight selection interface will make the booking process faster, reduce cognitive load, and lead to a higher completion rate.</p>
             </div>
             <div class="data">
-                <h4>Risk and Mitigation 📈 </h4>
+                <h5>Risk and Mitigation 📈 </h5>
                     <p>Risk:
                         There wont be a wide enough variety of issues for the users testing the app to get meaningful data for all features.</p>
                          <p>Mitigation:
                         Increase the data sample to something larger in order to attempt to capture more scenarios but within the allocated budget.</p>
                     </div>
                     <div class="data">
-                      <h4>Metric 📈</h4>
+                      <h5>Metric 📈</h5>
                       <p>Analyzing that the results are statistics significant:</p>
                       <p>By ensure that my P-value is below 0.05.
                         There is a less than 5% chance that the null hypothesis is true.</p>
                     </div>
             <div class="data">
-              <h4>Target Users 🎯</h4>
+              <h5>Target Users 🎯</h5>
               <p>Primary Target Audience: Users looking to book domestic flights, which represents Spirit Airlines’ main customer base.</p>
             <p>Secondary Target Audience: New users visiting the Spirit Airlines website or app for the first time, to assess how the redesigned interface impacts initial impressions and conversions.</p>
             </div>
           </div>
       </section>
+
+      
+
+            <!-- Takeaways -->
+            <section>
+                <h2 class="underlined-title">Takeaways</h2>
+                <h3>Impact</h3>
+                <p>
+                ADD
+                </p>
+                <h3>Key Takeaways</h3>
+                    <ul>
+                        <li>Card sorting exercise helped reveal how users expect content to be structured.</li>
+                        <li>Users need better visibility of their past selections, reinforcing Jakob’s Law (users expect consistency).</li>
+                        <li>How small design changes can greatly improve decision-making clarity.</li>
+                        <li>How unclear labels (e.g., search bar confusion) can lead to usability issues.</li>
+                    </ul>
+                <br>
+                <p>
+                  My knowlodge of software engineering helped me with my design
+                  strategy, as I understand some technical limitations.
+                </p>
+                <h3>Next steps</h3>
+                <ul>
+                  <li>Use A/B testing (if possible) to compare the original vs. revised flow.</li>
+                  <li>If I am working with stakeholders, summarize findings in a clear UX report to advocate for changes.</li>
+                </ul>
+              </section>
+            </br>
+              <!-- More projects -->
+              <section>
+                <h3 class="more-projects-title">More projects</h3>
+                <div class="projects-container">
+                  <a class="project" href="../projects/yogarythm.html">
+                    <div class="project-image-desktop">
+                      <img src="../assets/Mockup-landingpage1.png" alt="desktop-image" />
+                    </div>
+                    <div class="project-description">
+                      <h3>Yogarythm</h3>
+                    </div>
+                  </a>
+        
+                  <a class="project" href="http://">
+                    <div class="project-image">
+                      <!-- here goes the image -->
+                    </div>
+                    <div class="project-description">
+                      <h3>Coming soon</h3>
+                    </div>
+                  </a>
+                </div>
+              </section>
       </main>
 </body>
 </html>

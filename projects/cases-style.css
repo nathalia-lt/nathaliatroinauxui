@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3rem; /* Large and bold for main headings */
   line-height: 1.2;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   letter-spacing: -0.02em; /* Slightly tighter for display fonts */
 }
 
@@ -86,7 +86,7 @@ h3 {
 h4 {
   font-size: 1.5rem;
   line-height: 1.4;
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
   margin-bottom: 0.5rem;
   letter-spacing: normal;
 }
@@ -119,6 +119,11 @@ p {
 
 .bold-text{
     font-weight: bold;
+}
+
+span{
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 
 /* Section spacing */
@@ -313,7 +318,7 @@ main{
 }
 
 .carousel-container {
-  /* width: 80%; */
+  width: 100%;
   overflow-x: auto;
   margin: 0 auto;
   padding-top: 0.5rem;
@@ -519,19 +524,32 @@ img.carousel {
   height: 400px;
 }
 
+
 .method-wrapper{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-}
-
-.matrix {
-  width: 45%;
 }
 
 .method{
-  width: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 32px;
+  gap: 16px;
+  background-color: var(--white-color);
+}
+
+.method p{
+  margin: 0;
+  padding: 0;
+}
+
+.method-img{
+  width: 35%;
+}
+
+.matrix-img{
+  width: 40%;
 }
 
 .hs-wrapper{
@@ -540,12 +558,80 @@ img.carousel {
 }
 
 .hs{
-  width: 30%;
-  border-radius: 100%;
+  width: 32%;
+  border-radius: 50%;
   padding: 24px;
   margin: 0 auto;
-  background-color: var(--tertiary-color);
+  background-color: var(--white-color);
   text-align: center;
+}
+
+/* ----------------Period tracker--------------------------------- */
+
+/* .team-work-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.team-work{
+  width: 90%;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+} */
+.team-work-img{
+  display: flex;  
+  /* width: 90%; */
+  height: 450px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*  Hi-fi and Usability studies */
+
+
+
+.mockup-container {
+  padding: 32px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gif-description {
+  margin-top: 32px;
+  /* padding-top: 32px; */
+  width: 60%;
+}
+
+
+img.gif {
+  height: 400px;
+}
+
+.mockup-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.mockup{
+  height: 900px;
+  padding: 16px 8px;
+  align-self: center;
+}
+
+.mockup-gym{
+  height: 600px;
 }
 
 
@@ -569,6 +655,99 @@ We have defined the objective to create a new version of the interface that addr
 Preferential use of Tailwind components
 
 Adoption of a mobile-first approach */
+
+
+
+/* ---------------MORE-PROJECTS------------------------------- */
+
+.more-projects-title{
+  text-align: center;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.div-block{
+  width: 80%;
+  margin-left: 10%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #ccc;
+}
+
+.projects-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.project{
+  display: flex;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  width: 48%;
+  height: 250px;
+  justify-content: space-between;
+}
+
+a.project{
+  text-decoration: none;
+}
+
+.project:hover{
+  transition: 500ms linear;
+  transform: scale(1.1);
+}
+
+.project-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  height: 80%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-image-desktop img{
+  height: 70%;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
+.project-description {
+  width: 50%;
+  display: flex;
+  /* padding-right: 50px; */
+  /* padding-top: 70px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description h3 {
+  color: #384272;
+  font-size: 24px;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 /* ---------------------------FOOTER--------------------------------------- */

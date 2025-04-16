@@ -13,13 +13,24 @@
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     scrollbar-color: var(--secondary-color, auto);
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
     color: var(--preto-color);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unbounded', serif;
+    margin-top: 0;
+    color: var(--black-color);
+  }
 
 section {
     width: 80%;
