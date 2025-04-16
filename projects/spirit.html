@@ -17,7 +17,15 @@
     />
     <title>Spirit Airlines</title>
 </head>
-
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJSMS6YPB0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-PJSMS6YPB0');
+  </script>
 <body>
     <header class="top-nav">
         <div class="logo">
@@ -61,34 +69,47 @@
             </div>
           </section>
               <!-- Project Overview -->
-    <section class="project-details-container">
-        <h6>YEAR 2025</h6>
-        <div class="project-card">
-          <div class="column">  
-            <h5>My Role</h5>
-            <p>UX/UI Designer</p>
-            
-            <h5>Timeline</h5>
-            <p>2 months</p>
-          </div>
-          <!-- isso aqui ta errado -->
-          <!-- <div class="column">
-            <h5>Team</h5>
-            <ul>1 Project Onwer</ul>
-            <ul>1 Scrum Master</ul>
-            <ul>4 Developers</ul>
-            <ul>1 Design lead</ul>
-            <ul>1 UX/UI Designer</ul>
-          </div> -->
-          <div class="column">
-            <h5>Process</h5>
-            <p>Desk research, competitive analysis, survey, interview, heuristic analysis, JTBD, HMW, Impact vs benefit matrix, MoSCoW method, Card sorting, hypothesis statement, journey map, moodboard, crazy 8's wireframing, user testing, A/B testing.</p>
-            
-            <h5>Tools</h5>
-            <p>Figma, Maze, Kasort, Meet</p>
-          </div>
-        </div>
-      </section>
+
+              <section class="project-overview background-colored">
+                <!-- <h2>Flower Power</h2> -->
+                <div class="row">
+                  <div class="cell">
+                    <h6>YEAR 2023</h6>
+        
+                    <h5>BACKGROUND</h5>
+                    <p>Fiori, an online flower delivery service, aims to provide customers with a seamless and delightful experience when purchasing flowers for various occasions. Despite having a high-fidelity prototype, the app has been facing issues that hinder user satisfaction and business growth.
+                    </p>
+                  </div>
+                  <div class="cell">
+                    <h5>ROLE</h5>
+                    <p>UX/UI Designer</p>
+                    <h5>PROCESS</h5>
+                    <p>
+                        Desk research, competitive analysis, survey, interview, heuristic analysis, JTBD, HMW, Impact vs benefit matrix, MoSCoW method, Card sorting, hypothesis statement, journey map, moodboard, crazy 8's wireframing, user testing, A/B testing.
+                    </p>
+                    <h5>TOOLS</h5>
+                    <p>Figma, Maze, Kasort, Meet</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="cell">
+                    <h5>PROBLEM</h5>
+                    <p>Fiori app design fails to meet user expectations, resulting in low user engagement, high bounce rates, and suboptimal conversion rates. Customers are experiencing difficulties in navigating the app, finding the right flowers for specific occasions, customizing orders, and completing the purchase process smoothly. These challenges are leading to lost sales opportunities and decreased customer satisfaction.
+                    </p>
+                  </div>
+                  <div class="cell">
+                    <h5>GOAL</h5>
+                    <ul>
+                      <li>Improve app navigation and usability to keep users engaged and encourage them to explore more products.
+                      </li>
+                      <li>Ensure users have access to detailed product information to make informed decisions.
+                      </li>
+                      <li>Provide personalized recommendations to drive more sales.</li>
+                      <li>Enhance the overall user experience to make it enjoyable and intuitive.</li>
+                    </ul>          
+                  </div>
+                </div>
+              </section>
 
       <!-- Project overview -->
     <section class="project-overview" >
@@ -108,8 +129,9 @@
         
         <li>Desk Research: Analyzed industry trends and common pain points.</li>
         <li>Competitive Analysis: Comparece Spirit app aginst competitors like JetBlue, booking.com...</li>
-        <li>Survay: Gathered insights on frustations, expectations and booking behaviors.</li>
+        <li>Survey: Gathered insights on frustations, expectations and booking behaviors.</li>
         <li>User Interview: Uncovered real pains points.</li>
+        <br>
         <h4>Key insights:</h4>
         <div class="data-wrapper">
             <div class="data">
@@ -128,7 +150,7 @@
       </section>
       <section>
         <h2>Defining the solution</h2>
-        <p>Armed with research, I synthesized findings using: Heuristic Analysis, JTBD and HMW Statements.</p>
+        <!-- <p>Armed with research, I synthesized findings using: Heuristic Analysis, JTBD and HMW Statements.</p> -->
         <h4>How might we improve Spirit Airlines’ booking experience to <span>increase conversions</span> while maintaining the affordability that defines the brand?</h4>
         <p>To prioritize improvements, I used:</p>
         <ul>
@@ -141,40 +163,44 @@
                 <img class="method-img" src="../assets/moscow-spirit.png" alt="Moscow Method">
             </div>
         </div>
-            <h4>Hypothesis Statements</h4>
-            <p>I wanted to ground my ideas in evidence and ensure my approach is measurable. Here some of them:</p>
-            <div class="hs-wrapper">
-                <div class="hs">
-                    <h5>Hypothesis</h5>
-                    <p>We believe that <strong>enhancig fee transparency</strong> by clearly displaying all costs upfront will result in greater trust and <strong>fewer booking drop-off</strong> because we know hidden fees are a significant deterrent, and users are more likely to complete purchases when they feel informed and in control.</p>
-                </div>
-                <div class="hs">
-                    <h5>Desk Research</h5>
-                    <p>Additional fees were also a through-line among reviews particularly for seat selection, baggage and personal items making the cost much higher than anticipated.</p>
-                </div>
-                <div class="hs">
-                    <h5>Metrics</h5>
-                    <p>Booking Drop-offs: Track the drop-off rate during the booking process to see if it decreases.
-                    Completion Rate: Measure the increase in completed bookings.</p>
-                </div>
-            </div>
-            <div>
-            </br>
-                <div class="hs-wrapper">
-                    <div class="hs">
-                        <h5>Hypothesis</h5>
-                        <p>We believe that highlighting <strong>key information in search results</strong> based on user priorities will result in improve <strong>decision-making</strong> efficiency because users often face high cognitive load of information and benefit from being able to identify essential details at a glance..</p>
-                    </div>
-                    <div class="hs">
-                        <h5>User Interview</h5>
-                        <p> <strong> “I mainly look for price, flight duration, and layovers.</strong> if your app can highlight the best options based on these criteria right from the start, it would streamline my decision-making process."</p>
-                    </div>
-                    <div class="hs">
-                        <h5>Metrics</h5>
-                        <p>Click-Through Rate (CTR): Measure the CTR for search results to see if users are engaging with highlighted information.</p>
-                    </div>
-                </div>
-        </div>
+    </div>
+</section>
+
+<section>
+          <h4>Hypothesis Statements</h4>
+          <p>I wanted to ground my ideas in evidence and ensure my approach is measurable. Here some of them:</p>
+          <div class="hs-wrapper">
+              <div class="hs">
+                  <h5>Hypothesis</h5>
+                  <p>We believe that <strong>enhancig fee transparency</strong> by clearly displaying all costs upfront will result in greater trust and <strong>fewer booking drop-off</strong> because we know hidden fees are a significant deterrent, and users are more likely to complete purchases when they feel informed and in control.</p>
+              </div>
+              <div class="hs">
+                  <h5>Desk Research</h5>
+                  <p>Additional fees were also a through-line among reviews particularly for seat selection, baggage and personal items making the cost much higher than anticipated.</p>
+              </div>
+              <div class="hs">
+                  <h5>Metrics</h5>
+                  <p>Booking Drop-offs: Track the drop-off rate during the booking process to see if it decreases.
+                  Completion Rate: Measure the increase in completed bookings.</p>
+              </div>
+          </div>
+          <div>
+          </br>
+              <div class="hs-wrapper">
+                  <div class="hs">
+                      <h5>Hypothesis</h5>
+                      <p>We believe that highlighting <strong>key information in search results</strong> based on user priorities will result in improve <strong>decision-making</strong> efficiency because users often face high cognitive load of information and benefit from being able to identify essential details at a glance..</p>
+                  </div>
+                  <div class="hs">
+                      <h5>User Interview</h5>
+                      <p> <strong> “I mainly look for price, flight duration, and layovers.</strong> if your app can highlight the best options based on these criteria right from the start, it would streamline my decision-making process."</p>
+                  </div>
+                  <div class="hs">
+                      <h5>Metrics</h5>
+                      <p>Click-Through Rate (CTR): Measure the CTR for search results to see if users are engaging with highlighted information.</p>
+                  </div>
+              </div>
+
       </section>
 
       <section >
@@ -236,12 +262,13 @@
                   />
                 </div>
                 <div class="mockup-wrapper" >
-                  <img class="mockup" src="../assets/Wrapper mockup.png" alt="mockups">
+                  <img class="mockup" src="../assets/spirit-banner.png" alt="mockups">
                 </div>
               </section>
 
       <section>
         <h4>A/B Testing Plan:</h4>
+        <p>To ensure our redesign truly met users’ needs, we turned to A/B testing—a data-driven approach that lets real users guide our next steps. By comparing the original and updated versions side by side, we set out to discover which design delivered a smoother, more intuitive experience. </p>
         <div class="data-wrapper">
             <div class="data">
               <h5>Problem statement 🔎</h5>
