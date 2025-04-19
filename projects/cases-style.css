@@ -134,7 +134,7 @@ ul {
 
 /* Section spacing */
 section {
-  margin: 48px auto;
+  margin: 2rem auto;
   padding: 32px 16px;
 }
 
@@ -475,6 +475,53 @@ img.carousel {
 .header-container h5 {
   margin-top: 0;
 }
+
+.painpoint-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.painpoint {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  background: var(--tertiary-color);
+  border-radius: 50%;
+  padding-top: 20px;
+  /* para centralizar os numeros, usei esse padding top mas nao tenho certeza se é a melhor opcao. */
+  margin-bottom: 25px;
+}
+
+.painpoint-description-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.painpoint-description {
+  text-align: center;
+  padding: 16px;
+  background-color: #efd8d570;
+}
+
+.painpoint-wrapper {
+  display: flex;
+  gap: 24px;
+  margin: 0 32px;
+}
+
+.painpoint-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
 
 /* Period tracker */
 
