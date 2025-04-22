@@ -74,7 +74,7 @@
                 <!-- <h2>Flower Power</h2> -->
                 <div class="row">
                   <div class="cell">
-                    <h6>YEAR 2025</h6>
+                    <h6>YEAR <time datetime="2025-01-01">2025</time></h6>
         
                     <h5>BACKGROUND</h5>
                     <p>Spirit Airlines aims to provide affordable air travel with a user-friendly digital experience. While the app performs reasonably well, there are opportunities for improvement, particularly in areas like flight selection, fee transparency, and personalization. Addressing these aspects could further enhance customer satisfaction and trip planning efficiency.</p>
@@ -123,27 +123,27 @@
             <div class="painpoint">1</div>
             <div class="painpoint-description">
               <h5>Booking Process</h5>
-              <p>
+              <blockquote>
                 "My booking process involves setting flexible dates to <strong>find the cheapest options</strong>. If the app could <strong>suggest cheaper dates around my preferred travel dates</strong>, that would be a big plus." P4
-              </p>
+              </blockquote>
             </div>
           </div>
           <div class="painpoint-card">
             <div class="painpoint">2</div>
             <div class="painpoint-description">
               <h5>Decision-making</h5>
-              <p>
+              <blockquote>
                 "<strong> I mainly look for price, flight duration, and layovers</strong>. If your app can highlight the best options based on these criteria right from the start, it would streamline my decision-making process." P1
-              </p>
+              </blockquote>
             </div>
           </div>
           <div class="painpoint-card">
             <div class="painpoint">3</div>
             <div class="painpoint-description">
               <h5>Features</h5>
-              <p>
+              <blockquote>
               "I usually search for flights based on time and price, then look into the airline’s policies on luggages and refunds. If your app can consolidate this information clearly, it would be very helpful." P5
-              </p>
+              </blockquote>
             </div>
           </div>
         </div>
@@ -167,23 +167,19 @@
       <section>
         <h2>Defining the solution</h2>
         <!-- <p>Armed with research, I synthesized findings using: Heuristic Analysis, JTBD and HMW Statements.</p> -->
-        <h4>How might we improve Spirit Airlines’ booking experience to <span>increase conversions</span> while maintaining the affordability that defines the brand?</h4>
-        <p>To prioritize improvements, I used:</p>
-        <ul>
-            <li>Imapct vs. Benefit Matrix to focus on the high-value, low effort fixes first.</li>
-            <li>MoSCoW Method to define must-haves vs. nice-to have features.</li>
-        </ul>
+        <h4>How might we improve Spirit Airlines’ booking experience to <mark>increase conversions</mark> while maintaining the affordability that defines the brand?</h4>
+      </br>
+        <h5>Prioritizing improvements:</h5>
+        <p>Visualizing Prioritization with the Impact vs Benefit Matrix and Moscow Method</p>
         <div class="method-wrapper">
-            <div class="method">
-                <img class="matrix-img" src="../assets/matrix-spirit.png" alt="Impact vs Benefit Matrix">
-                <img class="method-img" src="../assets/moscow-spirit.png" alt="Moscow Method">
-            </div>
+            <img class="matrix-img" src="../assets/matrix-spirit.png" alt="Impact vs Benefit Matrix">                            
+            <img class="method-img" src="../assets/moscow-spirit.png" alt="Moscow Method">
         </div>
     </div>
 </section>
 
 <section>
-          <h4>Hypothesis Statements</h4>
+          <h2>Hypothesis Statements</h2>
           <p>I wanted to ground my ideas in evidence and ensure my approach is measurable. Here some of them:</p>
           <div class="hs-wrapper">
               <div class="hs">
@@ -228,7 +224,7 @@
                 <p>Ann Gullar, has been planning to visit her family in Miami for her mother's birthday next month. As a young professional on a tight budget, she's heard about Spirit Airlines' low-cost options but is cautious about additional fees. She decides to book her flight using the mobile app during her lunch break.</p>
             </div>
             <div class="cjm" >
-                <img class="cjm-img"  src="../assets/CJM-spirit.png" alt="journey-mapping">
+                <img class="cjm-img" id="img01" src="../assets/CJM-spirit.png" alt="journey-mapping">
             </div>
         </div>
       </section>
@@ -278,12 +274,12 @@
                   />
                 </div>
                 <div class="mockup-wrapper" >
-                  <img class="mockup" src="../assets/spirit-banner.png" alt="mockups">
+                  <img class="banner" src="../assets/spirit-banner.png" alt="mockups">
                 </div>
               </section>
 
       <section>
-        <h4>A/B Testing Plan:</h4>
+        <h2>A/B Testing Plan</h2>
         <p>To ensure our redesign truly met users’ needs, we turned to A/B testing—a data-driven approach that lets real users guide our next steps. By comparing the original and updated versions side by side, we set out to discover which design delivered a smoother, more intuitive experience. </p>
         <div class="data-wrapper">
             <div class="data">
@@ -371,6 +367,14 @@
                   </a>
                 </div>
               </section> -->
+              <!-------------- Modal -------------->
+              <div>
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01" />
+                  <div id="caption"></div>
+                </div>
+              </div>
       </main>
       <footer>Designed and built by Nathalia Troina</footer>
 

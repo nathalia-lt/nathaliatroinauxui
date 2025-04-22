@@ -109,6 +109,16 @@ h6 {
   color: var(--uppercase-color);
 }
 
+time{
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--uppercase-color);
+}
+
 p {
   font-family: 'Nunito', sans-serif; /* Body text uses Nunito */
   margin-top: 0;
@@ -121,9 +131,8 @@ p {
     font-weight: bold;
 }
 
-span{
+mark{
   font-weight: 600;
-  color: var(--tertiary-color);
 }
 
 ul {
@@ -351,7 +360,7 @@ main{
 img.carousel {
   display: inline;
   /* gap: 9px; */
-  height: 450px;
+  height: 550px;
 }
 
 .project-overview {
@@ -528,14 +537,16 @@ img.carousel {
 .data-wrapper{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
 
 /* verificar se esse 80px é mais adequado */
 .data{
   width: 33%;
-  padding-top: 16px;;
-  padding-right: 80px;
+  text-align: center;
+  padding: 16px;
 }
 
 
@@ -569,36 +580,37 @@ img.carousel {
 }
 
 .cjm-img{
-  width: 90%;
-  height: 400px;
+  width: 100%;
 }
 
 
 .method-wrapper{
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--white-color);
 }
 
 .method{
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: space-around; */
+  /* padding-bottom: 32px; */
   gap: 16px;
-  background-color: var(--white-color);
+  align-items: center;
 }
 
-.method p{
-  margin: 0;
-  padding: 0;
-}
 
 .method-img{
-  width: 35%;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 16px;
 }
 
 .matrix-img{
-  width: 40%;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 74px;
 }
 
 .hs-wrapper{
@@ -660,7 +672,7 @@ img.carousel {
 
 
 img.gif {
-  height: 400px;
+  height: 500px;
 }
 
 .mockup-wrapper{
@@ -677,6 +689,13 @@ img.gif {
 .mockup-gym{
   height: 600px;
 }
+
+
+/* usar width ou height, nao os dois */
+.banner{
+  width: 90%;
+}
+
 
 
 
@@ -806,6 +825,88 @@ footer {
   font-size: 12px;
   text-align: center;
   color: var(--text-color);
+}
+
+/* ---------Modal------------------------- */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 
