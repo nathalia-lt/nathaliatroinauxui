@@ -1,16 +1,25 @@
 :root {
-    --accent-color: #9C2E35;
-    --secondary-color: #384272;
-    --tertiary-color: #feaea3;
-    --CTA-color: #e5b714;
-    --preto-color: #252525;
-    --black-color: #18181b;
-    --text-color: #333A3F;
-    --uppercase-color: #666;
     --background2-color: #F6F2EE;
-    --background-color: #f2f2f2;
+    --background-color: #f5f5f5;
     --white-color: #fafafa;
-
+    --blue-100: #c1c4d3;
+    --blue-200: #a3a8be;
+    --blue-300: #7a80a1;
+    --blue-400: #60688e;
+    --blue-500: #384272;
+    --blue-600: #1e2a4d;
+    --blue-700: #0f172a;
+    --red-100: #ffe6e2;
+    --red-200: #ffdad5;
+    --red-300: #fec9c1;
+    --red-400: #febeb5;
+    --red-500: #feaea3;
+    --grey-100: #bbbbbb;
+    --grey-200: #9b9b9b;
+    --grey-300: #6d6d6d;
+    --grey-400: #515151;
+    --grey-500: #252525;
+    --grey-600: #222222;
 }
 
 * {
@@ -34,7 +43,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--text-color);
+  color: var(--grey-400);
   margin: 0;
   padding: 1.25rem;
   max-width: 1200px;
@@ -45,19 +54,19 @@ body {
 body::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: var(--secondary-color);
+  background-color: var(--blue-500);
   /* ou que isso seja adicionado ao "caminho" da barra */
 }
 
 /* Adiciona a barra arrastável */
 body::-webkit-scrollbar-thumb {
-  background-color: var(--tertiary-color);
+  background-color: var(--red-500);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Unbounded', serif;
   margin-top: 0;
-  color: var(--black-color);
+  color: var(--grey-500);
 }
 
 h1 {
@@ -106,7 +115,7 @@ h6 {
   margin-bottom: 0.5rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--uppercase-color);
+  color: var(--grey-300);
 }
 
 time{
@@ -116,7 +125,7 @@ time{
   margin-bottom: 0.5rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--uppercase-color);
+  color: var(--grey-300);
 }
 
 p {
@@ -124,7 +133,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   letter-spacing: normal; /* Default spacing for readability */
-  color: var(--text-color);
+  color: var(--grey-400);
 }
 
 .bold-text{
@@ -172,7 +181,7 @@ section:not(:last-child) {
 
 .top-nav a {
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--grey-500);
   margin-left: 0rem;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -187,7 +196,7 @@ section:not(:last-child) {
 }
 
 .main-name-header {
-  color: var(--secondary-color);
+  color: var(--blue-500);
   font-size: 24px;
   font-weight: 700;
   word-wrap: break-word;
@@ -195,7 +204,7 @@ section:not(:last-child) {
 }
 
 .main-name-header span {
-  color: var(--tertiary-color);
+  color: var(--red-500);
 }
 
 /* Hamburger menu styles */
@@ -215,7 +224,7 @@ section:not(:last-child) {
 .hamburger span {
   width: 32px;
   height: 2px;
-  background-color: var(--black-color);
+  background-color: var(--grey-500);
   transition: all 0.3s linear;
 }
 
@@ -242,7 +251,7 @@ section:not(:last-child) {
 .nav-menu a, .nav-menu .dropdown {
   margin: 1rem 0;
   font-size: 1.2rem;
-  color: var(--black-color);
+  color: var(--grey-500);
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -276,7 +285,7 @@ section:not(:last-child) {
 }
 
 .dropdown-content a {
-  color: var(--black-color);
+  color: var(--grey-400);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -287,7 +296,7 @@ section:not(:last-child) {
 }
 
 .dropdown-arrow {
-  color: var(--text-color);
+  color: var(--grey-400);
   display: inline-block;
   transition: transform 0.3s;
 }
@@ -345,13 +354,13 @@ main{
 .carousel-container::-webkit-scrollbar {
   width: 5px;
   height: 7px;
-  background-color: var(--secondary-color);
+  background-color: var(--blue-500);
   /* ou que isso seja adicionado ao "caminho" da barra */
 }
 
 /* Adiciona a barra arrastável */
 .carousel-container::-webkit-scrollbar-thumb {
-  background-color: var(--tertiary-color);
+  background-color: var(--red-500);
 }
 
 .carousel-images-container {
@@ -501,7 +510,7 @@ img.carousel {
   text-align: center;
   font-size: 24px;
   font-weight: 500;
-  background: var(--tertiary-color);
+  background: var(--red-300);
   border-radius: 50%;
   padding-top: 20px;
   /* para centralizar os numeros, usei esse padding top mas nao tenho certeza se é a melhor opcao. */
@@ -518,7 +527,8 @@ img.carousel {
 .painpoint-description {
   text-align: center;
   padding: 16px;
-  background-color: #efd8d570;
+  background-color: var(--red-100);
+  border-radius: 8px;
 }
 
 .painpoint-wrapper {
@@ -548,21 +558,27 @@ img.carousel {
 /* verificar se esse 80px é mais adequado */
 .data{
   width: 33%;
-  text-align: center;
   padding: 16px;
 }
 
 
 .jtbd-wrapper{
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .jtbd{
-  background: linear-gradient(to right, #414c8664, #ffffff);
+  /* width: 48%; */
+  display: flex;
   border-radius: 8px;
+  border: 1px solid var(--grey-200);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 16px;
   margin-bottom: 16px;
+  gap: 16px;
+  align-items: center;
 }
 
 
@@ -629,13 +645,33 @@ img.carousel {
   justify-content: center;
 }
 
+.hs-title{
+  display: flex;
+  align-items: center;
+}
+
 .hs{
   width: 32%;
   border-radius: 16px;
   padding: 16px 8px;
   margin: 0 auto;
-  background-color: var(--white-color);
-  text-align: center;
+  border: 1px solid var(--grey-200);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hs-icon{
+  padding-right: 8px;
+}
+
+.data-ab{
+  width: 32%;
+  padding: 16px;
+  border: 1px solid var(--grey-200);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  
 }
 
 /* ----------------Period tracker--------------------------------- */
@@ -832,10 +868,8 @@ footer {
   flex-direction: column;
   margin-top: auto;
   padding: 1rem;
-  /* margin-bottom: 1.5rem; */
-  font-size: 12px;
   text-align: center;
-  color: var(--text-color);
+  color: var(--grey-400);
 }
 
 /* ---------Modal------------------------- */

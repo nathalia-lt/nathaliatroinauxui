@@ -26,7 +26,7 @@
   <body>
     <div class="figma-design">
       <div class="trapezio">
-        <svg
+        <svg aria-hidden="true" focusable="false"
           width="361"
           height="355"
           viewBox="0 0 361 355"
@@ -45,7 +45,7 @@
         </svg>
       </div>
       <div class="triangulo">
-        <svg
+        <svg aria-hidden="true" focusable="false"
           width="226"
           height="236"
           viewBox="0 0 226 236"
@@ -68,23 +68,32 @@
           Nathalia <span class="surname" >Troina</span>
         </div>
       </div>
-      <div style="width: 256px; height: 22px; position: relative">
-        <a class="about" href="./about.html">About</a>  
-          <div class="work dropdown">Work <span class="dropdown-arrow">></span>
-            <div class="dropdown-content">
-              <a href="../nathaliatroinauxui/projects/spirit.html">Spirit Airlines</a>
-              <a href="../nathaliatroinauxui/projects/ciclo.html">Period Tracker</a>
-              <a href="../nathaliatroinauxui/projects/flower-power.html">Fiori</a>
-              <a href="../nathaliatroinauxui/projects/gym.html">GymPro</a>
-
-            </div>
-        </div>
-
-            <a class="contact" href="#contact-session">Contact</a>
-      </div>
+      <nav aria-label="Main navigation" style="width: 256px; height: 22px; position: relative" >
+        <ul >
+          <li style="list-style: none;">
+            <a class="about" href="./about.html">About</a>
+          </li>
+          <li class="work dropdown">
+            Work <span class="dropdown-arrow">></span>
+            <ul style="list-style: none;" class="dropdown-content">
+              <li>
+              <a href="./projects/spirit.html">Spirit Airlines</a>
+              </li>
+              <li>
+              <a href="./projects/ciclo.html">Period Tracker</a>
+              </li>
+              <li>
+              <a href="./projects/flower-power.html">Fiori</a>
+              </li>
+              <li>
+              <a href="./projects/gym.html">GymPro</a>
+              </li>
+            </ul>
+          </li>
+          <li style="list-style: none;"><a class="contact" href="#contact-session">Contact</a></li>
+        </ul>
+          </nav>
     </header>
-
-  
 
     <main>
 
@@ -111,7 +120,7 @@
                  <!-- Spirit airlines -->
         <div class="project">
           <div class="project-image">
-              <img src="./assets/homespirit.png" alt="mobile-image">
+              <img src="./assets/homespirit.png" alt="Spirit Airlines mobile app screenshot">
           </div>
           <div class="project-description">
               <h3>Spirit Airlines</h3>
@@ -119,7 +128,6 @@
               <a href="./projects/spirit.html">UX Case Study</a>
           </div>
       </div>
-
                        <!-- Ciclo Agil -->
         <div class="project">
           <div class="project-image">
@@ -142,7 +150,6 @@
           <a href="./projects/flower-power.html"> UX Case Study</a>
         </div>
       </div>
-      
       <!-- gympro -->
       <div class="project">
         <div class="project-image">
@@ -154,37 +161,13 @@
             <a href="./projects/gym.html">UX Case Study</a>
         </div>
     </div>
-        <!-- Yogarythm -->
-        <!-- <div class="project">
-            <div class="project-image">
-                <img class="desk-img" src="./assets/Mockup-landingpage1.png" alt="desktop-image">
-            </div>
-            <div class="project-description">
-                <h3>Yogarythm</h3>
-                <p>Learn Yoga and find your instructor</p>
-                <a href="./projects/yogarythm.html">UX Case Study</a>
-            </div>
-        </div> -->
-
-  
-          <!-- Coming soon project -->
-
-
-        <!-- <div class="project">
-            <div class="project-image">
-                <img src="" alt="">
-            </div> 
-             <div class="project-description">
-                <h3>Coming soon</h3>
-                <p></p>
-                <a href="">Case Study</a>
-            </div> -->
+    
           </section>
      </div>
      <!-- Contact -->
      <section id="contact-session" class="contact-container">
-            <h1>Let's Connect</h1>
-            <p>I am currently looking for opportunities for work and would be happy to collaborate.</p>
+            <h2>Let's Connect!</h2>
+            <p class="subtitle">I am currently looking for opportunities for work and would be happy to collaborate.</p>
             <div class="icons">
                 <a class="icon" href="https://drive.google.com/file/d/1AqtJKSu2slzPQ708YrlWGli9JIY2y8ve/view?usp=drive_link" data-tip="true" data-for="resume" target="_blank">
                     <p>Resume</p>
@@ -209,9 +192,16 @@
             </div>
             <img class="rectangle-design" src="./assets/Rectangle 6.png" alt="rectangle-design">
           </section>
+
+          <!-- <div data-lov-id="src/pages/Index.tsx:91:10" data-lov-name="div" data-component-path="src/pages/Index.tsx" data-component-line="91" data-component-file="Index.tsx" data-component-name="div" data-component-content="%7B%22className%22%3A%22flex%20justify-center%20gap-8%22%7D" class="flex justify-center gap-8"><a data-lov-id="src/pages/Index.tsx:92:12" data-lov-name="a" data-component-path="src/pages/Index.tsx" data-component-line="92" data-component-file="Index.tsx" data-component-name="a" data-component-content="%7B%22className%22%3A%22flex%20flex-col%20items-center%20gap-2%20text-muted-foreground%20hover%3Atext-primary-purple%20transition-colors%22%7D" href="https://drive.google.com/file/d/1AqtJKSu2slzPQ708YrlWGli9JIY2y8ve/view" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary-purple transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text" data-lov-id="src/pages/Index.tsx:98:14" data-lov-name="FileText" data-component-path="src/pages/Index.tsx" data-component-line="98" data-component-file="Index.tsx" data-component-name="FileText" data-component-content="%7B%7D"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg><span data-lov-id="src/pages/Index.tsx:99:14" data-lov-name="span" data-component-path="src/pages/Index.tsx" data-component-line="99" data-component-file="Index.tsx" data-component-name="span" data-component-content="%7B%22text%22%3A%22Resume%22%7D">Resume</span></a><a data-lov-id="src/pages/Index.tsx:101:12" data-lov-name="a" data-component-path="src/pages/Index.tsx" data-component-line="101" data-component-file="Index.tsx" data-component-name="a" data-component-content="%7B%22className%22%3A%22flex%20flex-col%20items-center%20gap-2%20text-muted-foreground%20hover%3Atext-primary-purple%20transition-colors%22%7D" href="https://www.linkedin.com/in/nathaliatroina/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary-purple transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" data-lov-id="src/pages/Index.tsx:107:14" data-lov-name="Linkedin" data-component-path="src/pages/Index.tsx" data-component-line="107" data-component-file="Index.tsx" data-component-name="Linkedin" data-component-content="%7B%7D"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg><span data-lov-id="src/pages/Index.tsx:108:14" data-lov-name="span" data-component-path="src/pages/Index.tsx" data-component-line="108" data-component-file="Index.tsx" data-component-name="span" data-component-content="%7B%22text%22%3A%22LinkedIn%22%7D">LinkedIn</span></a><a data-lov-id="src/pages/Index.tsx:110:12" data-lov-name="a" data-component-path="src/pages/Index.tsx" data-component-line="110" data-component-file="Index.tsx" data-component-name="a" data-component-content="%7B%22className%22%3A%22flex%20flex-col%20items-center%20gap-2%20text-muted-foreground%20hover%3Atext-primary-purple%20transition-colors%22%7D" href="mailto:nathaliatroina@gmail.com" class="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary-purple transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" data-lov-id="src/pages/Index.tsx:114:14" data-lov-name="Mail" data-component-path="src/pages/Index.tsx" data-component-line="114" data-component-file="Index.tsx" data-component-name="Mail" data-component-content="%7B%7D"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span data-lov-id="src/pages/Index.tsx:115:14" data-lov-name="span" data-component-path="src/pages/Index.tsx" data-component-line="115" data-component-file="Index.tsx" data-component-name="span" data-component-content="%7B%22text%22%3A%22Email%22%7D">Email</span></a><a data-lov-id="src/pages/Index.tsx:117:12" data-lov-name="a" data-component-path="src/pages/Index.tsx" data-component-line="117" data-component-file="Index.tsx" data-component-name="a" data-component-content="%7B%22className%22%3A%22flex%20flex-col%20items-center%20gap-2%20text-muted-foreground%20hover%3Atext-primary-purple%20transition-colors%22%7D" href="https://github.com/nathalia-lt" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary-purple transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" data-lov-id="src/pages/Index.tsx:123:14" data-lov-name="Github" data-component-path="src/pages/Index.tsx" data-component-line="123" data-component-file="Index.tsx" data-component-name="Github" data-component-content="%7B%7D"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg><span data-lov-id="src/pages/Index.tsx:124:14" data-lov-name="span" data-component-path="src/pages/Index.tsx" data-component-line="124" data-component-file="Index.tsx" data-component-name="span" data-component-content="%7B%22text%22%3A%22GitHub%22%7D">GitHub</span></a></div> -->
+
+
+
+        
     </main>
-    <footer>Designed and built by Nathalia Troina</footer>
+    <footer><small>Designed and built by Nathalia Troina</small></footer>
     <script src="./home.js"></script>
   </body>
 </html>
+
 
