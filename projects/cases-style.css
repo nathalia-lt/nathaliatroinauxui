@@ -123,6 +123,9 @@ time{
 
 p {
   font-family: 'Nunito', sans-serif; /* Body text uses Nunito */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.6; /* 28.8px */
+  margin-top: 1rem; /* Space above paragraphs */
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 140%;
@@ -142,6 +145,13 @@ ul {
   padding-left: 18px;
   margin-top: 16px;
   margin-bottom: 32px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.25; 
+  color: var(--grey-400);
 }
 
 /* Section spacing */
@@ -575,6 +585,15 @@ img.carousel {
   align-items: center;
 }
 
+.branding{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 32px;
+}
+
+
 
 
 /* --------------------------SPIRIT------------------------------ */
@@ -743,6 +762,14 @@ img.gif {
 /* usar width ou height, nao os dois */
 .banner{
   width: 90%;
+}
+
+.mvp-screens{
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px auto;
+  padding-bottom: 64px;
 }
 
 
