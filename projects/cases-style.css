@@ -166,7 +166,6 @@ ul li {
 
 .top-nav a:hover,
 .top-nav a:focus, .top-nav .work:hover, .top-nav .work:hover .dropdown-arrow {
-    color: var(--CTA-color);
     outline: none;
 }
 
