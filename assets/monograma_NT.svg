@@ -1,0 +1,13 @@
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    .text {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      font-size: 100px;
+      fill: #384272;
+    }
+  </style>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="text">NT</text>
+</svg>

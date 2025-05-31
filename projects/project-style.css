@@ -5,6 +5,12 @@
     --button-color: #e5b714;
     --preto-color: #252525;
     --background-color: #F6F2EE;
+    --grey-100: #bbbbbb;
+    --grey-200: #9b9b9b;
+    --grey-300: #6d6d6d;
+    --grey-400: #515151;
+    --grey-500: #252525;
+    --grey-600: #222222;
 }
 
 * {
@@ -23,14 +29,33 @@ body {
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
-    color: var(--preto-color);
+    color: var(--gray-400);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Unbounded', serif;
     margin-top: 0;
-    color: var(--black-color);
+    color: var(--gray-500);
   }
+
+p {
+  font-family: 'Nunito', sans-serif; /* Body text uses Nunito */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.6; /* 28.8px */
+  margin-top: 1rem; /* Space above paragraphs */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 140%;
+  letter-spacing: normal; /* Default spacing for readability */
+  color: var(--grey-400);
+} 
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.25; 
+  color: var(--grey-400);
+}
 
 section {
     width: 80%;
@@ -75,6 +100,8 @@ div.background-colored {
     padding-bottom: 25px;
     padding-left: 40px;
     padding-right: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .top-nav a {
@@ -85,7 +112,6 @@ div.background-colored {
     /* color: #252525; */
     color: var(--secondary-color);
     font-size: 22px;
-    font-family: Montserrat;
     font-weight: 700;
     word-wrap: break-word;
     word-spacing: 22px;
@@ -102,9 +128,8 @@ div.background-colored {
 .about,
 .work,
 .contact {
-    color: #252525;
+    color: var(--gray-400);
     font-size: 16px;
-    font-family: Montserrat, serif;
     font-weight: 400;
     line-height: 22px;
     word-wrap: break-word;
@@ -150,7 +175,7 @@ div.background-colored {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: var(--secondary-color);
+    color: var(--gray-400);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -170,7 +195,7 @@ div.background-colored {
 }
 
 .dropdown-arrow{
-    color: var(--preto-color);
+    color: var(--gray-400);
     display: inline-block;
     transition: all 0.5s;
 }
@@ -184,7 +209,7 @@ div.background-colored {
 
 /* larger fonts look better with less line spacing. Especially headers */
 h1 {
-    color: var(--secondary-color);
+    color: var(--gray-500);
     font-size: 32px;
     letter-spacing: -2%;
 }
@@ -212,10 +237,7 @@ ul {
 /* Smaller text sizes work best with larger line-heights */
 /* size 16px line-height: 140% */
 /* spacing following the paragraph should be at least two times the font size */
-p {
-    font-size: 16px;
-    line-height: 140%;
-}
+
 
 .home-project {
     display: flex;
@@ -627,7 +649,6 @@ a.project{
 .project-description h3 {
     color: #384272;
     font-size: 24px;
-    font-family: Montserrat;
     font-weight: 700;
     word-wrap: break-word;
     margin:0;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
     rel="shortcut icon"
-    href="../nathaliatroinauxui/assets/brandicon.png"
+    href="../nathaliatroinauxui/assets/Logo-nathalia.png"
     type="image/x-icon"
     />
     <link rel="stylesheet" href="cases-style.css" />
@@ -27,34 +27,35 @@
     gtag('config', 'G-PJSMS6YPB0');
   </script>
 <body>
-    <header class="top-nav">
-        <div class="logo">
-          <a href="../index.html">
-            <div class="main-name-header">Nathalia <span>Troina</span></div>
-          </a>
-        </div>
-        <!-- Hamburger menu button -->
-        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <!-- Navigation menu -->
-        <nav class="nav-menu">
-          <a class="about" href="../about.html">About</a>
-          <div class="work dropdown">
-            Work
-            <span class="dropdown-arrow">></span>
-            <div class="dropdown-content">
-              <a href="../projects/spirit.html">Spirit Airlines</a>
-              <a href="../projects/ciclo.html">Period Tracker</a>
-              <a href="../projects/flower-power.html">Fiori</a>
-              <a href="../projects/gym.html">GymPro</a>
-            </div>
+
+      <header class="top-nav">
+      <div>
+        <a href="../nathaliatroinauxui/index.html">
+          <div class="main-name-header">Nathalia <span>Troina</span></div>
+        </a>
+      </div>
+      <div style="width: 256px; height: 22px; position: relative">
+        <a class="about" href="../about.html">About</a>
+
+        <div class="work dropdown">
+          Work <span class="dropdown-arrow">></span>
+          <div class="dropdown-content">
+            <a href="../projects/spirit.html">Spirit Airlines</a>
+            <a href="../projects/ciclo.html">Period Tracker</a>
+            <a href="../projects/flower-power.html">Fiori</a>
+            <a href="../projects/gym.html">GymPro</a>
           </div>
-          <a class="contact" href="../index.html#contact-session">Contact</a>
-        </nav>
-      </header>
+        </div>
+        <a
+          class="contact"
+          href="../nathaliatroinauxui/index.html#contact-session"
+          style="left: 192px; top: 0px"
+          >Contact
+        </a>
+      </div>
+    </header>
+
+      
 
       <main>
         <section class="home-project">
@@ -299,36 +300,54 @@
 
       <section>
         <h2>A/B Testing Plan</h2>
-        <p>To ensure our redesign truly met users’ needs, we turned to A/B testing—a data-driven approach that lets real users guide our next steps. By comparing the original and updated versions side by side, we set out to discover which design delivered a smoother, more intuitive experience. </p>
+        <p>To ensure our redesign truly met users’ needs, I created an A/B testing data-driven approach that lets real users guide our next steps. By comparing the original and updated versions side by side, I would set out to discover which design delivered a smoother, more intuitive experience. </p>
         <div class="data-wrapper">
             <div class="data-ab">
-              <h4>🔎 Problem statement</h4>
+              <div class="ab-title">
+                <img src="../assets/lupa.svg" alt="problem statement">
+                <h4>Problem statement</h4>
+              </div>
               <p>Does highlighting key information reduce the time users take to complete a booking?</p>
               <p>Can users recall the key details of their booking (e.g., flight time, baggage) without revisiting previous steps?</p>
             </div>
             <div class="data-ab">
-              <h4>📊 Data</h4>
+              <div class="ab-title">
+                <img src="../assets/metric.svg" alt="data icon">
+                <h4>Data</h4>
+              </div>
               <p>30% Struggle to to locate certain options or features on an Airline platform.</p>
             </div>
             <div class="data-ab">
-              <h4>💡 Hypothesis</h4>
+              <div class="ab-title">
+                <img src="../assets/lamp.svg" alt="hypothesis icon">
+                <h4>Hypothesis</h4>
+              </div>
               <p>We believe that implementing a new design for the flight selection interface will make the booking process faster, reduce cognitive load, and lead to a higher completion rate.</p>
             </div>
             <div class="data-ab">
-                <h4>📈 Risk and Mitigation</h4>
+              <div class="ab-title">
+                <img src="../assets/metrics.svg" alt="target icon">
+                <h4>Risk and Mitigation</h4>
+              </div>
                     <p>Risk:
                         There wont be a wide enough variety of issues for the users testing the app to get meaningful data for all features.</p>
                          <p>Mitigation:
                         Increase the data sample to something larger in order to attempt to capture more scenarios but within the allocated budget.</p>
                     </div>
                     <div class="data-ab">
-                      <h4>📈 Metrics</h4>
+                      <div class="ab-title">
+                        <img src="../assets/metrics.svg" alt="metric icon">  
+                        <h4>Metrics</h4>
+                        </div>
                       <p>Analyzing that the results are statistics significant:</p>
                       <p>By ensure that my P-value is below 0.05.
                         There is a less than 5% chance that the null hypothesis is true.</p>
                     </div>
             <div class="data-ab">
-              <h4>🎯 Target Users</h4>
+              <div class="ab-title">
+                <img src="../assets/target.svg" alt="target icon">
+                <h4>Target Users</h4>
+              </div>
               <p>Primary Target Audience: Users looking to book domestic flights, which represents Spirit Airlines’ main customer base.</p>
             <p>Secondary Target Audience: New users visiting the Spirit Airlines website or app for the first time, to assess how the redesigned interface impacts initial impressions and conversions.</p>
             </div>
@@ -395,7 +414,9 @@
                 </div>
               </div>
       </main>
-      <footer><small>Designed and built by Nathalia Troina</small></footer>
+      <footer>
+        <small>Designed and built by Nathalia Troina</small>
+      </footer>
 
 </body>
 </html>

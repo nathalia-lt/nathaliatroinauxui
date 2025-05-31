@@ -7,6 +7,12 @@
     --black-color: #333A3F;
     --black2-color: #18181b;
     --background-color: #f2f2f2;
+    --grey-100: #bbbbbb;
+    --grey-200: #9b9b9b;
+    --grey-300: #6d6d6d;
+    --grey-400: #515151;
+    --grey-500: #252525;
+    --grey-600: #222222;
 }
 
 * {
@@ -53,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 h1, h2, h3 {
     font-family: 'Unbounded', serif;
     margin-top: 0;
-    color: var(--black2-color);
+    color: var(--grey-500);
 }
 
 h1 {
@@ -88,10 +94,13 @@ h3 {
 p {
     font-family: 'Nunito', sans-serif;
     /* Body text uses Nunito */
+    font-size: 1rem;
+    line-height: 140%;
     margin-top: 0;
     margin-bottom: 1rem;
     letter-spacing: normal;
     /* Default spacing for readability */
+    color: var(--grey-400);
 }
 
 li {
@@ -101,6 +110,7 @@ li {
     margin-bottom: 0.1rem;
     letter-spacing: normal;
     /* Default spacing for readability */
+    color: var(--grey-400);
 }
 
 .bold-text {
