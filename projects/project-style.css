@@ -51,9 +51,9 @@ p {
 } 
 
 ul li {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   font-size: 1.125rem; /* 18px */
-  line-height: 1.25; 
+  /* line-height: 1.25;  */
   color: var(--grey-400);
 }
 
@@ -231,7 +231,7 @@ h4 {
 ul {
     padding-left: 18px;
     margin-top: 16px;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 /* Smaller text sizes work best with larger line-heights */
@@ -579,13 +579,13 @@ img.gif {
     margin: 0 auto;
 }
 
-.div-block{
+/* .div-block{
     width: 80%;
     margin-left: 10%;
     border-style: solid;
     border-width: 0.5px;
     border-color: #ccc;
-}
+} */
 
 .projects-container{
     display: flex;
