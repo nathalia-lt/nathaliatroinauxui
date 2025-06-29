@@ -80,7 +80,8 @@ h1, h2, h3 {
 h1 {
     font-size: 3rem;
     /* Large and bold for main headings */
-    line-height: 1.2;
+    line-height: 120%;
+    font-weight: 700; /* Bold for emphasis */
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
     /* Slightly tighter for display fonts */
@@ -90,9 +91,10 @@ h2 {
     font-size: 2.25rem;
     /* Secondary headings */
     line-height: 1.3;
+    font-weight: 600;/* Semibold for secondary headings */;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    letter-spacing: -0.01em;
+    letter-spacing: -2%;
     /* Slightly tighter for balance */
 }
 
@@ -100,6 +102,7 @@ h3 {
     font-size: 1.75rem;
     /* Tertiary headings */
     line-height: 1.4;
+    font-weight: 500; /* Medium weight for tertiary headings */
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     letter-spacing: normal;
@@ -113,6 +116,7 @@ p {
     margin-bottom: 1rem;
     letter-spacing: normal;
     color: var(--grey-300);
+    font-weight: 400; /* Default font weight for body text */
     /* Default spacing for readability */
 }
 
@@ -162,7 +166,6 @@ button:active {
 
 button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(229, 183, 20, 0.5);
     /* Focus outline matching the button color */
 }
 
@@ -411,6 +414,7 @@ span.ux-title.new-color {
 
 
 .title {
+    line-height: 110%;
     width: 700px;
     /* height: 150px; */
     margin-top: 15rem;
@@ -420,8 +424,9 @@ span.ux-title.new-color {
 
 .subtitle {
     color: var(--grey-300);
+    line-height: 150% ;
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 600; /* Semibold for subtitles */
     width: 700px;
     word-wrap: break-word;
 }

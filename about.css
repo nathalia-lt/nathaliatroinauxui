@@ -95,6 +95,7 @@ p {
     font-family: 'Nunito', sans-serif;
     /* Body text uses Nunito */
     font-size: 1rem;
+    font-weight: 400;
     line-height: 140%;
     margin-top: 0;
     margin-bottom: 1rem;
