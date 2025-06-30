@@ -42,8 +42,6 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
-  line-height: 1.6;
-  font-weight: 400;
   color: var(--grey-400);
   margin: 0;
   padding: 1.25rem;
@@ -83,7 +81,7 @@ h2 {
   line-height: 1.3;
   font-weight: 600; /* Semibold for secondary headings */
   /* margin-top: 2rem; */
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   letter-spacing: -2%; /* Slightly tighter for balance */
 }
 
@@ -115,6 +113,16 @@ h5 {
   color: var(--grey-500);
 }
 
+p {
+  font-size: 1.125rem; /* 18px */
+  line-height: 150%; /* 28.8px */
+  font-weight: 400; /* Regular weight for body text */
+  margin-top: 1rem; /* Space above paragraphs */
+  margin-bottom: 1rem;
+  letter-spacing: normal; /* Default spacing for readability */
+  color: var(--grey-400);
+}
+
 .subtitle {
     color: var(--grey-300);
     font-size: 1.125rem;
@@ -126,6 +134,7 @@ h5 {
 time{
   font-size: 1rem;
   line-height: 1.5;
+  letter-spacing: 1%;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   letter-spacing: 0.02em;
@@ -134,13 +143,12 @@ time{
 }
 
 p {
-  font-family: 'Nunito', sans-serif; /* Body text uses Nunito */
+  font-family: 'Nunito', sans-serif; 
   font-size: 1.125rem; /* 18px */
-  line-height: 1.6; /* 28.8px */
-  margin-top: 1rem; /* Space above paragraphs */
-  margin-top: 0;
+  /* margin-top: 1rem;  */
   margin-bottom: 1rem;
-  line-height: 140%;
+  font-weight: 400;
+  line-height: 160%;
   letter-spacing: normal; /* Default spacing for readability */
   color: var(--grey-400);
 }
@@ -162,7 +170,7 @@ ul {
 ul li {
   margin-bottom: 8px;
   font-size: 1.125rem; /* 18px */
-  line-height: 1.25; 
+  line-height: 150%; 
   color: var(--grey-400);
 }
 
@@ -480,8 +488,8 @@ img.carousel {
 
 /* perguntar a melhor forma de arrumar o header */
 .home-project h1 {
-  padding-top: 8rem;
-  padding-bottom: 20px;
+  padding-top: 6rem;
+  /* padding-bottom: 1rem; */
 }
 
 .project-card {
@@ -616,6 +624,7 @@ img.carousel {
 .data{
   width: 33%;
   padding: 16px;
+  text-align: center;
 }
 
 
@@ -819,7 +828,7 @@ img.gif {
 
 /* usar width ou height, nao os dois */
 .banner{
-  width: 90%;
+  width: 100%;
 }
 
 .mvp-screens{

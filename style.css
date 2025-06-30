@@ -137,9 +137,9 @@ button {
     align-items: center;
     justify-content: center;
     margin-top: 24px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
     color: #F8FAFC;
@@ -449,7 +449,7 @@ span.ux-title.new-color {
     flex-direction: row;
     justify-content: space-between;
     height: 380px;
-    width: 70%;
+    width: 60%;
     background-color: var(--white-color);
     border-radius: 8px;
     box-shadow: var(--shadow-color);
@@ -462,7 +462,7 @@ span.ux-title.new-color {
 
 /* dentro do flex usar de flex */
 .container-title {
-    width: 70%;
+    width: 60%;
 }
 
 .project-image {
