@@ -622,4 +622,26 @@ footer {
     color: var(--grey-400);
 }
 
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media (min-width: 1920px) {
+  .home-container { max-width: 1600px; }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .home-container { max-width: 1400px; }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .home-container { max-width: 1200px; }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .home-container { max-width: 1000px; }
+}
+
 
