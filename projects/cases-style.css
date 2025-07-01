@@ -681,7 +681,7 @@ img.carousel {
 .method-wrapper{
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
 }
 
 .method{
@@ -698,7 +698,6 @@ img.carousel {
 .method-img{
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
 .matrix-img{
