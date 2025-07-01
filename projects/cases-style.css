@@ -170,7 +170,7 @@ ul {
 ul li {
   margin-bottom: 8px;
   font-size: 1.125rem; /* 18px */
-  line-height: 150%; 
+  line-height: 130%; 
   color: var(--grey-400);
 }
 
