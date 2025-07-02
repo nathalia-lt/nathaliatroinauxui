@@ -172,6 +172,8 @@ button:focus {
 /* Header */
 
 .top-nav {
+    max-width: 1200px;
+    margin: 0 auto;
     position: fixed;
     display: flex;
     top: 0;
@@ -182,7 +184,6 @@ button:focus {
     align-items: center;
     z-index: 1000;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .top-nav a {
@@ -368,15 +369,16 @@ span.ux-title.new-color {
 }
 
 .triangulo {
+
     position: absolute;
-    left: 0;
+    left: calc(50% - 600px);
     top: -40px;
     transform: rotate(180deg);
 }
 
 .trapezio {
     position: absolute;
-    left: 0;
+    left: calc(50% - 600px);
     top: -40px;
     transform: rotate(180deg);
 }
@@ -415,7 +417,7 @@ span.ux-title.new-color {
 
 .title {
     line-height: 110%;
-    width: 700px;
+    width: 900px;
     /* height: 150px; */
     margin-top: 15rem;
     color: var(--grey-500);
@@ -425,9 +427,9 @@ span.ux-title.new-color {
 .subtitle {
     color: var(--grey-300);
     line-height: 150% ;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 600; /* Semibold for subtitles */
-    width: 700px;
+    width: 900px;
     word-wrap: break-word;
 }
 
@@ -435,21 +437,21 @@ span.ux-title.new-color {
 /* My recents projects page */
 
 .projects-container {
+    width: 900px;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 40px;
+    gap: 42px;
 }
 
 .project {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    text-decoration: none;
     height: 380px;
-    width: 60%;
     background-color: var(--white-color);
     border-radius: 8px;
     box-shadow: var(--shadow-color);
@@ -466,11 +468,19 @@ span.ux-title.new-color {
 }
 
 .project-image {
-    width: 60%;
+    /* width: 60%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+ 
+/* .spirit {
+    background-color: var(--red-500);
+}
+
+.ciclo {
+    background-color: var(--red-500);
+} */
 
 .project-image img {
     height: 80%;
@@ -488,11 +498,10 @@ span.ux-title.new-color {
 }
 
 .project-description {
-    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.5rem;
+    width: 40%;
 }
 
 .project-description h3 {
