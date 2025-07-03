@@ -462,6 +462,10 @@ img.carousel {
   padding: 16px 32px;
 }
 
+.cell:first-child {
+  padding-left: 0px;
+}
+
 
 
 .year {
