@@ -617,8 +617,7 @@ img.carousel {
 .data-wrapper{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* align-items: center; */
+  /* justify-content: space-around; */
 }
 
 
@@ -629,6 +628,16 @@ img.carousel {
   text-align: center;
 }
 
+.data-ab{
+  width: 32%;
+  margin: 0 auto;
+  padding: 16px;
+  border: 1px solid var(--grey-200);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  margin-bottom: 16px;
+  
+}
 
 .jtbd-wrapper{
   width: 100%;
@@ -642,7 +651,7 @@ img.carousel {
   display: flex;
   border-radius: 8px;
   border: 1px solid var(--grey-200);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   padding: 16px;
   margin-bottom: 16px;
   gap: 16px;
@@ -731,8 +740,9 @@ img.carousel {
   border-radius: 16px;
   padding: 16px 8px;
   margin: 0 auto;
+
   border: 1px solid var(--grey-200);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .hs-icon{
@@ -744,16 +754,6 @@ img.carousel {
   gap: 8px;
 }
 
-.data-ab{
-  width: 32%;
-  padding: 16px;
-  border: 1px solid var(--grey-200);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin: 0 auto;
-  margin-bottom: 16px;
-  
-}
 
 /* ----------------Period tracker--------------------------------- */
 
