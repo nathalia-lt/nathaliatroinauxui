@@ -42,7 +42,7 @@ html {
 
 body {
     scrollbar-color: var(--blue-500, auto);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     background-color: var(--background-color);
@@ -110,7 +110,7 @@ h3 {
 }
 
 p {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', sans-serif;
     /* Body text uses Nunito */
     margin-top: 0;
     margin-bottom: 1rem;
