@@ -115,7 +115,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     letter-spacing: normal;
-    color: var(--grey-300);
+    color: var(--grey-400);
     font-weight: 400; /* Default font weight for body text */
     /* Default spacing for readability */
 }
