@@ -80,7 +80,7 @@ header {
 h1, h2, h3 {
     font-family: var(--font-title);
     margin-top: 0;
-    color: var(--blue-grey-700);
+    color: var(--blue-grey-900);
 }
 
 h1 {
@@ -275,21 +275,7 @@ span {
 
 /*  sem espaco span.ux-title { um elemento span que possui a classe ux-title; */
 
-span.ux-title {
-    color: var(--blue-grey-900);
-    /* color: var(--blue-500); */
-    /* color: linear-gradient(to right top, #feaea3,  #384272); */
-    /* -webkit-transition: color 1s 1s;
-    -moz-transition: color 1s 1s;
-    -ms-transition: color 1s 1s;
-    -o-transition: color 1s 1s;
-    transition: color 1s 1s; */
-    transition: color 0.3s ease-in-out;
-}
 
-/* span.ux-title.new-color {
-    color: var(--red-500);
-} */
 
 .top-nav.scrolled {
     background-color: var(--newbackground-color);
@@ -384,7 +370,6 @@ span.ux-title {
 }
 
 .triangulo {
-
     position: absolute;
     left: calc(50% - 600px);
     top: -40px;

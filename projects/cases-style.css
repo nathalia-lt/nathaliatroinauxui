@@ -196,6 +196,7 @@ ul li {
 .about,
 .work,
 .contact {
+  font-weight: 500;
     color: var(--blue-grey-700);
     word-wrap: break-word;
     position: absolute;
@@ -458,7 +459,7 @@ main{
 .carousel-container::-webkit-scrollbar {
   width: 5px;
   height: 7px;
-  background-color: var(--blue-500);
+  background-color: var(--blue-grey-400);
   /* ou que isso seja adicionado ao "caminho" da barra */
 }
 
@@ -628,7 +629,8 @@ img.carousel {
 .painpoint-description {
   text-align: left;
   padding: 16px;
-  border: 2px dotted var(--blue-grey-400);
+  border: 1px solid var(--blue-grey-400);
+  background-color: var(--blue-grey-100);
   border-radius: 8px;
 }
 
@@ -663,8 +665,8 @@ img.carousel {
 /* verificar se esse 80px é mais adequado */
 .data{
   width: 33%;
-  padding: 16px;
-  text-align: center;
+  /* padding: 16px; */
+  text-align: left;
 }
 
 .data-ab{
@@ -801,6 +803,10 @@ img.carousel {
 .ab-title{
   display: flex;
   gap: 8px;
+}
+
+.icon{
+  color: var(--complementaryslipt1-500);
 }
 
 
