@@ -8,7 +8,7 @@
 /* variables */
 :root {
     --font-title: 'Unbounded', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: "inter", sans-serif;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --blue-100: #f5f0ff;
     --blue-200: #ede5ff;
@@ -16,7 +16,7 @@
     --blue-400: #b8a0f7;
     --blue-500: #7242f0;
     --blue-500-hover: #6a13ec;
-    --blue-500-active: #5c00d8 
+    --blue-500-active: #5c00d8; 
     --blue-600: #6A13EC;
     --blue-800: #2e0066;
     --blue-grey-100: #f6f7f9;
@@ -186,6 +186,7 @@ li {
 .about,
 .work,
 .contact {
+    font-weight: 500;
     color: var(--blue-grey-700);
     word-wrap: break-word;
     position: absolute;
@@ -302,7 +303,7 @@ span {
     align-content: center;
     flex-wrap: wrap;
     margin: auto;
-    height: 600px;
+    /* height: 600px; */
 }
 
 
@@ -350,7 +351,7 @@ span {
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-top: 16px;
+    margin-top: 24px;
     color: var(--blue-grey-700);
 }
 

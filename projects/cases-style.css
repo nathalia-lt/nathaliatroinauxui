@@ -1,6 +1,6 @@
 :root {
     --font-title: 'Unbounded', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'inter', sans-serif;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --blue-100: #f5f0ff;
     --blue-200: #ede5ff;
@@ -19,13 +19,18 @@
     --blue-grey-600: #8490ae;
     --blue-grey-700: #373e55;
     --blue-grey-900: #212430;
+    --complementaryslipt1-100: #Faf0c4;
+    --complementaryslipt1-200: #F8e8a8;
+    --complementaryslipt1-300: #F5de80;
+    --complementaryslipt1-400: #F3d767;
     --complementaryslipt1-500: #F0cd41;
+    --complementaryslipt1-600: #dabb3b;
+    --complementaryslipt2-700: #aa922e;
     --complementaryslipt2-200: #ecf8a8;
     --complementaryslipt2-300: #e3f580;
     --complementaryslipt2-400: #ddf367;
     --complementaryslipt2-500: #D5F041;
     --complementaryslipt1-600: #c2da3b;
-
 }
 
 * {
@@ -69,8 +74,8 @@ body::-webkit-scrollbar-thumb {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title);
-  margin-top: 0;
   color: var(--blue-grey-900);
+  margin-top: 0;
 }
 
 h1 {
@@ -382,7 +387,6 @@ section:not(:last-child) {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   /* left: -20px; */
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -427,8 +431,6 @@ section:not(:last-child) {
   .nav-menu a, .nav-menu .dropdown {
     margin-left: 2rem;
   }
-
-
 
   .nav-menu a:first-child {
     margin-left: 0;
@@ -1120,14 +1122,13 @@ footer {
 }
 
 .description-wrapper {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   align-items:start;
   margin-top: 16px;
 }
 
-/* Ultrahuman ring */
 
 
 
