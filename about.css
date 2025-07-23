@@ -19,8 +19,9 @@
     --blue-500-active: #5c00d8; 
     --blue-600: #6A13EC;
     --blue-800: #2e0066;
+    --blue-grey-50: #f9fbfd;
     --blue-grey-100: #f6f7f9;
-    --blue-grey-200: #ebedf3;
+    --blue-grey-200: #f3f5f8;
     --blue-grey-300: #e5e8f0;
     --blue-grey-400: #d8dae2;
     --blue-grey-500: #afb6ca;
@@ -31,7 +32,7 @@
     --complementaryslipt2-500: #D5F041;
 }
 
-
+/* f8f9fa; */
 
 /* base font-size for rem calculation */
 html {
@@ -101,7 +102,6 @@ h3 {
 
 p {
     font-family: var(--font-body);
-    /* Body text uses Nunito */
     font-size: 1rem;
     font-weight: 400;
     line-height: 140%;
@@ -113,7 +113,7 @@ p {
 }
 
 li {
-    font-family: var(font-body);
+    font-family: var(--font-body);
     margin-top: 0;
     margin-bottom: 0.1rem;
     letter-spacing: normal;
@@ -131,7 +131,7 @@ li {
 }
 
 
-@keyframes dropAnimation {
+/* @keyframes dropAnimation {
     0% {
         top: -200px;
     }
@@ -144,11 +144,11 @@ li {
         top: 25%;
     }
 
-    /* tenho 100 da altura, se eu tirar a altura da imagem */
     100% {
         top: calc(100vh - 563px - 30px);
     }
-}
+} */
+    /* tenho 100 da altura, se eu tirar a altura da imagem */
 
 .top-nav {
     max-width: 1200px;
@@ -223,19 +223,6 @@ li {
 /* --------------------------------------------------------- */
 
 
-.main-name-header {
-    /* color: #252525; */
-    color: var(--secondary-color);
-    font-size: 24px;
-    font-weight: 700;
-    word-wrap: break-word;
-    word-spacing: 22px;
-}
-
-span {
-    color: var(--tertiary-color);
-}
-
 /* The container <div> - needed to position the dropdown content */
 /* eu tenho dois div com position relative que estao em conflito */
 /* vou colocar em flex e align end */
@@ -299,19 +286,23 @@ span {
 .about-container {
     width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* align-items: center; */
     align-content: center;
     flex-wrap: wrap;
-    margin: auto;
-    /* height: 600px; */
+    gap: 32px;
+    /* height: 60vh; */
+    margin-top: 32px;
 }
 
 
 .about-content {
     width: 60%;    
-    text-align: left;
-    padding: 16px 8px;
+    /* text-align: left; */
+    /* padding: 16px 8px; */
     line-height: 140%;
+    padding: 1rem 2rem;
 }
 
 .rectangle-design {
@@ -325,8 +316,9 @@ span {
 
 .about-image {
     width: 350px;
-    height: 363px;
+    /* height: 363px; */
     /* margin: auto; */
+    border-radius: 16px;
     padding: 30px 20px;
     /* flex-shrink: 0; */
 }
@@ -345,6 +337,25 @@ span {
 .star-bullet{
     padding-right: 4px;
     align-items: baseline;
+}
+/* .star-bullet::before {
+    content: "★";
+    color: var(--complementaryslipt1-500);
+    font-size: 1rem;
+}
+.star-bullet::after {
+    content: " ";
+    color: var(--blue-grey-700);
+    font-size: 0.8rem;
+} */
+
+ul{
+    list-style-image: url("../nathaliatroinauxui/assets/star-point.png");
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
 }
 
 .location {
