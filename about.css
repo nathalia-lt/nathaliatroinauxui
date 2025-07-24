@@ -291,14 +291,13 @@ li {
     /* align-items: center; */
     align-content: center;
     flex-wrap: wrap;
-    gap: 32px;
     /* height: 60vh; */
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 
 .about-content {
-    width: 60%;    
+    width: 55%;    
     /* text-align: left; */
     /* padding: 16px 8px; */
     line-height: 140%;
