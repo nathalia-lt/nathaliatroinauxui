@@ -1,0 +1,39 @@
+/* criando variables */
+:root {
+    --font-title: 'Unbounded', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --blue-100: #f5f0ff;
+    --blue-200: #ede5ff;
+    --blue-300: #daccff;
+    --blue-400: #b8a0f7;
+    --blue-500: #7242f0;
+    --blue-500-hover: #6a13ec;
+    --blue-500-active: #5c00d8;
+    --blue-600: #6A13EC;
+    --blue-800: #2e0066;
+    --blue-grey-50: #f7f8fa;
+    --blue-grey-100: #f6f7f9;
+    --blue-grey-200: #f3f5f8;
+    --blue-grey-300: #e5e8f0;
+    --blue-grey-400: #d8dae2;
+    --blue-grey-500: #afb6ca;
+    --blue-grey-600: #697694;
+    --blue-grey-700: #373e55;
+    --blue-grey-900: #212430;
+    --complementaryslipt1-100: #Faf0c4;
+    --complementaryslipt1-200: #F8e8a8;
+    --complementaryslipt1-300: #F5de80;
+    --complementaryslipt1-400: #F3d767;
+    --complementaryslipt1-500: #F0cd41;
+    --complementaryslipt1-600: #dabb3b;
+    --complementaryslipt1-700: #aa922e;
+    --complementaryslipt1-800: #8c7a24;
+    --complementarysplit1-900: #6f621a;
+    --complementaryslipt2-200: #ecf8a8;
+    --complementaryslipt2-300: #e3f580;
+    --complementaryslipt2-400: #ddf367;
+    --complementaryslipt2-500: #D5F041;
+    --complementaryslipt1-600: #c2da3b;
+
+}

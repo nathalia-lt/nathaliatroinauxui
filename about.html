@@ -4,57 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ver aqui o que esta acontencendo com esse link do about, quebra a pagina -->
-    <link rel="stylesheet"  href="about.css" />
+    <link rel="stylesheet" type="text/css" href="variables.css" />
+    <link rel="stylesheet" href="about.css" />
     <link
       rel="shortcut icon"
       href="../nathaliatroinauxui/assets/Logo-nathalianew.png"
       type="image/x-icon"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>About Page</title>
   </head>
   <body>
-    <header class="top-nav">
-      <div>
-        <a href="../nathaliatroinauxui/index.html">
-                <img src="../nathaliatroinauxui/assets/logo-nathalianew.png" alt="Your Brand Logo" height="40" />
-        </a>
+    <header id="header" class="top-nav">
+    <div>
+        <a href="" class="logo" aria-label="Home">
+      <!-- Replace with your logo image or SVG -->
+      <img src=".//assets/logo-nathalianew.png" alt="Brand Logo" height="40" />
+    </a>
       </div>
-      <div style="width: 256px; height: 22px; position: relative">
-        <a class="about" href="../about.html">About</a>
-
-        <div class="work dropdown">
-          Work <span class="dropdown-arrow">></span>
-          <div class="dropdown-content">
-            <a href="../nathaliatroinauxui/projects/spirit.html">Spirit Airlines</a>
-            <a href="../nathaliatroinauxui/projects/ciclo.html">Period Tracker</a>
-            <a href="../nathaliatroinauxui/projects/ultrahuman.html">Ultrahuman</a>
-          </div>
-        </div>
-        <a
-          class="contact"
-          href="./index.html#contact-session"
-          style="left: 192px; top: 0px"
-          >Contact
-        </a>
-      </div>
+      <nav aria-label="Main navigation" style="width: 256px; height: 22px; position: relative" >
+        <ul >
+          <li style="list-style: none;">
+            <a class="about" href="./about.html">About</a>
+          </li>
+          <li class="work dropdown">
+            Work <span class="dropdown-arrow">></span>
+            <ul style="list-style: none;" class="dropdown-content">
+              <li>
+              <a href="./projects/spirit.html">Spirit Airlines</a>
+              </li>
+              <li>
+              <a href="./projects/ciclo.html">Period Tracker</a>
+              </li>
+              <li>
+              <a href="./projects/ultrahuman.html">Ultrahuman</a>
+              </li>
+            </ul>
+          </li>
+          <li style="list-style: none;"><a class="contact" href="#contact-session">Contact</a></li>
+        </ul>
+          </nav>
     </header>
 
-  
     <main>
       <div class="about-container">
         <div class="about-content">
           <h2>About me</h2>
           <ul>
-            <li class="bullet-point"><span><img class="star-bullet" src="./assets/star-point.png" alt="star-point">My professional journey began in healthcare, where I worked as a mental health nurse. During this time, I collaborated daily with psychiatrists and psychologists, discussing and analyzing patient behavior.</span></li>
-            <li class="bullet-point"><span><img class="star-bullet" src="./assets/star-point.png" alt="star-point">After transitioning from a different career path, I discovered a true passion for Product design. Motivated by a desire to blend creativity with problem-solving, I immersed myself in learning modern web development and user experience principles.</span></li>
-            <li class="bullet-point"><span><img class="star-bullet" src="./assets/star-point.png" alt="star-point">In my free time, you’ll often find me soaking up the sun with a book or exploring new food spots.</span></li>  
+            <li class="bullet-point">
+              <span
+                ><img
+                  class="star-bullet"
+                  src="./assets/star-point.png"
+                  alt="star-point"
+                />My professional journey began in healthcare, where I worked as
+                a mental health nurse. During this time, I collaborated daily
+                with psychiatrists and psychologists, discussing and analyzing
+                patient behavior.</span
+              >
+            </li>
+            <li class="bullet-point">
+              <span
+                ><img
+                  class="star-bullet"
+                  src="./assets/star-point.png"
+                  alt="star-point"
+                />After transitioning from a different career path, I discovered
+                a true passion for Product design. Motivated by a desire to
+                blend creativity with problem-solving, I immersed myself in
+                learning modern web development and user experience
+                principles.</span
+              >
+            </li>
+            <li class="bullet-point">
+              <span
+                ><img
+                  class="star-bullet"
+                  src="./assets/star-point.png"
+                  alt="star-point"
+                />In my free time, you’ll often find me soaking up the sun with
+                a book or exploring new food spots.</span
+              >
+            </li>
           </ul>
-          <div class="location"><span><img src="./assets/location.png" alt="location"></span>New York City</div>    
+          <div class="location">
+            <span><img src="./assets/location.png" alt="location" /></span>New
+            York City
+          </div>
           <img
             class="rectangle-design"
             src="../nathaliatroinauxui/assets/Rectangleabout.png"
@@ -71,11 +114,7 @@
             </ul>
           </div> -->
         </div>
-        <img
-          class="about-image"
-          src="./assets/linkedin2.PNG"
-          alt="image"
-        />
+        <img class="about-image" src="./assets/about-design.png" alt="image" />
       </div>
     </main>
     <footer><small>Designed and built by Nathalia Troina</small></footer>
