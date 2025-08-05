@@ -801,14 +801,14 @@ img.carousel {
 .hs-container{
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .hs-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding-left: 8px;
-  margin-top: 0.05rem;
+  /* margin-top: 0.05rem; */
   border-radius: 8px;
   border: 1px solid var(--blue-grey-400);
   background-color: var(--blue-grey-50);

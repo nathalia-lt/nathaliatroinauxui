@@ -408,9 +408,10 @@ span {
 
 .experience-subtitle {
     color: var(--blue-grey-600);
-    line-height: 150%;
+    line-height: 130%;
     font-size: 1.5rem;
     font-weight: 300;
+    letter-spacing: -0.05rem;
     /* Semibold for subtitles */
     width: 100%;
     word-wrap: break-word;
