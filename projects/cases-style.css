@@ -741,7 +741,7 @@ img.carousel {
 
 .defining {
   font-size: 1.75rem;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.05rem;
   line-height: 1.5;
   font-weight: 500;
   margin-bottom: 16px;
@@ -787,6 +787,7 @@ img.carousel {
 .matrix-img {
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .matrix-360 {
@@ -926,6 +927,13 @@ img.gif {
   padding-bottom: 64px;
 }
 
+.marketing-img{
+  width: 60%;
+  margin: auto;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
 
 
 
@@ -1174,6 +1182,24 @@ footer {
   flex-direction: column;
   align-items: start;
   margin-top: 16px;
+}
+
+.goals-wrapper{
+  display: flex;
+  justify-content:space-between;
+  gap: 24px;
+}
+
+.ultrahuman-screen {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.goal{
+  width: 30%;
 }
 
 
