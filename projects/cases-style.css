@@ -157,6 +157,7 @@ p {
 
 .subsection {
   margin-bottom: 2rem;
+  /* padding: 0px 16px; */
 }
 
 
@@ -180,7 +181,7 @@ mark {
   font-weight: 600;
 }
 
-ul {
+ul, ol {
   padding-left: 18px;
   margin-top: 16px;
   margin-bottom: 32px;
@@ -194,6 +195,16 @@ ul li {
   color: var(--blue-grey-700);
 }
 
+
+ol li {
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+  /* 18px */
+  line-height: 130%;
+  color: var(--blue-grey-700);
+}
+
+/* -----------------------HEADER------------------------------------------- */
 
 .top-nav a {
   text-decoration: none;
@@ -261,16 +272,6 @@ section {
   margin-right: auto;
 }
 
-.about,
-.work,
-.contact {
-  color: var(--blue-grey-700);
-  word-wrap: break-word;
-  position: absolute;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .about {
   left: 0px;
   top: 0px;
@@ -308,7 +309,7 @@ section:not(:last-child) {
 
 .top-nav a {
   text-decoration: none;
-  color: var(--grey-500);
+  color: var(--blue-grey-700);
   margin-left: 0rem;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -324,7 +325,7 @@ section:not(:last-child) {
 }
 
 .main-name-header {
-  color: var(--blue-500);
+  color: var(--blue-grey-500);
   font-size: 24px;
   font-weight: 700;
   word-wrap: break-word;
@@ -352,7 +353,7 @@ section:not(:last-child) {
 .hamburger span {
   width: 32px;
   height: 2px;
-  background-color: var(--grey-500);
+  background-color: var(--blue-grey-500);
   transition: all 0.3s linear;
 }
 
@@ -735,6 +736,7 @@ img.carousel {
   width: 100%;
   margin: 0 auto;
   padding-top: 8px;
+  padding-bottom: 24px;
 }
 
 /* --------------------------SPIRIT------------------------------ */
@@ -788,6 +790,14 @@ img.carousel {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.cjm-img {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 .matrix-360 {
@@ -1158,7 +1168,7 @@ footer {
 }
 
 
-/* Ultrahuman */
+/* ------Ultrahuman ---------*/
 
 .framework {
   display: flex;
