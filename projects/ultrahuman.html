@@ -62,8 +62,8 @@
             <p></p>
             <div class="carousel-container">
               <div class="carousel-images-container">
-                <note style="color: red;">COMING SOON</note>
-                <!-- <img class="carousel" src="../assets/carousel-spirit.png" alt=""> -->
+                <!-- <note style="color: red;">COMING SOON</note> -->
+                <img class="hero-ultrahuman" src="../assets/hero-ultrahuman.png" alt="hero-ultrahuman">
               </div>
             </div>
           </section>
@@ -76,7 +76,7 @@
                     <h5>YEAR <time datetime="2025-01-01">2025</time></h5>
         
                     <h5>BRIEFING</h5>
-                    <p>The health market, specifically smart rings like ultrahuman, Oura ring, and Whoop, represents a revolution in how we monitor our well-being. However, there is a significant opportunity to adapt and evolve this technology to better meet users' needs and realities.</p>
+                    <p>The health market, specifically smart rings like ultrahuman, Oura ring, and RingConn, represents a revolution in how we monitor our well-being. However, there is a significant opportunity to adapt and evolve this technology to better meet users' needs and realities.</p>
 
                     <h5>Timeline</h5>
                     <p>3 Months</p>
@@ -88,8 +88,8 @@
                     <p>
                         Desk research, competitive analysis, interview, heuristic analysis, JTBD, HMW, Cost vs benefit matrix, MoSCoW method, hypothesis statement, journey map, moodboard, user testing.
                     </p>
-                    <h5>TOOLS</h5>
-                    <p>Figma, Maze, Meet</p>
+                    <h5>PROTOTYPE</h5>
+                    <p class="prototype-view"><a href="https://www.figma.com/proto/CkRofEDoXGmv43ouVaAaDH/ultrahuman-case-study?page-id=0%3A1&node-id=486-10574&viewport=349%2C1678%2C0.14&t=mC8nPbK98B4ryYS3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=486%3A10574">View Figma Prototype</a></p>
                   </div>
                 </div>
                 <div class="row">
@@ -117,7 +117,7 @@
             <!-- <p>The key findings suggest Ultrahuman can differentiate through metabolic health focus, positioning between premium and budget competitors, and creating unique value through continuous glucose insights.</p> -->
             <div>
             <h4>Key findings:</h4>
-            <p>The analysis revealed clear opportunities to improve the clarity and effectiveness of data visualizations. In addition, I identified a need to enhance visual hierarchy and accessibility to ensure that insights are easily understood and inclusive for all users.</p>
+            <p>The analysis revealed that while glucose tracking stood out as a differentiating feature, meal logging appeared to be less emphasized in terms of visibility, integration, or design priority. Additionally, the analysis revealed a strong need to improve how data is interpreted and to enhance the clarity and usability of chart layouts.</p>
               </div>
             <div class="description-wrapper">
               <img class="matrix-img" src="../assets/Competitior-Analysis-UH.png" alt="journey map" />
@@ -128,40 +128,44 @@
   
           <section>
                 <h2>User Interviews</h2>
-                <p>Conducted qualitative interview with 5 individuals who wears a smart ring, who are health conscius professional and fitness enthusiasts.</p>
+                <p>Conducted qualitative interview with 5 individuals who wears wearble, who are health conscius professional and fitness enthusiasts, especially those aged 18-44 year old.</p>
             <div class="painpoint-wrapper">
               <div class="painpoint-card">
                 <!-- <div class="painpoint">1</div> -->
                 <div class="painpoint-description">
-                  <h5>Life Change</h5>
+                  <h5>Metrics matter</h5>
                   <blockquote>
-                    <p>"Stress! The ring changed my life. I changed my work schedule because I know there is a Client that stresses me. So I always move him to the day before my day off." P1</p>
+                    <p>"I check HRV and sleep stages. It helps me plan my classes and personal practice.." P4</p>
                   </blockquote>
                 </div>
               </div>
               <div class="painpoint-card">
                 <!-- <div class="painpoint">2</div> -->
                 <div class="painpoint-description">
-                  <h5>Awful UI</h5>
+                  <h5>cluttered Interface</h5>
                   <blockquote>
-                    <p>"The ring is promising tech, but the app experience is abysmal. There is way too much useless and confusing info. Stop making stuff up. Use common english terms"</p>
+                    <p>"I log meals sometimes. But it’s hard to find what I’ve logged before, and the interface feels busy." P5</p>
                   </blockquote>
                 </div>
               </div>
               <div class="painpoint-card">
                 <!-- <div class="painpoint">3</div> -->
                 <div class="painpoint-description">
-                  <h5>Acessibility</h5>
+                  <h5>Motivation</h5>
                   <blockquote>
-                    <p>"Unable to adjust font size in the app and the default size is too small to read for some people, incredibly disappointing. Cosidering return my ring"</p>
+                    <p>"when the data feels too technical or doesn’t change much, I lose interest." P1</p>
                   </blockquote>
                 </div>
               </div>
             </div>
+            <div>
+              <h4>Takeaways:</h4>
+              <p>Users value health metrics that inform their lifestyle choices, but often find the app interface cluttered and difficult to navigate. Simplifying data presentation and enhancing accessibility could improve user engagement and satisfaction.</p>
+            </div>
         </section>  
         <!-- Define the solution -->
-        <div class="subsection"> 
-          <h5>Defining the solution</h5>
+        <div> 
+          <h5>Problem Statement</h5>
           <p class="defining">How might we translate complex health metrics into meaningful insights that support <mark>user retention</mark> and position the ring as a daily wellness companion?</p>    
         </div>
       </br>
@@ -240,7 +244,7 @@
             </p>
             <p><strong>Testing objectives:</strong></p>
             <ol>
-              <li>Evaluate data comprehension: Assesss whether users can understand the health metrics presented in the dashboard.</li>
+              <li>Evaluate data comprehension: Assess whether users can understand the health metrics presented in the dashboard.</li>
               <li>Test meal tracking usability: Observe how easily users can log meals, find saved items and interpret calorie information.</li>
               <li>Identify navigation challenges: Determine if users can intuitively move between key sections of the app.</li>
               <li>Uncover opportunities for improvement: Gather feedback on pain points, unclear elements, or missing features that could enhance the overall user experience and engagement.</li>
@@ -256,7 +260,7 @@
 
 
       <section>
-        <h2>Design challenges</h2>
+        <h2>Design Decisions</h2>
         <!-- <p>Redesigned the smart ring dashboard to translate complex health metrics into clear, relatable insights through layered visualizations, simplified language, and personalized narratives, while enhancing the meal tracking experience.</p> -->
         <p>Each update addresses specific usability challenges such as vague glucose visualization, compressed meal lists, and unclear sleep data presentation by refining interface elements, optimizing visual hierarchy, and adding intuitive cues. The following sections describe the reasoning and impact behind each redesign, highlighting improvements that make health tracking more accessible and actionable.</p>
         <!-- <img class="ultrahuman-screen" src="../assets/overview-screen.png" alt="overview screen"> -->
@@ -270,23 +274,25 @@
 
         <div class="subsection">
           <h3>Streamlining Meal Tracking for Better Readability and Smarter Recall</h3>
-          <p><strong>Problem:</strong> The list of past meals appears overly compressed, with too much information packed into a limited space, making it hard to read and match quantities to the correct items. Additionally, the tracked items seem to be displayed in no particular order, leaving users unsure whether they rre seeing the most frequent or most recent entries first.</p>
+          <p><strong>Problem:</strong> The list of past meals appears overly compressed, with too much information packed into a limited space, making it hard to read and match quantities to the correct items. Additionally, the tracked items seem to be displayed in no particular order, leaving users unsure whether they are seeing the most frequent or most recent entries first.</p>
           <p><strong>Solution:</strong> In the updated design, meal items are now displayed individually, with calories and quantities presented in a clearer, more readable format. A new section for saving custom meals has been added at the top for quicker access. These saved meals appear first, followed by the most frequently tracked items. Each saved meal also shows the total calorie count for every food item it includes.</p>
-          <img src="" alt="meal-tracking-screen">
+          <img class="design-decision" src="../assets/meal-tracking-screen.png" alt="meal-tracking-screen">
         </div>
 
         <div class="subsection">
           <h3>Visualizing Macronutrients for Instant Nutritional Understanding</h3>
           <p><strong>Problem:</strong> The macronutrient doughnut graph is difficult to interpret.</p>
           <p><strong>Solution:</strong> The macronutrients are displayed in a separate doughnut graph, which makes it clear to understand how the total number of calories in the item is split between each macronutrient.</p>
-          <img src="" alt="macronutrients-screen">
+          <div class="img-container">
+            <img class="design-decision" src="../assets/macronutrients-screens.png" alt="macronutrients-screen">
+          </div>
         </div>
 
         <div class="subsection">
           <h3>Making Sleep Data Intuitive Through Smarter Charts and Visual Hierarchy</h3>
           <p><strong>Problem:</strong> The sleep stages section lacks visual clarity, making it difficult for users  to interpret their sleep patterns. Both the hypnogram and sleep score charts have room for improvement in terms of readability and data storytelling.</p>
           <p><strong>Solution:</strong> Enhanced the visual hierarchy and labeling within the sleep stages section, redesign the hypnogram to better differentiate bed time and wake up time, and refine the sleep score chart with clearer indicators and contextual cues to help users quickly grasp their sleep quality.</p>
-          <img src="" alt="sleep-data-screen">
+          <img class="design-decision" src="../assets/sleep-data-screen.png" alt="sleep-data-screen">
         </div>
 
         <!-- <div class="subsection">
