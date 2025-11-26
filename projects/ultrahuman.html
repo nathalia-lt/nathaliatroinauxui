@@ -89,7 +89,7 @@
                         Desk research, competitive analysis, interview, heuristic analysis, JTBD, HMW, Cost vs benefit matrix, MoSCoW method, hypothesis statement, journey map, moodboard, user testing.
                     </p>
                     <h5>PROTOTYPE</h5>
-                    <p class="prototype-view"><a href="https://www.figma.com/proto/CkRofEDoXGmv43ouVaAaDH/ultrahuman-case-study?page-id=0%3A1&node-id=486-10574&viewport=349%2C1678%2C0.14&t=mC8nPbK98B4ryYS3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=486%3A10574">View Figma Prototype</a></p>
+                    <p class="prototype-view"><a href="https://www.figma.com/proto/CkRofEDoXGmv43ouVaAaDH/ultrahuman-case-study?page-id=0%3A1&node-id=486-10574&viewport=349%2C1678%2C0.14&t=mC8nPbK98B4ryYS3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=486%3A10574" target="_blank">View Figma Prototype</a></p>
                   </div>
                 </div>
                 <div class="row">
@@ -153,14 +153,19 @@
                 <div class="painpoint-description">
                   <h5>Motivation</h5>
                   <blockquote>
-                    <p>"when the data feels too technical or doesn’t change much, I lose interest." P1</p>
+                    <p>"when the data feels too technical or does not change much, I lose interest." P1</p>
                   </blockquote>
                 </div>
               </div>
             </div>
             <div>
-              <h4>Takeaways:</h4>
-              <p>Users value health metrics that inform their lifestyle choices, but often find the app interface cluttered and difficult to navigate. Simplifying data presentation and enhancing accessibility could improve user engagement and satisfaction.</p>
+              <h4>key Insights:</h4>
+              <ul>
+                <li>Users often feel confused by technical metrics like HRV, recovery scores..</li>
+                <li>Lack of actionable context makes it hard to know what to do with the data.</li>
+                <li>Difficulty finding previously logged meals discourages consistent use.</li>
+                <li>Cluttered interface.</li>
+              </ul>
             </div>
         </section>  
         <!-- Define the solution -->
@@ -176,17 +181,23 @@
     <div class="jtbd-wrapper">
       <div class="jtbd">
         <img src="../assets/hypotesis-icon.png" alt="job to be done">
-        <p>"<strong>We believe</strong> that implementing a layered dashboard that presents information from simple to detailed <strong>will help</strong> users better understand their health metrics without feeling overwhelmed <strong>because</strong> we know users currently feel lost in overly technical graphs and want to build confidence gradually."</p>
+        <p>"We believe that implementing a layered dashboard that presents information from simple to detailed will help users better understand their health metrics without feeling overwhelmed because we know users currently feel lost in <strong>overly technical graphs</strong> and want to build confidence gradually."</p>
       </div>
       <div class="jtbd">
         <img src="../assets/hypotesis-icon.png" alt="job to be done">
-        <p>"<strong>We believe</strong> that delivering personalized summaries and recommendations based on user patterns <strong>will increase</strong> user engagement and perceived value <strong>because</strong> users want actionable insights, not just raw numbers, to help connect data to real-life behaviors."</p>
+        <p>"We believe that delivering personalized summaries and recommendations based on user patterns <strong>will increase user engagement</strong> and perceived value because users want actionable insights, not just raw numbers, to help connect data to real-life behaviors."</p>
       </div>
     </div>
     <div class="jtbd-wrapper">
       <div class="jtbd">
         <img src="../assets/hypotesis-icon.png" alt="job to be done">
-        <p>"<strong>We believe</strong> that simplifying the meal tracking interface and organizing past entries by relevance (e.g., recency or frequency) <strong>will increase</strong> user engagement and tracking consistency, <strong>because</strong> users will find it easier to log meals and review their dietary patterns without cognitive overload."</p>
+        <p>"We believe that simplifying the meal tracking interface and organizing past entries by relevance will increase user engagement and tracking consistency, because users will find it easier to log meals and review their dietary patterns <strong> without cognitive overload</strong>."</p>
+      </div>
+    </div>
+        <div class="jtbd-wrapper">
+      <div class="jtbd">
+        <img src="../assets/hypotesis-icon.png" alt="job to be done">
+        <p>"We believe that users gradually lose confidence in the presented metrics because they cannot verify their accuracy or compare them with familiar parameters, <strong>which results in progressive disengagement</strong>."</p>
       </div>
     </div>
   </div>  
@@ -202,7 +213,7 @@
       </section>
       <section>
         <h2>Customer Journey Map</h2>
-        <p>The goal of this journey is to map the input and monitoring of data within the Ultrahuman app, identifying user actions, difficulties, and pain points, in order to then correlate these issues with the solutions proposed in the previous stages.</p>
+        <p>This journey maps how users input and monitor data within the Ultrahuman app, highlighting their actions, difficulties, and pain points, and then correlating these issues with the solutions proposed in earlier stages.</p>
         <div>
           <h4>Takeaways</h4>
           <p>Based on the insights gathered, I designed a more intuitive user journey by prioritizing the moments with the greatest impact on the overall experience. The goal was to make the flow clearer, more direct, and efficient by removing unnecessary steps and simplifying interactions.</p>
@@ -252,9 +263,13 @@
             <h3>Addressing usability concerns and user recommendations</h3>
             <p>Here are some of the key findings from the usability testing:</p>
             <ul>
-              <li>The meal tracking interface now features a dropdown menu, enabling users to access saved and previous meal logs more efficiently.</li>
-              <li>In the Glucose Track chart, significant changes in glucose levels are not easily detectable because the color shift is too subtle; a more distinct color transition could improve immediate recognition and action.</li>
-              <li>Icons have been added to the hypnogram chart to help users quickly recognize chart elements and meanings, supporting reduced cognitive load and faster interpretation.</li>
+              <li><strong>Issue 1: Users skipped or ignored secondary option on the meal list</strong></li>
+              <li class="issue-list">Description: During the usability test, participants frequently overlooked secondary options in the meal list, focusing only on the primary choice.</li>
+              <li><strong>Issue 2: Difficulty interpreting the term temp. deviation and its graphic.</strong></li>
+              <li class="issue-list">Description: When encountering the “temp. deviation” metric, some users hesitated, expressed confusion about its meaning, and struggled to interpret the associated chart.</li>
+              <!-- <li>In the Glucose Track chart, significant changes in glucose levels are not easily detectable because the color shift is too subtle; a more distinct color transition could improve immediate recognition and action.</li> -->
+              <li><strong>Issue 3: Sleep data visualization challenges</strong></li>
+              <!-- <li>Description: In reviewing sleep data, users had difficulty understanding bedtime and wake-up markers when placed above the hypnogram.</li> -->
             </ul>
           </section>
 
