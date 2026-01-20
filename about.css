@@ -397,8 +397,10 @@ p {
 
 .about-image {
     /* width: 45%; */
-    width: 420px;
-    height: 450px;
+    /* width: 420px; */
+    width: 500px;
+    height: 480px;
+    object-fit: cover;
     /* padding: 30px 20px; */
     /* flex-shrink: 0; */
     padding: 1rem 2rem;
