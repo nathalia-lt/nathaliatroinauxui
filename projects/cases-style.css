@@ -694,7 +694,7 @@ img.carousel {
 /* verificar se esse 80px é mais adequado */
 .data {
   width: 33%;
-  padding: 16px;
+  padding: 16px 16px 16px 0;
   text-align: left;
 }
 
