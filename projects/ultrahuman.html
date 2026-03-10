@@ -177,15 +177,15 @@
         </div>
       </br>
             <section class="challenge-section">
-        <h2>Challenges and Constraints</h2>
+        <h2>Constraints</h2>
         <div>
-        <p>Redesigning multiple data‑heavy sections of the Ultrahuman M1 mobile experience, from health metrics to meal tracking, macronutrient visuals, and sleep insights, introduced several challenges. Each screen carried dense information, inconsistent hierarchy, and limited space for clear storytelling. Within the constraints of mobile layouts, real‑time data variability, and scientific accuracy, I focused on balancing clarity with depth and simplifying complex concepts so users could interpret their health data with confidence and ease.</p>
+        <p>Redesigning multiple data‑heavy sections of the Ultrahuman M1 mobile experience required working within several constraints that shaped the direction and feasibility of the solutions. These limitations influenced what information could be shown, how it could be structured, and the level of detail that could be surfaced on mobile.</p>
         </div>    
         <ul>
-          <li>Transforming dense meal information into a clearer, more human‑centered presentation, reorganizing cluttered data into a structure that’s easier to scan and interpret without sacrificing accuracy or context.</li>
-          <li>Balancing depth vs. simplicity: deciding how much data to surface on mobile without overwhelming users.</li>
-          <li>Designing for small screens while maintaining clarity, hierarchy, and glanceability for dense health information.</li>
-          <li>Managing real‑time data variability and sensor/API limitations, which affected what could be shown and when.</li>
+          <li>Mobile screen limitations: small layouts restricted how much information could appear at once without compromising readability.</li>
+          <li>High data density: health metrics, meals, macronutrients, and sleep insights all required careful structuring to avoid clutter.</li>
+          <li>Real‑time data variability: sensor and API fluctuations affected the consistency and timing of what could be displayed.</li>
+          <li>Information hierarchy inconsistencies in the original app: existing patterns limited how far certain redesigns could diverge without breaking coherence.</li>
         </ul>
       </section>
 <section>
@@ -301,21 +301,21 @@
           <img class="ultrahuman-screen" src="../assets/dashboard-redesign.png" alt="glucose-screen">
         </div> -->
 
-          <div class="subsection">
+          <div class="subsection redesign">
           <h3>Redesigning Individual Markers</h3>
           <p><strong>Problem:</strong> On the individual markers screen of the Ultrahuman app, users faced a cluttered layout, confusing terminology, and a lack of clear explanations for key metrics. This led to difficulty interpreting data and reduced confidence in the insights provided.</p>
           <p><strong>Solution:</strong> I added concise explanations for each metric, reorganized the layout to improve spacing, and refined how certain metrics were displayed. These changes made the screen cleaner, easier to understand, and more supportive of user trust in the data.</p>
           <img class="design-decision" src="../assets/individual-markers.png" alt="markers-screen">
         </div>
 
-        <div class="subsection">
+        <div class="subsection redesign">
           <h3>Streamlining Meal Tracking for Better Readability and Smarter Recall</h3>
           <p><strong>Problem:</strong> The list of past meals appears overly compressed, with too much information packed into a limited space, making it hard to read and match quantities to the correct items. Additionally, the tracked items seem to be displayed in no particular order, leaving users unsure whether they are seeing the most frequent or most recent entries first.</p>
           <p><strong>Solution:</strong> In the updated design, meal items are now displayed individually, with calories and quantities presented in a clearer, more readable format. A new section for saving custom meals has been added at the top for quicker access. These saved meals appear first, followed by the most frequently tracked items. Each saved meal also shows the total calorie count for every food item it includes.</p>
           <img class="design-decision" src="../assets/meal-tracking-screen.png" alt="meal-tracking-screen">
         </div>
 
-        <div class="subsection">
+        <div class="subsection redesign">
           <h3>Visualizing Macronutrients for Instant Nutritional Understanding</h3>
           <p><strong>Problem:</strong> The macronutrient doughnut graph is difficult to interpret.</p>
           <p><strong>Solution:</strong> The macronutrients are displayed in a separate doughnut graph, which makes it clear to understand how the total number of calories in the item is split between each macronutrient.</p>
@@ -324,11 +324,20 @@
           </div>
         </div>
 
-        <div class="subsection">
+        <div class="subsection redesign">
           <h3>Making Sleep Data Intuitive Through Smarter Charts and Visual Hierarchy</h3>
           <p><strong>Problem:</strong> The sleep stages section lacks visual clarity, making it difficult for users  to interpret their sleep patterns. Both the hypnogram and sleep score charts have room for improvement in terms of readability and data storytelling.</p>
           <p><strong>Solution:</strong> Enhanced the visual hierarchy and labeling within the sleep stages section, redesign the hypnogram to better differentiate bed time and wake up time, and refine the sleep score chart with clearer indicators and contextual cues to help users quickly grasp their sleep quality.</p>
           <img class="design-decision" src="../assets/sleep-data-screen.png" alt="sleep-data-screen">
+        </div>
+        <div>
+          <h4>Trade-offs</h4>
+          <ul>
+            <li>Clarity vs. depth: simplifying dense health data without losing scientific accuracy or meaningful context.</li>
+            <li>Mobile constraints vs. data density: deciding what information to surface first on small screens without overwhelming users.</li>
+            <li>Education vs. cognitive load: adding explanations that build user confidence without cluttering the interface.</li>
+            <li>Simplicity vs. personalization: delivering tailored insights while maintaining a consistent, intuitive interface.</li>
+          </ul>
         </div>
 
         <!-- <div class="subsection">

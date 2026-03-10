@@ -32,6 +32,13 @@
   --complementaryslipt2-400: #ddf367;
   --complementaryslipt2-500: #D5F041;
   --complementaryslipt1-600: #c2da3b;
+  --space-xxl: 6rem;     /* 96px */
+  --space-xl: 5rem;      /* 80px */
+  --space-lg: 3.5rem;    /* 56px */
+  --space-md: 2rem;      /* 32px */
+  --space-ms: 1.5rem;    /* 24px */
+  --space-sm: 1rem;      /* 16px */
+  --space-xs: 0.75rem;   /* 12px */
 }
 
 * {
@@ -139,7 +146,7 @@ p {
   font-size: 1.125rem;
   /* 18px */
   /* margin-top: 1rem;  */
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-ms);
   font-weight: 400;
   line-height: 140%;
   letter-spacing: normal;
@@ -156,7 +163,7 @@ p {
 }
 
 .subsection {
-  margin-bottom: 4rem;
+  margin-bottom: var(--space-lg);
   /* padding: 0px 16px; */
 }
 
@@ -195,7 +202,7 @@ ul, ol {
 }
 
 ul li {
-  margin-bottom: 8px;
+  margin-bottom: var(--space-xs);
   font-size: 1.125rem;
   /* 18px */
   line-height: 130%;
@@ -255,7 +262,8 @@ ol li {
 
 /* Section spacing */
 section {
-  margin: 3rem auto;
+  /* margin: 3rem auto; */
+  margin: var(--space-xl) auto;
   /* padding: 0px 16px; */
 }
 
@@ -741,8 +749,8 @@ img.carousel {
 .ia-img {
   width: 100%;
   margin: 0 auto;
-  padding-top: 8px;
-  padding-bottom: 24px;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /* --------------------------SPIRIT------------------------------ */
@@ -1244,6 +1252,10 @@ footer {
 
 .challenge-section{
   padding-bottom: 8px !important;
+}
+
+.redesign:not(:last-child){
+  padding-bottom: 3rem;
 }
 
 
