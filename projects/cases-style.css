@@ -224,7 +224,6 @@ ol li {
   text-decoration: none;
   color: var(--blue-grey-700);
   margin-left: 0rem;
-  font-weight: 500;
   transition: color 0.3s ease;
 
 }
@@ -242,7 +241,6 @@ ol li {
 .about,
 .work,
 .contact {
-  font-weight: 500;
   color: var(--blue-grey-700);
   word-wrap: break-word;
   position: absolute;
@@ -271,7 +269,6 @@ section {
   text-decoration: none;
   color: var(--blue-grey-700);
   margin-left: 0rem;
-  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -325,7 +322,6 @@ section:not(:last-child) {
   text-decoration: none;
   color: var(--blue-grey-700);
   margin-left: 0rem;
-  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -341,7 +337,7 @@ section:not(:last-child) {
 .main-name-header {
   color: var(--blue-grey-500);
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   word-wrap: break-word;
   word-spacing: 55px;
 }
@@ -396,7 +392,6 @@ section:not(:last-child) {
   margin: 1rem 0;
   font-size: 1.2rem;
   color: var(--blue-grey-200);
-  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -1193,9 +1188,6 @@ footer {
   }
 
 
- width: 35%;
- margin: 0 auto;
-}   */
 
 .framework {
   display: flex;

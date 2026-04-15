@@ -200,7 +200,7 @@ section:not(:last-child) {
     text-decoration: none;
     color: var(--blue-grey-700);
     margin-left: 0rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     transition: color 0.3s ease;
 }
 

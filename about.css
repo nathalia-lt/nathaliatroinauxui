@@ -1,3 +1,46 @@
+:root {
+  --font-title: 'Unbounded', sans-serif;
+  --font-body: 'inter', sans-serif;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --blue-100: #f5f0ff;
+  --blue-200: #ede5ff;
+  --blue-300: #daccff;
+  --blue-400: #b8a0f7;
+  --blue-500: #7242f0;
+  --blue-500-hover: #6a13ec;
+  --blue-500-active: #5c00d8;
+  --blue-600: #6A13EC;
+  --blue-800: #2e0066;
+  --blue-grey-50: #f7f8fa;
+  --blue-grey-100: #f6f7f9;
+  --blue-grey-200: #f3f5f8;
+  --blue-grey-300: #e5e8f0;
+  --blue-grey-400: #d8dae2;
+  --blue-grey-500: #afb6ca;
+  --blue-grey-600: #697694;
+  --blue-grey-700: #373e55;
+  --blue-grey-900: #212430;
+  --complementaryslipt1-100: #Faf0c4;
+  --complementaryslipt1-200: #F8e8a8;
+  --complementaryslipt1-300: #F5de80;
+  --complementaryslipt1-400: #F3d767;
+  --complementaryslipt1-500: #F0cd41;
+  --complementaryslipt1-600: #dabb3b;
+  --complementaryslipt2-700: #aa922e;
+  --complementaryslipt2-200: #ecf8a8;
+  --complementaryslipt2-300: #e3f580;
+  --complementaryslipt2-400: #ddf367;
+  --complementaryslipt2-500: #D5F041;
+  --complementaryslipt1-600: #c2da3b;
+  --space-xxl: 6rem;     /* 96px */
+  --space-xl: 5rem;      /* 80px */
+  --space-lg: 3.5rem;    /* 56px */
+  --space-md: 2rem;      /* 32px */
+  --space-ms: 1.5rem;    /* 24px */
+  --space-sm: 1rem;      /* 16px */
+  --space-xs: 0.75rem;   /* 12px */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,6 +75,10 @@ header {
     transition: all 0.8s ease;
 }
 
+section {
+    margin: var(--space-xl) auto;
+    /* padding: 2rem 1rem; */}
+
 body::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -51,30 +98,30 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     /* Large and bold for main headings */
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
     letter-spacing: -0.02em;
     /* Slightly tighter for display fonts */
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     /* Secondary headings */
-    line-height: 1.3;
+    line-height: 1.2;
     /* margin-top: 2rem; */
-    margin-bottom: 1rem;
-    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+    letter-spacing: -2%;
     /* Slightly tighter for balance */
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     /* Tertiary headings */
-    line-height: 1.4;
+    line-height: 1.3;
     margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     letter-spacing: normal;
     /* Default spacing */
 }
@@ -90,6 +137,7 @@ p {
     color: var(--blue-grey-700);
 }
 
+
 .bullet-point {
     font-family: var(--font-body);
     margin-top: 0;
@@ -97,6 +145,13 @@ p {
     letter-spacing: normal;
     /* Default spacing for readability */
     color: var(--blue-grey-700);
+}
+
+.edu-bullet {
+    margin-top: var(--space-ms);
+    margin-bottom: var(--space-md);
+    line-height: 130%;
+    list-style-type: none;    
 }
 
 .bold-text {
@@ -178,7 +233,7 @@ p {
     text-decoration: none;
     color: var(--blue-grey-700);
     margin-left: 0rem;
-    font-weight: 500;
+    font-weight: 400;
     transition: color 0.3s ease;
 }
 
@@ -227,7 +282,10 @@ p {
 .dropdown {
     position: relative;
     display: inline-block;
+    list-style: none;
 }
+
+
 
 /* Dropdown Content (Hidden by Default) */
 /* sem position o lefet nao funciona */
@@ -244,6 +302,7 @@ p {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     left: -20px;
+    list-style: none;
 }
 
 /* Links inside the dropdown */
@@ -272,6 +331,8 @@ p {
     color: var(--blue-grey-700);
     display: inline-block;
     transition: transform 0.3s;
+    list-style: none;
+    font-family: var(--font-body);
 }
 
 .dropdown:hover .dropdown-arrow {
@@ -361,6 +422,12 @@ p {
 
 /* About session */
 
+section {
+  /* margin: 3rem auto; */
+  margin: var(--space-xl) auto;
+  /* padding: 0px 16px; */
+}
+
 
 .about-container {
     /* height: 60vh; */
@@ -377,13 +444,22 @@ p {
     overflow: hidden;
 }
 
-
 .about-content {
     width: 55%;
     /* text-align: left; */
     /* padding: 16px 8px; */
     line-height: 140%;
     padding: 1rem 2rem;
+}
+
+.experience-container {
+  margin-top: var(--space-xl);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
 }
 
 .rectangle-design {
