@@ -493,10 +493,25 @@ span {
     background-color: var(--blue-500);
 }
 
+.realestate {
+    background-color: var(--complementaryslipt1-600);
+}
+
+.designsystem {
+    background-color: var(--complementaryslipt1-400);
+}
+
 .card-image img {
     max-width: 200px;
     height: auto;
     object-fit: cover;
+}
+
+.realestate img {
+    max-width: 300px;
+    margin: auto;
+    /* height: auto; */
+    /* object-fit: cover; */
 }
 
 .card-content-wrapper {
