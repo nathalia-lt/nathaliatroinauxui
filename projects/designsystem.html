@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Real Estate</title>
+    <title>Design System</title>
 </head>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -43,6 +43,9 @@
             <a href="../projects/ultrahuman.html">Ultrahuman</a>
             <a href="../projects/ciclo.html">Period Tracker</a>
             <a href="../projects/spirit.html">Spirit Airlines</a>
+            <a href="../projects/realestate.html">Real Estate</a>
+            <a href="../projects/designsystem.html">Design System</a>
+
           </div>
         </div>
         <a
@@ -75,7 +78,7 @@
                 <!-- Spirit airlines -->
                 <div class="row">
                   <div class="cell">
-                    <h5>YEAR <time datetime="2025-01-01">2025</time></h5>
+                    <h5>YEAR <time datetime="2025-01-01">2026</time></h5>
         
                     <h5>CONTEXT</h5>
                     <p>When I first started building my personal portfolio, it was written entirely in HTML, CSS, and vanila JavaScript. As the project grew, I realized that the codebase was becoming increasingly repetitive and difficult to scale. I found myself duplicating UI patterns, rewriting similar components, and manually maintaining styles across multiple pages.
@@ -84,8 +87,6 @@
 
                     To solve this, I migrated the project to HTML, CSS, React, and Next.js, which allowed me to adopt a component‑based architecture. I decided to build a complete Design System, a foundation that would support the project’s growth and demonstrate my ability to think like a Product Designer.</p>
 
-                    <h5>Timeline</h5>
-                    <p>3 Months</p>
                   </div>
                   <div class="cell">
                     <h5>ROLE</h5>
@@ -94,8 +95,10 @@
                     <p>
                         Research, Design tokens: typography, colors, spacing, grid and layout, components and tech implementation.
                     </p>
-                    <h5>PROTOTYPE</h5>
-                    <p class="prototype-view"><a href="https://www.figma.com/proto/CkRofEDoXGmv43ouVaAaDH/ultrahuman-case-study?page-id=0%3A1&node-id=486-10574&viewport=349%2C1678%2C0.14&t=mC8nPbK98B4ryYS3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=486%3A10574" target="_blank">Soon</a></p>
+                    <h5>TIMELINE</h5>
+                    <p>Always Evolving</p>
+                    <h5>METHODOLOGY</h5>
+                    <p>Atomic Design</p>
                   </div>
                 </div>
                 <div class="row">
@@ -126,7 +129,7 @@
 
               <section>
                 <h2>Research</h2>
-                <p>Before creating any components, I studied how established systems structure their foundations.</p>
+                <p>These references helped me define solid patterns, even for a small project.</p>
                 <h4>Key Findings</h4>
                 <ul>
                     <li>Material Design: Tokens and guidelines.</li>
@@ -135,10 +138,63 @@
                 </ul>
               </section>
               <section>
-                <h2>Design System foundations</h2>
+                <h2>Design System Foundations</h2>
+                <p>Before building any components, I focused on establishing the foundations of the Design System. This involved defining core rules, structure, naming conventions, tokens, and controls. At the core of this foundation were design tokens, which act as the single source of truth for all design decisions.</p>
+                <div>
+                  <h3>Color Palette</h3>
+                  <p>A carefully curated selection of colors that align with the brand identity and ensure accessibility.</p>
+                  <img class="matrix-img" src="../assets/Color-palette.png" alt="Color Palette">
+                </div>
+                <div>
+                  <h3>Typography</h3>
+                  <p>Hierarchy is expressed through weight, size, line height, and letter spacing, organized into five device-agnostic type roles:</p>
+                  <p>A typographic scale is essentially a set of text sizes that follow a consistent mathematical proportion, creating harmonious relationships between each level. In practice, when you define a typographic scale for your project, you establish a series of predetermined sizes that will be used consistently across the interface. Benefits include:</p>
+                    <ul>
+                      <li>Visual consistency</li>
+                      <li>Clear hierarchy</li>
+                      <li>Efficiency in the design process</li>
+                    </ul>
+                  <img src="" alt="Typography">
+                </div>
+                <div>
+                  <h3>Spacing Tokens</h3>
+                  <p>The 4px base unit forms the foundation of our spacing token system, defined as spacing-xs.  So everything becomes a multiple of 4. Every spacing token is derived as a multiple of this base unit, where the numeric suffix represents a percentage of the base value. it matches Tailwind, Chakra, Material systems. 4px is better than 8px. </p>
+                  <p><strong>Why?</strong> A 4px spacing system offers significantly more flexibility compared to an 8px system, which can often feel too rigid. With a 4px base, designers can easily use values like 12px, 20px, and 28px—sizes that are very common in real UI design but harder to achieve cleanly with an 8px-only scale. It also improves micro-spacing, allowing more precise control over elements like button padding, icon gaps, and input field spacing, where 8px increments can feel too large or visually heavy. At the same time, it remains scalable because you can still think in terms of 8px multiples when needed, for example, 8px becomes 2 units and 16px becomes 4 units—giving you the best of both precision and consistency.</p>
+                  <ul>
+                    <li>Micro spacing: Micro white space refers to the small spaces between individual elements, such as text and images.</li>
+                    <li>Macro spcaing: Macro white space refers to the larger spaces between sections or groups of elements, such as between paragraphs or sections.</li>
+                  </ul>
+                  <img class="matrix-img" src="../assets/Spacing-tokens.png" alt="spacing tokens">
+                </div>
+                <div>
+                  <h3>Layout Grid</h3>
+                  <p>A grid is used to structure and position content in a way that creates consistent and balanced page layouts. It helps designers organize information clearly and maintain visual harmony across screens. A layout grid is made up of three key elements: columns, gutters, and margins. Columns divide the page into equal vertical sections and act as the primary structure for placing content. Gutters are the spaces between these columns, ensuring that content is separated in a clean and consistent manner. Margins define the outer boundaries of the layout, preventing content from touching the edges of the screen and maintaining proper breathing space.
+
+                  A fixed-width grid is a type of grid where the overall layout width remains constant regardless of screen size. Instead of stretching fluidly, the content stays within a defined width, making it easier to maintain precise alignment and control over design elements. This approach is commonly used in desktop-focused designs where consistency and predictability are more important than responsiveness.</p>
+                  <img class="matrix-img" src="../assets/layout-grid.png" alt="Layout Grid">
+                </div>
+                <div>
+                  <h3>Component Guidelines</h3>
+                  <p>Clear guidelines for component usage, including best practices for accessibility and responsive design.</p>
+                </div>
+                <div>
+                  <h3>Accessibility Guidelines</h3>
+                  <p>Clear guidelines for ensuring all components are accessible to users with disabilities.</p>
+                </div>
+              </section>
+              <section>
+                <h2>Component Library</h2>
+                <p>I implemented Atomic Design to establish a clear hierarchy and promote maximum reusability across my portfolio's interface. By breaking down UI elements into atoms, molecules, and organisms, I was able to build a scalable foundation that ensures visual consistency and simplifies the handoff from design to code. This modular approach not only accelerated my development workflow but also allowed for easier maintenance, as updates to a single base component automatically propagate throughout the entire system.</p>
               </section>
               <section>
                 <h2>Components and Tech Implementation</h2>
+                <p>For the portfolio's project gallery, I utilized the Shadcn Card component as the structural foundation. Following the Atomic Design methodology, I treated the individual Shadcn elements, such as CardHeader, CardTitle, and CardContent as atoms that were composed into a functional molecule (the Project Card).</p>
+                <h3>Key Technical Decisions</h3>
+                <ul>
+                  <li>Composition: I nested atoms like Badge (for tech stacks) and Button (for links) within the Shadcn card structure to create a rich, informative organism.</li>
+                  <li>Customization: Using Tailwind CSS, I extended the base Shadcn styles to include custom hover effects and typography scales (using Playfair Display for titles), ensuring the component matched my unique brand identity.</li>
+                  <li>Reusability: By defining a clear props structure for the image, title, and description, I transformed the static Shadcn template into a dynamic, reusable component that handles all project entries consistently.</li>
+                </ul>
               </section>
 
 
